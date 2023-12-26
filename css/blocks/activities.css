@@ -1,0 +1,23 @@
+
+.activities__slider {
+    color: #323232;
+    line-height: 1.1;
+}
+
+.activities__slider-item {
+    flex: 0 1 310px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.activities__slider-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.activities__slider-descr {
+    font-size: 16px;
+    font-weight: 400;
+}

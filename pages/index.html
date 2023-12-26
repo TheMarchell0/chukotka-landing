@@ -1,58 +1,251 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta
             name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Правительство Чукотского автономного округа</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
-<header>
-    <p>header</p>
+<header class="header">
+    <div class="header__container container">
+        <div class="header__top">
+            <picture>
+                <source
+                        srcset="../images/head-logo.png 1x, ../images/head-logo@2x.png 2x"
+                />
+                <img
+                        src="../images/head-logo.png"
+                        alt="Логотип в шапке"
+                        width="212"
+                />
+            </picture>
+            <div class="header__top-contacts">
+                <a class="header__tel" href="tel:+78003000000">8-800-300-00-00</a>
+                <button class="header__button button">Задать вопрос</button>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-list-item"><a href="https://invest-chukotka.ru" target="_blank">Инвестпортал</a>
+                </li>
+                <li class="header__nav-list-item"><a href="#activities">Деятельность</a></li>
+                <li class="header__nav-list-item"><a href="#team">Команда</a></li>
+                <li class="header__nav-list-item"><a href="#resources">Полезные ресурсы</a></li>
+                <li class="header__nav-list-item"><a href="#documents">Документы</a></li>
+                <li class="header__nav-list-item"><a href="#news">Новости</a></li>
+                <li class="header__nav-list-item"><a href="#contact-us">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
-    <section>
-        <h1>Московский экспортный центр для столичных экспортеров</h1>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <picture class="header__bg-flower">
-                        <source
-                                srcset="./images/flower.png 1x, ./images/flower@2x.png 2x"
-                        />
-                        <img
-                                src="./images/flower.png"
-                                srcset="./images/flower.png 1x, ./images/flower@2x.png 2x"
-                                alt="Header flower background"
-                        />
-                    </picture>
+    <section class="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">Департамент экономики и&nbsp;инвестиций Чукотского АО</h1>
+                <div class="hero__content-text">
+                    <p class="hero__content-text-title">Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim.</p>
+                    <a class="hero__content-text-link" href="#">Подробнее</a>
                 </div>
-                <div class="swiper-slide">
-                    <picture class="header__bg-flower">
-                        <source
-                                srcset="./images/flower.png 1x, ./images/flower@2x.png 2x"
-                        />
-                        <img
-                                src="./images/flower.png"
-                                srcset="./images/flower.png 1x, ./images/flower@2x.png 2x"
-                                alt="Header flower background"
-                        />
-                    </picture>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
+    <section class="activities" id="activities">
+        <div class="activities__container container">
+            <h2 class="activities__title title">Направления деятельности</h2>
+            <div class="activities__slider swiper">
+                <div class="activities__slider-wrapper swiper-wrapper">
+                    <div class="activities__slider-item swiper-slide">
+                        <p class="activities__slider-title">Экономический анализ и прогнозирование</p>
+                        <p class="activities__slider-descr">Стратегическое планирование и мониторинг
+                            социально-экономического положения ЧАО.</p>
+                        <picture>
+                            <source
+                                    srcset="../images/activities-slider-img-1.png 1x, ../images/activities-slider-img-1@2x.png 2x"
+                            />
+                            <img
+                                    src="../images/activities-slider-img-1.png"
+                                    alt="Картинка в слайдере №1"
+                                    width="310"
+                            />
+                        </picture>
+                    </div>
+                    <div class="activities__slider-item swiper-slide">
+                        <p class="activities__slider-title">Привлечение инвестиций и сопровождение проектов</p>
+                        <p class="activities__slider-descr">Запуск проектов в различных отраслях, взаимодействие с
+                            инвесторами, улучшение инвестиционного климата региона.</p>
+                        <picture>
+                            <source
+                                    srcset="../images/activities-slider-img-2.png 1x, ../images/activities-slider-img-2@2x.png 2x"
+                            />
+                            <img
+                                    src="../images/activities-slider-img-2.png"
+                                    alt="Картинка в слайдере №2"
+                                    width="310"
+                            />
+                        </picture>
+                    </div>
+                    <div class="activities__slider-item swiper-slide">
+                        <p class="activities__slider-title">Экономический анализ и прогнозирование</p>
+                        <p class="activities__slider-descr">Организация и предоставление субсидий и грантов субъектам
+                            МСП.</p>
+                        <picture>
+                            <source
+                                    srcset="../images/activities-slider-img-3.png 1x, ../images/activities-slider-img-3@2x.png 2x"
+                            />
+                            <img
+                                    src="../images/activities-slider-img-3.png"
+                                    alt="Картинка в слайдере №3"
+                                    width="310"
+                            />
+                        </picture>
+                    </div>
+                    <div class="activities__slider-item swiper-slide">
+                        <p class="activities__slider-title">Региональный проектный офис</p>
+                        <p class="activities__slider-descr">Координация хода исполнения и реализации Национальных
+                            проектов РФ.</p>
+                        <picture>
+                            <source
+                                    srcset="../images/activities-slider-img-4.png 1x, ../images/activities-slider-img-4@2x.png 2x"
+                            />
+                            <img
+                                    src="../images/activities-slider-img-4.png"
+                                    alt="Картинка в слайдере №4"
+                                    width="310"
+                            />
+                        </picture>
+                    </div>
+                    <div class="activities__slider-item swiper-slide">
+                        <p class="activities__slider-title">ГЧП</p>
+                        <p class="activities__slider-descr">Реализация проектов и создание объектов социальной
+                            инфраструктуры в регионе.</p>
+                        <picture>
+                            <source
+                                    srcset="../images/activities-slider-img-5.png 1x, ../images/activities-slider-img-5@2x.png 2x"
+                            />
+                            <img
+                                    src="../images/activities-slider-img-5.png"
+                                    alt="Картинка в слайдере №5"
+                                    width="310"
+                            />
+                        </picture>
+                    </div>
+                    <div class="activities__slider-item swiper-slide">
+                        <p class="activities__slider-title">Развитие территорий</p>
+                        <p class="activities__slider-descr">Создание и внедрение мастер-планов городских
+                            агломераций.</p>
+                        <picture>
+                            <source
+                                    srcset="../images/activities-slider-img-6.png 1x, ../images/activities-slider-img-6@2x.png 2x"
+                            />
+                            <img
+                                    src="../images/activities-slider-img-6.png"
+                                    alt="Картинка в слайдере №6"
+                                    width="310"
+                            />
+                        </picture>
+                    </div>
+                    <div class="activities__slider-item swiper-slide">
+                        <p class="activities__slider-title">Госпрограммы</p>
+                        <p class="activities__slider-descr">Разработка, реализация и оценка эффективности
+                            государственных программ.</p>
+                        <picture>
+                            <source
+                                    srcset="../images/activities-slider-img-7.png 1x, ../images/activities-slider-img-7@2x.png 2x"
+                            />
+                            <img
+                                    src="../images/activities-slider-img-7.png"
+                                    alt="Картинка в слайдере №7"
+                                    width="310"
+                            />
+                        </picture>
+                    </div>
+                </div>
+                <div class="activities__slider-arrows slider-arrows">
+                    <div class="activities__slider-prev-arrow swiper-button-prev"></div>
+                    <div class="activities__slider-next-arrow swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team" id="team">
+        <div class="team__container container">
+            <h2 class="team__title title">Команда департамента</h2>
+        </div>
+    </section>
+    <section class="institutions" id="institutions">
+        <div class="institutions__container container">
+            <h2 class="institutions__title title">Учреждения</h2>
+        </div>
+    </section>
+    <section class="resources" id="resources">
+        <div class="resources__container container">
+            <h2 class="resources__title title">Полезные ресурсы</h2>
+        </div>
+    </section>
+    <section class="documents" id="documents">
+        <div class="documents__container container">
+            <h2 class="documents__title title">Документы</h2>
+        </div>
+    </section>
+    <section class="news" id="news">
+        <div class="news__container container">
+            <h2 class="news__title title">Новости</h2>
+        </div>
+    </section>
+    <section class="contact-us" id="contact-us">
+        <div class="contact-us__container container">
+
+        </div>
+    </section>
 </main>
-<footer>
-    <p>footer</p>
+<footer class="footer">
+    <div class="footer__container container">
+        <h2 class="footer__title title title_light">Контакты</h2>
+        <div class="footer__content">
+            <div class="footer__content-column footer__column">
+                <div class="footer__column-title">Адрес</div>
+                <p class="footer__column-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="footer__content-column footer__column">
+                <div class="footer__column-title">Телефон</div>
+                <p class="footer__column-text">
+                    <a href="tel:+79999999999">+ 7 (999) 999 99 99</a>
+                    <span>Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore</span></p>
+                <p class="footer__column-text">
+                    <a href="tel:+79999999999">+ 7 (999) 999 99 99</a>
+                    <span>Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore</span></p>
+            </div>
+            <div class="footer__content-column footer__column">
+                <div class="footer__column-title">Электронная почта</div>
+                <p class="footer__column-text">
+                    <a href="mailto:namename@mail.ru">namename@mail.ru</a>
+                    <span>Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore</span></p>
+                <p class="footer__column-text">
+                    <a href="mailto:namename@mail.ru">namename@mail.ru</a>
+                    <span>Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore</span></p>
+            </div>
+            <div class="footer__content-column footer__column">
+                <div class="footer__column-title">График работы</div>
+                <p class="footer__column-text">ПН-ПТ 10:00-20:00</p>
+                <p class="footer__column-text">СБ-ВС 12:00-17:00</p>
+            </div>
+        </div>
+    </div>
 </footer>
-<script src="js/main.js"></script>
+<script type="module" src="../js/main.js"></script>
 </body>
 </html>

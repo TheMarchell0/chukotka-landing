@@ -1,25 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    import { Swiper } from "../libs/swiper/swiper.bundle.min.js";
-    /* СЛАЙДЕРЫ
-     ========================================================================== */
+import SwiperBundle from '../libs/swiper/swiper-bundle.min.js';
 
-    Swiper.use([Navigation, Pagination]);
-
-    const swiper = new Swiper(".swiper", {
-        loop: true,
-        allowTouchMove: false,
-        spaceBetween: 10,
-
-        // Navigation arrows
+function createSliders() {
+    const activitiesSlider = new SwiperBundle.Swiper(".activities__slider", {
+        spaceBetween: 20,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: `.swiper-pagination`,
-            clickable: true,
+            nextEl: ".activities__slider-next-arrow",
+            prevEl: ".activities__slider-prev-arrow",
         },
     });
+}
 
-    /* ========================================================================== */
-});
+export default createSliders;

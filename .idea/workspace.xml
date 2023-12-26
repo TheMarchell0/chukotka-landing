@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67679702-cc35-45fc-8b16-c19b0656fcb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sliders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/swiper/swiper.bundle.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/swiper/swiper.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/documents.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/blocks/contact-us.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/blocks/documents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/blocks/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/blocks/hero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/blocks/institutions.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/blocks/news.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/blocks/resources.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/blocks/team.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blocks/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/activities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/swiper/swiper.bundle.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/libs/swiper/swiper-bundle.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/swiper/swiper.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Work/chukotka-landing",
+    "last_opened_file_path": "D:/Work/govmo",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -47,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703585288412</updated>
-      <workItem from="1703585289587" duration="521000" />
+      <workItem from="1703585289587" duration="17385000" />
     </task>
     <servers />
   </component>

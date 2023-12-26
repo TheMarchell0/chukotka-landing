@@ -22,6 +22,9 @@ html {
 
 body {
     margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: auto;
 }
 
 /**
@@ -37,9 +40,10 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
 }
 
 /* Grouping content
@@ -75,6 +79,7 @@ pre {
 
 a {
     background-color: transparent;
+    text-decoration: none;
 }
 
 /**
@@ -136,6 +141,11 @@ sub {
 
 sup {
     top: -0.5em;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 /* Embedded content
@@ -228,6 +238,13 @@ button:-moz-focusring,
 
 fieldset {
     padding: 0.35em 0.75em 0.625em;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
 }
 
 /**
