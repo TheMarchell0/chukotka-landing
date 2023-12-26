@@ -1,0 +1,45 @@
+/*Cera Pro*/
+
+@font-face {
+    font-family: "Cera Pro";
+    src: local("Cera Pro"),
+    url("../fonts/Cera Pro/CeraPro-Light.woff2") format("woff2"),
+    url("../fonts/Cera Pro/CeraPro-Light.woff") format("woff"),
+    url("../fonts/Cera Pro/CeraPro-Light.ttf") format("ttf"),
+    url("../fonts/Cera Pro/CeraPro-Light.eot") format("eot");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: local("Cera Pro"),
+    url("../fonts/Cera Pro/CeraPro-Regular.woff2") format("woff2"),
+    url("../fonts/Cera Pro/CeraPro-Regular.woff") format("woff"),
+    url("../fonts/Cera Pro/CeraPro-Regular.ttf") format("ttf"),
+    url("../fonts/Cera Pro/CeraPro-Regular.eot") format("eot");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: local("Cera Pro"),
+    url("../fonts/Cera Pro/CeraPro-Medium.woff2") format("woff2"),
+    url("../fonts/Cera Pro/CeraPro-Medium.woff") format("woff"),
+    url("../fonts/Cera Pro/CeraPro-Medium.ttf") format("ttf"),
+    url("../fonts/Cera Pro/CeraPro-Medium.eot") format("eot");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: local("Cera Pro"),
+    url("../fonts/Cera Pro/CeraPro-Bold.woff2") format("woff2"),
+    url("../fonts/Cera Pro/CeraPro-Bold.woff") format("woff"),
+    url("../fonts/Cera Pro/CeraPro-Bold.ttf") format("ttf"),
+    url("../fonts/Cera Pro/CeraPro-Bold.eot") format("eot");
+    font-weight: 700;
+    font-style: normal;
+}

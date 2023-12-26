@@ -1,0 +1,8 @@
+@import "fonts.css";
+@import "normalize.css";
+@import "../libs/swiper/swiper.bundle.min.css";
+@import "./blocks/header.css";
+
+* {
+    font-family: "Cera Pro", "Arial", sans-serif;
+}
