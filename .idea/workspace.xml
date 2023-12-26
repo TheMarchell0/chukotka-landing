@@ -4,10 +4,12 @@
     <list default="true" id="a26893ff-0757-47c0-957c-7221d5bd31b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/blocks/activities.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/activities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blocks/contact-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/contact-us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blocks/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blocks/institutions.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/institutions.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/blocks/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/team.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/createSliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/createSliders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +33,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.selected.package.stylelint": "",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.webOptions",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SashaWork\chukotka-landing" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,11 +53,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703616648467</updated>
-      <workItem from="1703616649802" duration="6182000" />
+      <workItem from="1703616649802" duration="10730000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

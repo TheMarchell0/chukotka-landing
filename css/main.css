@@ -149,3 +149,40 @@ a:hover {
     color: #1C5A96;
     background-color: #FFFFFF;
 }
+
+.contacts-text {
+    font-weight: 400;
+    color: inherit;
+    display: block;
+    position: relative;
+    padding-left: 16px;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.contacts-text:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.contacts-text::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+}
+
+.contacts-text_mail::before {
+    background: url('/images/email-icon.svg') no-repeat center;
+}
+
+.contacts-text_phone::before {
+    background: url('/images/phone-icon.svg') no-repeat center;
+}
+
+.contacts-text_site::before {
+    background: url('/images/site-icon.svg') no-repeat center;
+}

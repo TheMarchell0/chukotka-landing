@@ -1,0 +1,31 @@
+.contact-us {
+    margin-bottom: 1px;
+}
+
+.contact-us__content {
+    color: #FFFFFF;
+    border-radius: 25px;
+    background: url('../../images/contact-us-bg.png') no-repeat center;
+    padding: 130px 39px 176px 114px;
+}
+
+.contact-us__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.contact-us__descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 21px 0 19px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .contact-us__content {
+        background: url('../../images/contact-us-bg@2x.png') no-repeat center;
+        background-size: 100%;
+    }
+}

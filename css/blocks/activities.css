@@ -57,6 +57,7 @@
 .activities__slider-item:hover {
     transform: scale(1.1) !important;
     border: 2px solid #FFFFFF;
+    box-shadow: 0px 10px 30px 0px #E0E0E0;
 }
 
 .activities__slider-item:hover::before {
@@ -70,6 +71,8 @@
 
 .activities__slider-item img {
     width: 310px;
+    max-height: 190px;
+    object-fit: cover;
 }
 
 .activities__slider-title {
