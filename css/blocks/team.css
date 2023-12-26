@@ -1,0 +1,89 @@
+.team {
+    margin-bottom: 1px;
+}
+
+.team__title {
+    margin-bottom: 71px;
+}
+
+
+.team__slider-wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+.team__slider {
+    max-width: 1080px;
+}
+
+.team__slider-arrows {
+    top: 180px;
+}
+
+.team__slider-item {
+    color: #323232;
+    line-height: 1.1;
+    flex: 0 1 310px;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+.team__slider-item img {
+    border-radius: 20px;
+}
+
+.team__slider-content {
+    padding: 11px 10px 23px 19px
+}
+
+.team__slider-name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.team__slider-position {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 8px 0 7px;
+}
+
+.team__slider-contacts-title,
+.team__slider-contacts-text {
+    font-size: 14px;
+}
+
+.team__slider-contacts-title {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.team__slider-contacts-text {
+    font-weight: 400;
+    color: inherit;
+    display: block;
+    position: relative;
+    padding-left: 16px;
+}
+
+.team__slider-contacts-text:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.team__slider-contacts-text::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+}
+
+.team__slider-contacts-text_mail::before {
+    background: url('/images/email-icon.svg') no-repeat center;
+}
+
+.team__slider-contacts-text_phone::before {
+    background: url('/images/phone-icon.svg') no-repeat center;
+}

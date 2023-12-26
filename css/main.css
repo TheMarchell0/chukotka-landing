@@ -40,15 +40,15 @@ a:hover {
 
 .swiper-button-prev,
 .swiper-button-next {
-    position: initial!important;
-    top: initial!important;
-    left: initial!important;
-    right: initial!important;
-    bottom: initial!important;
-    display: block!important;
-    width: 31px!important;
-    height: 31px!important;
-    margin: 0!important;
+    position: initial !important;
+    top: initial !important;
+    left: initial !important;
+    right: initial !important;
+    bottom: initial !important;
+    display: block !important;
+    width: 31px !important;
+    height: 31px !important;
+    margin: 0 !important;
     background: url('../images/slider-arrow.svg') no-repeat center;
     transition: 0.2s linear;
 }
@@ -68,9 +68,34 @@ a:hover {
     display: none;
 }
 
+.swiper-slide {
+    height: auto !important;
+}
+
+.slider-arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+}
+
+.slider-arrows_small {
+    max-width: 64px;
+}
+
+.slider-arrows_small .swiper-button-prev {
+    margin-right: 4px!important;
+}
+
+.slider-arrows_big {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .container {
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1326px;
     position: relative;
     padding: 0 13px;
 }
@@ -121,6 +146,6 @@ a:hover {
 }
 
 .button_light {
-    color:#1C5A96;
+    color: #1C5A96;
     background-color: #FFFFFF;
 }
