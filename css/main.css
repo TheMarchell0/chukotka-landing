@@ -1,6 +1,5 @@
 @import "fonts.css";
 @import "normalize.css";
-@import "../libs/swiper/swiper-bundle.min.css";
 @import "./blocks/header.css";
 @import "./blocks/hero.css";
 @import "./blocks/activities.css";
@@ -41,15 +40,15 @@ a:hover {
 
 .swiper-button-prev,
 .swiper-button-next {
-    position: initial;
-    top: initial;
-    left: initial;
-    right: initial;
-    bottom: initial;
-    display: block;
-    width: 31px;
-    height: 31px;
-    margin: 0;
+    position: initial!important;
+    top: initial!important;
+    left: initial!important;
+    right: initial!important;
+    bottom: initial!important;
+    display: block!important;
+    width: 31px!important;
+    height: 31px!important;
+    margin: 0!important;
     background: url('../images/slider-arrow.svg') no-repeat center;
     transition: 0.2s linear;
 }
@@ -74,7 +73,6 @@ a:hover {
     max-width: 1300px;
     position: relative;
     padding: 0 13px;
-    overflow: hidden;
 }
 
 .title {

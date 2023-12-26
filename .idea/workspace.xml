@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67679702-cc35-45fc-8b16-c19b0656fcb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/blocks/contact-us.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/documents.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/hero.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/institutions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/news.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/resources.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/team.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/blocks/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blocks/activities.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/activities.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/activities.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sliders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/swiper/swiper.bundle.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/libs/swiper/swiper-bundle.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/swiper/swiper.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/createSliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/swiper/swiper-bundle.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/swiper/swiper-bundle.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +30,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",

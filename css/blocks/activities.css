@@ -1,7 +1,23 @@
+.activities__container {
+    overflow: visible;
+}
 
+.activities__title {
+    margin-bottom: 55px;
+}
+
+.activities__slider-wrapper {
+    position: relative;
+    height: 390px;
+}
 .activities__slider {
     color: #323232;
     line-height: 1.1;
+    overflow: visible!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .activities__slider-item {
@@ -9,6 +25,15 @@
     border-radius: 20px;
     background-color: #FFFFFF;
     cursor: pointer;
+    padding: 22px 15px 0px 19px;
+    min-height: 360px!important;
+    display: flex!important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activities__slider-item picture {
+    display: flex;
 }
 
 .activities__slider-title {
@@ -20,4 +45,6 @@
 .activities__slider-descr {
     font-size: 16px;
     font-weight: 400;
+    min-height: 72px;
+    margin-bottom: 12px;
 }

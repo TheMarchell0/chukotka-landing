@@ -1,4 +1,4 @@
-import createSliders from "./sliders.js";
+import createSliders from "./createSliders.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     createSliders();

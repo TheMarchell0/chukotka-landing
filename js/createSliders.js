@@ -1,7 +1,7 @@
-import SwiperBundle from '../libs/swiper/swiper-bundle.min.js';
-
 function createSliders() {
-    const activitiesSlider = new SwiperBundle.Swiper(".activities__slider", {
+    const activitiesSlider = new Swiper(".activities__slider", {
+        loop: false,
+        slidesPerView: 4,
         spaceBetween: 20,
         navigation: {
             nextEl: ".activities__slider-next-arrow",
