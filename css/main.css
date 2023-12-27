@@ -27,6 +27,10 @@ body {
     background-color: #F9F9F9;
 }
 
+main {
+    min-height: 100vh;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -61,6 +65,10 @@ a:not(.button):hover {
     clip-path: inset(100%) !important;
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
+}
+
+.hidden {
+    display: none;
 }
 
 .slider-arrows {

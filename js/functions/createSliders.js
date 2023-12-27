@@ -5,7 +5,6 @@ function createSliders() {
     for (let i = 0; i < newsBlocks.length; i++) {
         newsBlocks[i].addEventListener('click', ()=> {
             newsGlobalSlider.slideTo(i);
-            console.log('otkryl '+i)
         })
     }
 

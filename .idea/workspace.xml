@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a26893ff-0757-47c0-957c-7221d5bd31b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/swiper-styles-reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/documents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/functions/createSearchFunctional.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/documents-page-blocks/documents.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/documents-page-blocks/documents.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/createFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/createFormValidation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/createModalFunctional.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/createModalFunctional.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/createSliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/createSliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/createFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createFormValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/createModalFunctional.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createModalFunctional.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/createSliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createSliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SashaWork\chukotka-landing\js\functions" />
       <recent name="D:\SashaWork\chukotka-landing\css" />
       <recent name="D:\SashaWork\chukotka-landing" />
     </key>
