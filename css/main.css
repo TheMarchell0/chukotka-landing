@@ -1,5 +1,6 @@
 @import "fonts.css";
 @import "normalize.css";
+@import "swiper-styles-reset.css";
 @import "main-page-blocks/header.css";
 @import "main-page-blocks/hero.css";
 @import "main-page-blocks/activities.css";
@@ -11,7 +12,7 @@
 @import "main-page-blocks/contact-us.css";
 @import "main-page-blocks/footer.css";
 @import "documents-page-blocks/documents.css";
-@import "main-page-blocks/modal.css";
+@import "modal.css";
 
 * {
     font-family: "TT Firs Neue", "Arial", sans-serif;
@@ -62,47 +63,6 @@ a:not(.button):hover {
     overflow: hidden !important;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    position: initial !important;
-    top: initial !important;
-    left: initial !important;
-    right: initial !important;
-    bottom: initial !important;
-    display: block !important;
-    width: 31px !important;
-    height: 31px !important;
-    margin: 0 !important;
-    background: url('../images/slider-arrow.svg') no-repeat center;
-    transition: 0.2s linear;
-    border-radius: 50%;
-    background-color: #1C5A96;
-}
-
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-    opacity: 1!important;
-    background-color: #C2C2C2;
-}
-
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-    background-color: #062D5E;
-}
-
-.swiper-button-next {
-    transform: rotate(180deg);
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    display: none;
-}
-
-.swiper-slide {
-    height: auto !important;
-}
-
 .slider-arrows {
     display: flex;
     justify-content: space-between;
@@ -115,13 +75,20 @@ a:not(.button):hover {
 }
 
 .slider-arrows_small .swiper-button-prev {
-    margin-right: 4px!important;
+    margin-right: 4px !important;
 }
 
 .slider-arrows_big {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.news-global-modal .slider-arrows_big {
+    top: 206px;
+    left: -16px;
+    width: 492px;
+    transform: none;
 }
 
 .no-scroll {

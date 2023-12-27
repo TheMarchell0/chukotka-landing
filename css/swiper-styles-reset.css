@@ -1,0 +1,89 @@
+.swiper-button-prev,
+.swiper-button-next {
+    position: initial !important;
+    top: initial !important;
+    left: initial !important;
+    right: initial !important;
+    bottom: initial !important;
+    display: block !important;
+    width: 31px !important;
+    height: 31px !important;
+    margin: 0 !important;
+    background: url('../images/slider-arrow.svg') no-repeat center;
+    transition: 0.2s linear;
+    border-radius: 50%;
+    background-color: #1C5A96;
+}
+
+.modal__news-slider-arrows .swiper-button-prev,
+.modal__news-slider-arrows .swiper-button-next {
+    background: url('../images/news-slider-arrow.svg') no-repeat center;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 1 !important;
+    background-color: #C2C2C2;
+}
+
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #062D5E;
+}
+
+.modal__news-slider-arrows .swiper-button-prev:hover,
+.modal__news-slider-arrows .swiper-button-next:hover {
+    opacity: 0.7;
+    background-color: transparent;
+}
+
+.swiper-button-next {
+    transform: rotate(180deg);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-slide {
+    height: auto !important;
+}
+
+.swiper-pagination {
+    text-align: initial!important;
+    transition: initial!important;
+    top:initial!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content: center!important;
+    width: 82px!important;
+    height: 10px!important;
+    bottom: 23px!important;
+    left: 50%!important;
+    transform:translateX(-50%)!important;
+}
+
+.swiper-pagination-bullet {
+    margin: 0!important;
+    width: 8px!important;
+    height: 8px!important;
+    display: initial!important;
+    border-radius: 50%!important;
+    background: #FFFFFF!important;
+    opacity: 0.7!important;
+    display:block!important;
+}
+
+.swiper-pagination-bullet:not(:last-child) {
+    margin-right:10px!important;
+}
+
+.swiper-pagination-bullet-active {
+    margin: 0!important;
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%!important;
+    background: #FFFFFF!important;
+    opacity: 1!important;
+}

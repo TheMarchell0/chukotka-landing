@@ -465,33 +465,33 @@
                     <a class="absolute-link" href="#" target="_blank"></a>
                 </li>
             </ul>
-            <a href="#" target="_blank" class="documents__button button ">Посмотреть все</a>
+            <a href="/documents" target="_blank" class="documents__button button ">Посмотреть все</a>
         </div>
     </section>
     <section class="news" id="news">
         <div class="news__container container">
             <h2 class="news__title title">Новости</h2>
             <ul class="news__list">
-                <li class="news__list-item js-modal-trigger" data-open-modal="news-modal">
-                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <li class="news__list-item js-modal-trigger js-news-open" data-open-modal="news-slider">
+                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit111</p>
                     <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
-                <li class="news__list-item js-modal-trigger" data-open-modal="news-modal">
-                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <li class="news__list-item js-modal-trigger js-news-open" data-open-modal="news-slider">
+                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit222</p>
                     <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
-                <li class="news__list-item js-modal-trigger" data-open-modal="news-modal">
-                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <li class="news__list-item js-modal-trigger js-news-open" data-open-modal="news-slider">
+                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit333</p>
                     <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
-                <li class="news__list-item js-modal-trigger" data-open-modal="news-modal">
-                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <li class="news__list-item js-modal-trigger js-news-open" data-open-modal="news-slider">
+                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit444</p>
                     <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
@@ -586,74 +586,444 @@
         </form>
     </div>
 </div>
-<div class="modal js-modal news-modal" id="news-modal">
-    <div class="modal__content">
-        <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
-        <div class="modal__news-head">
-            <p class="modal__title title">Новость 1</p>
-            <div class="modal__news-slider-arrows slider-arrows slider-arrows_small">
-                <div class="modal__news-slider-prev-arrow swiper-button-prev"></div>
-                <div class="modal__news-slider-next-arrow swiper-button-next"></div>
-            </div>
-            <div class="modal__news-topic">
-                <div class="modal__news-topic-slider news__slider">
-                    <div class="modal__news-topic-slider-wrapper swiper-wrapper">
-                        <div class="modal__news-topic-slider-item swiper-slide">
-                            <picture>
-                                <source
-                                        srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
-                                />
-                                <img
-                                        src="images/slider-img-1.png"
-                                        alt="Картинка слайдера №1"
-                                />
-                            </picture>
-                        </div>
-                        <div class="modal__news-topic-slider-item swiper-slide">
-                            <picture>
-                                <source
-                                        srcset="images/resources-gosuslugi-bg.png 1x, ../images/resources-gosuslugi-bg@2x.png 2x"
-                                />
-                                <img
-                                        src="images/resources-gosuslugi-bg.png"
-                                        alt="Картинка слайдера №2"
-                                />
-                            </picture>
+<div id="news-slider" class="modal js-modal news-global-modal">
+    <div class="news-global-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide modal__content">
+                <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
+                <div class="modal__news-head">
+                    <p class="modal__title title">Новость 1</p>
+                    <div class="modal__news-head-switches">
+                        <p class="modal__news-head-switches-text">Следующая новость</p>
+                        <div class="modal__news-head-arrows slider-arrows slider-arrows_small">
+                            <div class="modal__news-head-prev-arrow swiper-button-prev"></div>
+                            <div class="modal__news-head-next-arrow swiper-button-next"></div>
                         </div>
                     </div>
-                    <div id="cross-fade-swiper-pagination" class="swiper-pagination"></div>
                 </div>
-                <div class="modal__news-topic-content">
-                    <p class="modal__news-topic-content-head">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore.</p>
-                    <p class="modal__news-topic-content-text modal__news-main-text">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                <div class="modal__news-topic">
+                    <div id="js-news__slider-1" class="modal__news-topic-slider news__slider">
+                        <div class="modal__news-topic-slider-wrapper swiper-wrapper">
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/slider-img-1.png"
+                                            alt="Картинка слайдера №1"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/resources-gosuslugi-bg.png 1x, ../images/resources-gosuslugi-bg@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/resources-gosuslugi-bg.png"
+                                            alt="Картинка слайдера №2"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/slider-img-1.png"
+                                            alt="Картинка слайдера №3"
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                        <div id="modal__news-pagination-1" class="modal__news-pagination swiper-pagination"></div>
+                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
+                            <div id="modal__news-slider-prev-arrow-1" class="modal__news-slider-prev-arrow swiper-button-prev"></div>
+                            <div id="modal__news-slider-next-arrow-1" class="modal__news-slider-next-arrow swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="modal__news-topic-content">
+                        <p class="modal__news-topic-content-head">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit,
+                            sed do eiusmod tempor incididunt ut labore.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            eu
+                            fugiat nulla pariatur.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+                            dolor
+                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum
+                            dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+                <div class="modal__news-main">
+                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                        cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur.</p>
-                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur.</p>
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                        cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
                 </div>
             </div>
-            <div class="modal__news-main">
-                <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.</p>
-                <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.</p>
+            <div class="swiper-slide modal__content">
+                <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
+                <div class="modal__news-head">
+                    <p class="modal__title title">Новость 2</p>
+                    <div class="modal__news-head-switches">
+                        <p class="modal__news-head-switches-text">Следующая новость</p>
+                        <div class="modal__news-head-arrows slider-arrows slider-arrows_small">
+                            <div class="modal__news-head-prev-arrow swiper-button-prev"></div>
+                            <div class="modal__news-head-next-arrow swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__news-topic">
+                    <div id="js-news__slider-2" class="modal__news-topic-slider news__slider">
+                        <div class="modal__news-topic-slider-wrapper swiper-wrapper">
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/slider-img-1.png"
+                                            alt="Картинка слайдера №1"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/resources-gosuslugi-bg.png 1x, ../images/resources-gosuslugi-bg@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/resources-gosuslugi-bg.png"
+                                            alt="Картинка слайдера №2"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/slider-img-1.png"
+                                            alt="Картинка слайдера №3"
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                        <div id="modal__news-pagination-2" class="modal__news-pagination swiper-pagination"></div>
+                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
+                            <div id="modal__news-slider-prev-arrow-2" class="modal__news-slider-prev-arrow swiper-button-prev"></div>
+                            <div id="modal__news-slider-next-arrow-2" class="modal__news-slider-next-arrow swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="modal__news-topic-content">
+                        <p class="modal__news-topic-content-head">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit,
+                            sed do eiusmod tempor incididunt ut labore.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            eu
+                            fugiat nulla pariatur.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+                            dolor
+                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum
+                            dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+                <div class="modal__news-main">
+                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                        cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                        cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="swiper-slide modal__content">
+                <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
+                <div class="modal__news-head">
+                    <p class="modal__title title">Новость 3</p>
+                    <div class="modal__news-head-switches">
+                        <p class="modal__news-head-switches-text">Следующая новость</p>
+                        <div class="modal__news-head-arrows slider-arrows slider-arrows_small">
+                            <div class="modal__news-head-prev-arrow swiper-button-prev"></div>
+                            <div class="modal__news-head-next-arrow swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__news-topic">
+                    <div id="js-news__slider-3" class="modal__news-topic-slider news__slider">
+                        <div class="modal__news-topic-slider-wrapper swiper-wrapper">
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/slider-img-1.png"
+                                            alt="Картинка слайдера №1"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/resources-gosuslugi-bg.png 1x, ../images/resources-gosuslugi-bg@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/resources-gosuslugi-bg.png"
+                                            alt="Картинка слайдера №2"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/slider-img-1.png"
+                                            alt="Картинка слайдера №3"
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                        <div id="modal__news-pagination-3" class="modal__news-pagination swiper-pagination"></div>
+                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
+                            <div id="modal__news-slider-prev-arrow-3" class="modal__news-slider-prev-arrow swiper-button-prev"></div>
+                            <div id="modal__news-slider-next-arrow-3" class="modal__news-slider-next-arrow swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="modal__news-topic-content">
+                        <p class="modal__news-topic-content-head">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit,
+                            sed do eiusmod tempor incididunt ut labore.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            eu
+                            fugiat nulla pariatur.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+                            dolor
+                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum
+                            dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+                <div class="modal__news-main">
+                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                        cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                        cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="swiper-slide modal__content">
+                <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
+                <div class="modal__news-head">
+                    <p class="modal__title title">Новость 4</p>
+                    <div class="modal__news-head-switches">
+                        <p class="modal__news-head-switches-text">Следующая новость</p>
+                        <div class="modal__news-head-arrows slider-arrows slider-arrows_small">
+                            <div class="modal__news-head-prev-arrow swiper-button-prev"></div>
+                            <div class="modal__news-head-next-arrow swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__news-topic">
+                    <div id="js-news__slider-4" class="modal__news-topic-slider news__slider">
+                        <div class="modal__news-topic-slider-wrapper swiper-wrapper">
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/slider-img-1.png"
+                                            alt="Картинка слайдера №1"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/resources-gosuslugi-bg.png 1x, ../images/resources-gosuslugi-bg@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/resources-gosuslugi-bg.png"
+                                            alt="Картинка слайдера №2"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="modal__news-topic-slider-item swiper-slide">
+                                <picture>
+                                    <source
+                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/slider-img-1.png"
+                                            alt="Картинка слайдера №3"
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                        <div id="modal__news-pagination-4" class="modal__news-pagination swiper-pagination"></div>
+                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
+                            <div id="modal__news-slider-prev-arrow-4" class="modal__news-slider-prev-arrow swiper-button-prev"></div>
+                            <div id="modal__news-slider-next-arrow-4" class="modal__news-slider-next-arrow swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="modal__news-topic-content">
+                        <p class="modal__news-topic-content-head">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit,
+                            sed do eiusmod tempor incididunt ut labore.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            eu
+                            fugiat nulla pariatur.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+                            dolor
+                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum
+                            dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+                <div class="modal__news-main">
+                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                        cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
+                        cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
+                </div>
             </div>
         </div>
     </div>

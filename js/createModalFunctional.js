@@ -1,5 +1,5 @@
 const body = document.body;
-let modals; // Ссылки на все модальные окна
+let modals;
 
 export function closeModal(modal) {
     if (modal) {
@@ -7,7 +7,7 @@ export function closeModal(modal) {
         modal.addEventListener('animationend', () => {
             modal.classList.remove('active', 'modal-anim-close');
             unlockScroll();
-        }, { once: true });
+        }, {once: true});
     }
 }
 
@@ -24,27 +24,28 @@ function unlockScroll() {
 
 function createModalFunctional() {
     const triggerButtons = document.querySelectorAll('.js-modal-trigger');
-    modals = document.querySelectorAll('.js-modal'); // Получаем все модальные окна
+    modals = document.querySelectorAll('.js-modal');
 
-    // Для каждой кнопки-триггера добавляем обработчик событий
+    const openModal = (modal) => {
+        modal.classList.add('active', 'modal-anim-open');
+        lockScroll();
+        modal.classList.remove('modal-anim-close');
+    };
+
     triggerButtons.forEach(triggerButton => {
         triggerButton.addEventListener('click', () => {
-            const modalId = triggerButton.getAttribute('data-open-modal'); // Предположим, что есть атрибут указывающий на связанное модальное окно
-            const modal = document.querySelector(`#${modalId}`); // Получаем модальное окно связанное с кнопкой
-
-            if (modal) {
-                modal.classList.add('active', 'modal-anim-open');
-                lockScroll();
-                modal.classList.remove('modal-anim-close');
-            }
+            const modalId = triggerButton.getAttribute('data-open-modal');
+            const modal = document.querySelector(`#${modalId}`);
+            openModal(modal);
         });
     });
 
-    // Закрытие модальных окон при клике на крестик, для каждого окна свой обработчик
     modals.forEach(modal => {
-        const closeButton = modal.querySelector('.js-close-modal');
+        const closeButtons = modal.querySelectorAll('.js-close-modal');
 
-        closeButton && closeButton.addEventListener('click', () => closeModal(modal));
+        closeButtons.forEach(closeButton => {
+            closeButton.addEventListener('click', () => closeModal(modal));
+        });
 
         modal.addEventListener('click', (event) => {
             if (event.target === modal) {
@@ -59,5 +60,6 @@ function createModalFunctional() {
         });
     });
 }
+
 
 export default createModalFunctional;

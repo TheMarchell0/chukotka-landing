@@ -1,4 +1,5 @@
 import { closeModal } from './createModalFunctional.js';
+
 function createFormValidation() {
     const submitButton = document.querySelector('.js-submit-button');
     const inputs = document.querySelectorAll('.modal__form-item');
