@@ -553,37 +553,47 @@
     </div>
 </footer>
 <div class="modal js-modal" id="form">
-    <div class="modal__content">
-        <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
-        <p class="modal__title title">Электронная приёмная</p>
-        <p class="modal__descr">Заполните форму обратной связи, оставьте ваш запрос</p>
-        <form class="modal__form">
-            <div class="modal__form-inputs">
-                <div class="modal__form-item">
-                    <label class="modal__form-label" for="form-name">Фамилия *</label>
-                    <input class="modal__form-input" id="form-name" type="text" placeholder="Иванов">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
+            <p class="modal__title title">Электронная приёмная</p>
+            <p class="modal__descr">Заполните форму обратной связи, оставьте ваш запрос</p>
+            <form class="modal__form">
+                <div class="modal__form-inputs">
+                    <div class="modal__form-item">
+                        <label class="modal__form-label" for="form-name">Фамилия *</label>
+                        <input name="Фамилия" class="modal__form-input" id="form-name" type="text" placeholder="Иванов">
+                    </div>
+                    <div class="modal__form-item">
+                        <label class="modal__form-label" for="form-surname">Имя *</label>
+                        <input name="Имя" class="modal__form-input" id="form-surname" type="text" placeholder="Иван">
+                    </div>
+                    <div class="modal__form-item email-input js-email-input">
+                        <label class="modal__form-label" for="form-email">Адрес электронной почты *</label>
+                        <input name="Почта" class="modal__form-input" id="form-email" type="email"
+                               placeholder="namename@mail.ru">
+                    </div>
+                    <div class="modal__form-item">
+                        <label class="modal__form-label" for="form-descr">Ваш вопрос, причина обращения * </label>
+                        <textarea class="modal__form-input" id="form-descr" type="text"
+                                  name="Вопрос, причина обращения"
+                                  placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/></textarea>
+                    </div>
                 </div>
-                <div class="modal__form-item">
-                    <label class="modal__form-label" for="form-surname">Имя *</label>
-                    <input class="modal__form-input" id="form-surname" type="text" placeholder="Иван">
+                <p class="modal__form-remark">* - Поля обязательные для заполнения</p>
+                <div class="modal__form-footer">
+                    <button type="submit" class="modal__form-button button js-submit-button">Отправить</button>
+                    <p class="modal__form-footer-text">Нажимая на кнопку «Отправить», вы даете согласие на обработку
+                        данных </p>
                 </div>
-                <div class="modal__form-item email-input js-email-input">
-                    <label class="modal__form-label" for="form-email">Адрес электронной почты *</label>
-                    <input class="modal__form-input" id="form-email" type="email" placeholder="namename@mail.ru">
-                </div>
-                <div class="modal__form-item">
-                    <label class="modal__form-label" for="form-descr">Ваш вопрос, причина обращения * </label>
-                    <textarea class="modal__form-input" id="form-descr" type="text"
-                              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/></textarea>
-                </div>
-            </div>
-            <p class="modal__form-remark">* - Поля обязательные для заполнения</p>
-            <div class="modal__form-footer">
-                <button type="submit" class="modal__form-button button js-submit-button">Отправить</button>
-                <p class="modal__form-footer-text">Нажимая на кнопку «Отправить», вы даете согласие на обработку
-                    данных </p>
-            </div>
-        </form>
+            </form>
+        </div>
+        <div class="modal__success hidden">
+            <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
+            <p class="modal__success-title">Спасибо!</p>
+            <p class="modal__success-descr">Ваше обращение успешно отправлено.</p>
+            <img class="modal__success-img" src="/images/success-mark-icon.svg" alt="Картинка с галочкой">
+        </div>
     </div>
 </div>
 <div id="news-slider" class="modal js-modal news-global-modal">
@@ -640,8 +650,10 @@
                         </div>
                         <div id="modal__news-pagination-1" class="modal__news-pagination swiper-pagination"></div>
                         <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
-                            <div id="modal__news-slider-prev-arrow-1" class="modal__news-slider-prev-arrow swiper-button-prev"></div>
-                            <div id="modal__news-slider-next-arrow-1" class="modal__news-slider-next-arrow swiper-button-next"></div>
+                            <div id="modal__news-slider-prev-arrow-1"
+                                 class="modal__news-slider-prev-arrow swiper-button-prev"></div>
+                            <div id="modal__news-slider-next-arrow-1"
+                                 class="modal__news-slider-next-arrow swiper-button-next"></div>
                         </div>
                     </div>
                     <div class="modal__news-topic-content">
@@ -749,8 +761,10 @@
                         </div>
                         <div id="modal__news-pagination-2" class="modal__news-pagination swiper-pagination"></div>
                         <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
-                            <div id="modal__news-slider-prev-arrow-2" class="modal__news-slider-prev-arrow swiper-button-prev"></div>
-                            <div id="modal__news-slider-next-arrow-2" class="modal__news-slider-next-arrow swiper-button-next"></div>
+                            <div id="modal__news-slider-prev-arrow-2"
+                                 class="modal__news-slider-prev-arrow swiper-button-prev"></div>
+                            <div id="modal__news-slider-next-arrow-2"
+                                 class="modal__news-slider-next-arrow swiper-button-next"></div>
                         </div>
                     </div>
                     <div class="modal__news-topic-content">
@@ -858,8 +872,10 @@
                         </div>
                         <div id="modal__news-pagination-3" class="modal__news-pagination swiper-pagination"></div>
                         <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
-                            <div id="modal__news-slider-prev-arrow-3" class="modal__news-slider-prev-arrow swiper-button-prev"></div>
-                            <div id="modal__news-slider-next-arrow-3" class="modal__news-slider-next-arrow swiper-button-next"></div>
+                            <div id="modal__news-slider-prev-arrow-3"
+                                 class="modal__news-slider-prev-arrow swiper-button-prev"></div>
+                            <div id="modal__news-slider-next-arrow-3"
+                                 class="modal__news-slider-next-arrow swiper-button-next"></div>
                         </div>
                     </div>
                     <div class="modal__news-topic-content">
@@ -967,8 +983,10 @@
                         </div>
                         <div id="modal__news-pagination-4" class="modal__news-pagination swiper-pagination"></div>
                         <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
-                            <div id="modal__news-slider-prev-arrow-4" class="modal__news-slider-prev-arrow swiper-button-prev"></div>
-                            <div id="modal__news-slider-next-arrow-4" class="modal__news-slider-next-arrow swiper-button-next"></div>
+                            <div id="modal__news-slider-prev-arrow-4"
+                                 class="modal__news-slider-prev-arrow swiper-button-prev"></div>
+                            <div id="modal__news-slider-next-arrow-4"
+                                 class="modal__news-slider-next-arrow swiper-button-next"></div>
                         </div>
                     </div>
                     <div class="modal__news-topic-content">

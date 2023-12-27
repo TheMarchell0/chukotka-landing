@@ -1,4 +1,5 @@
-import { closeModal } from './createModalFunctional.js';
+export const formContent = document.querySelector('.modal__content');
+export const successMessage = document.querySelector('.modal__success');
 
 function createFormValidation() {
     const submitButton = document.querySelector('.js-submit-button');
@@ -37,8 +38,8 @@ function createFormValidation() {
     function clearFormFields() {
         inputs.forEach((input) => {
             const field = input.querySelector('.modal__form-input');
-            field.value = ''; // Очистка значения поля
-            field.classList.remove('touched'); // Снятие отметки о том, что поле было изменено
+            field.value = '';
+            field.classList.remove('touched');
         });
     }
 
@@ -50,8 +51,8 @@ function createFormValidation() {
         });
 
         if (checkAllFieldsValid()) {
-            alert('отправлено');
-            closeModal();
+            successMessage.classList.remove('hidden');
+            formContent.classList.add('hidden');
             clearFormFields();
         }
     });
@@ -67,6 +68,7 @@ function createFormValidation() {
             field.classList.add('touched');
         });
     });
+
 }
 
 export default createFormValidation;

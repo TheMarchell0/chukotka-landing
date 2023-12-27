@@ -1,13 +1,20 @@
+import {successMessage, formContent} from './createFormValidation.js';
 const body = document.body;
 let modals;
 
-export function closeModal(modal) {
+function closeModal(modal) {
     if (modal) {
         modal.classList.replace('modal-anim-open', 'modal-anim-close');
         modal.addEventListener('animationend', () => {
             modal.classList.remove('active', 'modal-anim-close');
             unlockScroll();
         }, {once: true});
+        if (!successMessage.classList.contains('hidden')) {
+            setTimeout(()=> {
+                formContent.classList.remove('hidden');
+                successMessage.classList.add('hidden');
+            },500)
+        }
     }
 }
 
