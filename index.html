@@ -29,7 +29,7 @@
             </picture>
             <div class="header__top-contacts">
                 <a class="header__tel" href="tel:+78003000000">8-800-300-00-00</a>
-                <button class="header__button button js-modal-trigger">Задать вопрос</button>
+                <button class="header__button button js-modal-trigger" data-open-modal="form">Задать вопрос</button>
             </div>
         </div>
         <nav class="header__nav">
@@ -472,25 +472,25 @@
         <div class="news__container container">
             <h2 class="news__title title">Новости</h2>
             <ul class="news__list">
-                <li class="news__list-item">
+                <li class="news__list-item js-modal-trigger" data-open-modal="news-modal">
                     <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
-                <li class="news__list-item">
+                <li class="news__list-item js-modal-trigger" data-open-modal="news-modal">
                     <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
-                <li class="news__list-item">
+                <li class="news__list-item js-modal-trigger" data-open-modal="news-modal">
                     <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
-                <li class="news__list-item">
+                <li class="news__list-item js-modal-trigger" data-open-modal="news-modal">
                     <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur</p>
@@ -504,7 +504,9 @@
             <div class="contact-us__content">
                 <p class="contact-us__title">Свяжитесь с нами</p>
                 <p class="contact-us__descr">Оставьте интересующий вас вопрос</p>
-                <button class="contact-us__button button button_light js-modal-trigger">Задать вопрос</button>
+                <button class="contact-us__button button button_light js-modal-trigger" data-open-modal="form">Задать
+                    вопрос
+                </button>
             </div>
         </div>
     </section>
@@ -550,7 +552,7 @@
         </div>
     </div>
 </footer>
-<div class="modal js-modal">
+<div class="modal js-modal" id="form">
     <div class="modal__content">
         <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
         <p class="modal__title title">Электронная приёмная</p>
@@ -571,15 +573,89 @@
                 </div>
                 <div class="modal__form-item">
                     <label class="modal__form-label" for="form-descr">Ваш вопрос, причина обращения * </label>
-                    <textarea class="modal__form-input" id="form-descr" type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/></textarea>
+                    <textarea class="modal__form-input" id="form-descr" type="text"
+                              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/></textarea>
                 </div>
             </div>
             <p class="modal__form-remark">* - Поля обязательные для заполнения</p>
             <div class="modal__form-footer">
                 <button type="submit" class="modal__form-button button js-submit-button">Отправить</button>
-                <p class="modal__form-footer-text">Нажимая на кнопку «Отправить», вы даете согласие на обработку данных </p>
+                <p class="modal__form-footer-text">Нажимая на кнопку «Отправить», вы даете согласие на обработку
+                    данных </p>
             </div>
         </form>
+    </div>
+</div>
+<div class="modal js-modal news-modal" id="news-modal">
+    <div class="modal__content">
+        <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
+        <div class="modal__news-head">
+            <p class="modal__title title">Новость 1</p>
+            <div class="modal__news-slider-arrows slider-arrows slider-arrows_small">
+                <div class="modal__news-slider-prev-arrow swiper-button-prev"></div>
+                <div class="modal__news-slider-next-arrow swiper-button-next"></div>
+            </div>
+            <div class="modal__news-topic">
+                <div class="modal__news-topic-slider news__slider">
+                    <div class="modal__news-topic-slider-wrapper swiper-wrapper">
+                        <div class="modal__news-topic-slider-item swiper-slide">
+                            <picture>
+                                <source
+                                        srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                />
+                                <img
+                                        src="images/slider-img-1.png"
+                                        alt="Картинка слайдера №1"
+                                />
+                            </picture>
+                        </div>
+                        <div class="modal__news-topic-slider-item swiper-slide">
+                            <picture>
+                                <source
+                                        srcset="images/resources-gosuslugi-bg.png 1x, ../images/resources-gosuslugi-bg@2x.png 2x"
+                                />
+                                <img
+                                        src="images/resources-gosuslugi-bg.png"
+                                        alt="Картинка слайдера №2"
+                                />
+                            </picture>
+                        </div>
+                    </div>
+                    <div id="cross-fade-swiper-pagination" class="swiper-pagination"></div>
+                </div>
+                <div class="modal__news-topic-content">
+                    <p class="modal__news-topic-content-head">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+            <div class="modal__news-main">
+                <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.</p>
+                <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.</p>
+            </div>
+        </div>
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

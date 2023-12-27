@@ -1,7 +1,7 @@
 const body = document.body;
-let modal;
+let modals; // Ссылки на все модальные окна
 
-export function closeModal() {
+export function closeModal(modal) {
     if (modal) {
         modal.classList.replace('modal-anim-open', 'modal-anim-close');
         modal.addEventListener('animationend', () => {
@@ -24,29 +24,39 @@ function unlockScroll() {
 
 function createModalFunctional() {
     const triggerButtons = document.querySelectorAll('.js-modal-trigger');
-    modal = document.querySelector('.js-modal');
-    const closeButton = document.querySelector('.js-close-modal');
+    modals = document.querySelectorAll('.js-modal'); // Получаем все модальные окна
 
-    for (let triggerButton of triggerButtons) {
+    // Для каждой кнопки-триггера добавляем обработчик событий
+    triggerButtons.forEach(triggerButton => {
         triggerButton.addEventListener('click', () => {
-            modal.classList.add('active', 'modal-anim-open');
-            lockScroll();
-            modal.classList.remove('modal-anim-close');
+            const modalId = triggerButton.getAttribute('data-open-modal'); // Предположим, что есть атрибут указывающий на связанное модальное окно
+            const modal = document.querySelector(`#${modalId}`); // Получаем модальное окно связанное с кнопкой
+
+            if (modal) {
+                modal.classList.add('active', 'modal-anim-open');
+                lockScroll();
+                modal.classList.remove('modal-anim-close');
+            }
         });
-    }
-
-    closeButton.addEventListener('click', closeModal);
-
-    modal.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            closeModal();
-        }
     });
 
-    window.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && modal.classList.contains('active')) {
-            closeModal();
-        }
+    // Закрытие модальных окон при клике на крестик, для каждого окна свой обработчик
+    modals.forEach(modal => {
+        const closeButton = modal.querySelector('.js-close-modal');
+
+        closeButton && closeButton.addEventListener('click', () => closeModal(modal));
+
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal(modal);
+            }
+        });
+
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal(modal);
+            }
+        });
     });
 }
 

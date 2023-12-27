@@ -18,6 +18,20 @@ function createSliders() {
             prevEl: ".team__slider-prev-arrow",
         },
     });
+
+        const newsSlider = new Swiper(".news__slider", {
+            autoplay: {
+                delay: 1000,
+            },
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true,
+            },
+            pagination: {
+                el: "#cross-fade-swiper-pagination",
+                clickable: true,
+            },
+        });
 }
 
 export default createSliders;

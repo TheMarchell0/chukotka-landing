@@ -24,6 +24,9 @@
     width: 100%;
     position: relative;
     padding: 50px 50px 42px;
+    overflow-y: auto;
+    max-height: 100vh;
+    -webkit-overflow-scrolling: touch;
 }
 
 .modal__close {
@@ -166,6 +169,53 @@ textarea.modal__form-input {
     animation: openModalAnim 0.3s ease forwards;
 }
 
+.modal-anim-close {
+    animation: closeModalAnim 0.3s ease forwards;
+}
+
+.news-modal {
+    color: #323232;
+}
+
+.modal__news-topic {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.modal__news-topic-slider {
+    position: relative;
+    max-width: 461px;
+    width: 100%;
+    overflow: hidden;
+    margin-right: 55px;
+}
+
+.modal__news-topic-slider-item picture,
+.modal__news-topic-slider img{
+    width: 100%;
+}
+
+.modal__news-topic-content-head {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.modal__news-main-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.modal__news-main-text:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.modal__news-topic-content {
+    flex: 0 1 466px;
+}
+
 @keyframes openModalAnim {
     0% {
         opacity: 0;
@@ -175,11 +225,6 @@ textarea.modal__form-input {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* CSS для анимации закрытия */
-.modal-anim-close {
-    animation: closeModalAnim 0.3s ease forwards;
 }
 
 @keyframes closeModalAnim {
