@@ -1,15 +1,16 @@
 @import "fonts.css";
 @import "normalize.css";
-@import "./blocks/header.css";
-@import "./blocks/hero.css";
-@import "./blocks/activities.css";
-@import "./blocks/team.css";
-@import "./blocks/institutions.css";
-@import "./blocks/resources.css";
-@import "./blocks/documents.css";
-@import "./blocks/news.css";
-@import "./blocks/contact-us.css";
-@import "./blocks/footer.css";
+@import "main-page-blocks/header.css";
+@import "main-page-blocks/hero.css";
+@import "main-page-blocks/activities.css";
+@import "main-page-blocks/team.css";
+@import "main-page-blocks/institutions.css";
+@import "main-page-blocks/resources.css";
+@import "main-page-blocks/documents.css";
+@import "main-page-blocks/news.css";
+@import "main-page-blocks/contact-us.css";
+@import "main-page-blocks/footer.css";
+@import "documents-page-blocks/documents.css";
 
 * {
     font-family: "TT Firs Neue", "Arial", sans-serif;
@@ -251,4 +252,10 @@ a:not(.button):hover {
     line-height: 1.1;
     max-width: 427px;
     width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
