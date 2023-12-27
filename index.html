@@ -29,7 +29,7 @@
             </picture>
             <div class="header__top-contacts">
                 <a class="header__tel" href="tel:+78003000000">8-800-300-00-00</a>
-                <button class="header__button button">Задать вопрос</button>
+                <button class="header__button button js-modal-trigger">Задать вопрос</button>
             </div>
         </div>
         <nav class="header__nav">
@@ -474,22 +474,26 @@
             <ul class="news__list">
                 <li class="news__list-item">
                     <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
                 <li class="news__list-item">
                     <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
                 <li class="news__list-item">
                     <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
                 <li class="news__list-item">
                     <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
             </ul>
@@ -500,7 +504,7 @@
             <div class="contact-us__content">
                 <p class="contact-us__title">Свяжитесь с нами</p>
                 <p class="contact-us__descr">Оставьте интересующий вас вопрос</p>
-                <button class="contact-us__button button button_light">Задать вопрос</button>
+                <button class="contact-us__button button button_light js-modal-trigger">Задать вопрос</button>
             </div>
         </div>
     </section>
@@ -546,6 +550,38 @@
         </div>
     </div>
 </footer>
+<div class="modal js-modal">
+    <div class="modal__content">
+        <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
+        <p class="modal__title title">Электронная приёмная</p>
+        <p class="modal__descr">Заполните форму обратной связи, оставьте ваш запрос</p>
+        <form class="modal__form">
+            <div class="modal__form-inputs">
+                <div class="modal__form-item">
+                    <label class="modal__form-label" for="form-name">Фамилия *</label>
+                    <input class="modal__form-input" id="form-name" type="text" placeholder="Иванов">
+                </div>
+                <div class="modal__form-item">
+                    <label class="modal__form-label" for="form-surname">Имя *</label>
+                    <input class="modal__form-input" id="form-surname" type="text" placeholder="Иван">
+                </div>
+                <div class="modal__form-item email-input js-email-input">
+                    <label class="modal__form-label" for="form-email">Адрес электронной почты *</label>
+                    <input class="modal__form-input" id="form-email" type="email" placeholder="namename@mail.ru">
+                </div>
+                <div class="modal__form-item">
+                    <label class="modal__form-label" for="form-descr">Ваш вопрос, причина обращения * </label>
+                    <textarea class="modal__form-input" id="form-descr" type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/></textarea>
+                </div>
+            </div>
+            <p class="modal__form-remark">* - Поля обязательные для заполнения</p>
+            <div class="modal__form-footer">
+                <button type="submit" class="modal__form-button button js-submit-button">Отправить</button>
+                <p class="modal__form-footer-text">Нажимая на кнопку «Отправить», вы даете согласие на обработку данных </p>
+            </div>
+        </form>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="module" src="js/main.js"></script>
 </body>

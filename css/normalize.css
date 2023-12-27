@@ -188,6 +188,11 @@ input { /* 1 */
     overflow: visible;
 }
 
+input, textarea {
+    outline: none;
+    border: none;
+}
+
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
@@ -246,6 +251,7 @@ button {
     outline: none;
     border: none;
 }
+
 
 /**
  * 1. Correct the text wrapping in Edge and IE.

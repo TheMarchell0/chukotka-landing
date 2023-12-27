@@ -1,0 +1,71 @@
+import { closeModal } from './createModalFunctional.js';
+function createFormValidation() {
+    const submitButton = document.querySelector('.js-submit-button');
+    const inputs = document.querySelectorAll('.modal__form-item');
+
+    function validateEmail(email) {
+        const emailRegex = /\S+@\S+\.\S+/;
+        return emailRegex.test(email);
+    }
+
+    function validateInput(input) {
+        const isEmailField = input.classList.contains('js-email-input');
+        const field = input.querySelector('.modal__form-input');
+        const value = field.value.trim();
+        const isEmpty = value === '';
+
+        input.classList.remove('error', 'email-error');
+
+        if (isEmpty) {
+            input.classList.add('error');
+        } else {
+            field.classList.add('touched');
+
+            if (isEmailField && !validateEmail(value)) {
+                input.classList.add('error', 'email-error');
+            }
+        }
+    }
+
+    function checkAllFieldsValid() {
+        return Array.from(inputs).every((input) => {
+            return !input.classList.contains('error') && !input.classList.contains('email-error');
+        });
+    }
+
+    function clearFormFields() {
+        inputs.forEach((input) => {
+            const field = input.querySelector('.modal__form-input');
+            field.value = ''; // Очистка значения поля
+            field.classList.remove('touched'); // Снятие отметки о том, что поле было изменено
+        });
+    }
+
+    submitButton.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        inputs.forEach(input => {
+            validateInput(input);
+        });
+
+        if (checkAllFieldsValid()) {
+            alert('отправлено');
+            closeModal();
+            clearFormFields();
+        }
+    });
+
+    inputs.forEach((input) => {
+        const field = input.querySelector('.modal__form-input');
+
+        field.addEventListener('input', () => {
+            validateInput(input);
+        });
+
+        field.addEventListener('change', () => {
+            field.classList.add('touched');
+        });
+    });
+}
+
+export default createFormValidation;
