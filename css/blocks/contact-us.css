@@ -6,7 +6,8 @@
     color: #FFFFFF;
     border-radius: 25px;
     background: url('../../images/contact-us-bg.png') no-repeat center;
-    padding: 130px 39px 176px 114px;
+    padding: 130px 114px;
+    min-height: 450px;
 }
 
 .contact-us__title {

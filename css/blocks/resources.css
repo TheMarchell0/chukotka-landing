@@ -1,0 +1,91 @@
+.resources {
+    margin-bottom: 37px;
+}
+
+.resources__content {
+    display: flex;
+    color: #1C5A96;
+    margin-top: 46px;
+}
+
+.resources__links {
+    flex: 0 1 640px;
+    margin-right: 20px;
+}
+.resources__links-item {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    max-width: 610px;
+    width: 100%;
+    position: relative;
+    padding: 30px;
+    transition: 0.2s linear;
+}
+
+.resources__links-item:hover {
+    transform: scale(1.08);
+    background-color: #E8E9F7;
+    box-shadow: 0px 10px 30px 0px #E0E0E0;
+}
+
+.resources__links-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.resources__links-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    width: 31px;
+    height: 31px;
+    background: url('/images/arrow-with-bg.svg') no-repeat center;
+}
+
+.resources__links-title {
+    color: #323232;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.resources__banner {
+    background: url('../../images/resources-gosuslugi-bg.png') no-repeat center;
+    border-radius: 20px;
+    flex: 0 1 640px;
+    padding: 40px;
+    min-height: 562px;
+    position: relative;
+}
+
+.resources__banner:hover .contact-us__button {
+    background-color: #062D5E;
+}
+
+.resources__banner-text {
+    max-width: 269px;
+    width: 100%;
+}
+
+.resources__banner-text-title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 25px 0 10px;
+}
+
+.resources__banner-text-descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+    .resources__banner {
+        background: url('../../images/resources-gosuslugi-bg@2x.png') no-repeat center;
+        background-size: 100%;
+    }
+}

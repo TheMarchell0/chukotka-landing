@@ -1,0 +1,13 @@
+.documents {
+    margin-bottom: 60px;
+}
+
+.documents__content {
+    margin: 51px 0 29px;
+}
+
+.documents__button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
