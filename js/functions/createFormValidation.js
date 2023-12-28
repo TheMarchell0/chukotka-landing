@@ -30,9 +30,39 @@ function createFormValidation() {
     }
 
     function checkAllFieldsValid() {
-        return Array.from(inputs).every((input) => {
+        var allValid = Array.from(inputs).every((input) => {
             return !input.classList.contains('error') && !input.classList.contains('email-error');
         });
+
+        if (allValid) {
+            // Объект для отправки данных
+            var formData = {};
+            inputs.forEach((input) => {
+                const field = input.querySelector('.modal__form-input');
+                formData[field.name] = field.value; // Убедитесь, что у каждого input есть `name` атрибут
+            });
+            console.log( JSON.stringify(formData))
+            // Замените 'YOUR_WEB_APP_URL' на URL вашего веб-приложения
+            fetch('https://script.google.com/macros/s/AKfycbwJGfa-m63J9C8Zp5ih5c8edA4iwJiaGfWr3CJAUg6SV-Cl73pyjZEs_1rpB11gZdz5/exec', {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            })
+                .then(response => response.text())
+                .then(result => {
+                    successMessage.classList.remove('hidden');
+                    formContent.classList.add('hidden');
+                    clearFormFields();
+                    console.log('Success:', result);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        return allValid;
     }
 
     function clearFormFields() {
