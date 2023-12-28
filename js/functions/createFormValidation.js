@@ -42,13 +42,13 @@ function createFormValidation() {
                 formData[field.name] = field.value; // Убедитесь, что у каждого input есть `name` атрибут
             });
             console.log( JSON.stringify(formData))
-            // Замените 'YOUR_WEB_APP_URL' на URL вашего веб-приложения
-            fetch('https://script.google.com/macros/s/AKfycbwJGfa-m63J9C8Zp5ih5c8edA4iwJiaGfWr3CJAUg6SV-Cl73pyjZEs_1rpB11gZdz5/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwyBsL1hmFCrK5vLuxx-VC7eii4I04vT_SXJFpNGGfbnW3aEk5TX3xwaPHTa34pOHCb/exec', {
                 method: 'POST',
                 body: JSON.stringify(formData),
                 headers: {
-                    "Content-Type": "application/json",
+                    'Content-Type': 'application/json',
                 },
+                mode: 'cors' // Установите режим CORS
             })
                 .then(response => response.text())
                 .then(result => {
