@@ -39,14 +39,14 @@ function createFormValidation() {
             var formData = {};
             inputs.forEach((input) => {
                 const field = input.querySelector('.modal__form-input');
-                formData[field.name] = field.value; // Убедитесь, что у каждого input есть `name` атрибут
+                formData[field.name] = field.value;
             });
             console.log( JSON.stringify(formData))
-            fetch('https://script.google.com/macros/s/AKfycbwyBsL1hmFCrK5vLuxx-VC7eii4I04vT_SXJFpNGGfbnW3aEk5TX3xwaPHTa34pOHCb/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbyP3j0yEFa-2mbZldMoHUESNuibNzTHaQBmlp-1BCD7GdxhNwWCDHo7v7LF85grISPTkw/exec', {
                 method: 'POST',
-                body: JSON.stringify(formData),
+                body: new URLSearchParams(formData).toString(),
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 mode: 'cors' // Установите режим CORS
             })
