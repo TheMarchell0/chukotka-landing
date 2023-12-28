@@ -36,6 +36,8 @@
 .news-global-slider .modal__content {
     padding: 63px 37px 0px 50px;
     max-height: 830px;
+    background-color: #FFFFFF;
+    overflow: auto;
     border-bottom: 53px solid #FFFFFF;
 }
 
@@ -187,6 +189,10 @@ textarea.modal__form-input {
     color: #323232;
 }
 
+.modal__news-pagination {
+    display: flex;
+}
+
 .modal__news-head {
     display: flex;
     align-items: flex-end;
@@ -258,6 +264,7 @@ textarea.modal__form-input {
 
 .news-global-slider {
     max-width: 1080px;
+    width: 100%;
 }
 
 .modal__success {
@@ -277,7 +284,8 @@ textarea.modal__form-input {
     margin: 10px 0 50px;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.1
+    line-height: 1.1;
+    text-align: center;
 }
 
 .modal__success-img {
@@ -325,4 +333,145 @@ textarea.modal__form-input {
 
 .modal__content::-webkit-scrollbar-track:hover {
     background-color: #DADBE5;
+}
+
+@media (max-width: 1024px) {
+    .modal__wrapper,
+    .news-global-slider {
+        max-width: 94%;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+
+    .form-modal .modal__title,
+    .modal__form-footer {
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .modal__descr {
+        margin: 20px auto;
+        width: fit-content;
+    }
+
+    .modal__form-inputs {
+        height: auto;
+        align-items: center;
+    }
+
+    .modal__form-remark {
+        margin: 0 auto 20px;
+        width: fit-content;
+    }
+
+    .modal__form-footer {
+        flex-direction: column;
+    }
+
+    .modal__form-footer-text {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .modal__news-topic {
+        flex-direction: column;
+    }
+
+    .modal__news-topic-content {
+        flex: auto;
+    }
+
+    .modal__news-topic-slider {
+        max-width: 370px;
+        margin: 0 auto 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal__close {
+        position: absolute;
+        top: 20px;
+        right: 22px;
+    }
+
+    .modal__descr,
+    .modal__form-remark,
+    .modal__form-inputs {
+        width: auto;
+    }
+
+    .form-modal .modal__title, .modal__form-footer {
+        margin: 0;
+    }
+
+    .modal__wrapper {
+        padding: 48px 42px 24px 19px;
+        max-height: 90vh;
+    }
+
+    .modal__descr {
+        font-size: 14px;
+        margin: 20px auto 15px;
+    }
+
+    .modal__form-label {
+        font-size: 12px;
+        padding-bottom: 15px;
+        margin-bottom: 0;
+    }
+
+    .modal__form-input {
+        padding: 13px 16px 13px;
+    }
+
+    .modal__form-item:last-child {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+
+    .modal__form-input::placeholder {
+        font-size: 14px;
+    }
+
+    .modal__form-input::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+
+    .modal__form-input::-moz-placeholder {
+        font-size: 14px;
+    }
+
+    .modal__form-input:-ms-input-placeholder {
+        font-size: 14px;
+    }
+
+    textarea.modal__form-input {
+        height: 90px;
+    }
+
+    .modal__form-footer {
+        align-items: flex-start;
+    }
+
+    .modal__form-footer-text {
+        font-size: 12px;
+        max-width: 217px;
+        margin-top: 10px;
+    }
+
+    .modal__form-label::after {
+        font-size: 12px;
+        right: initial;
+        top: initial;
+        left: 0;
+        bottom: 0;
+    }
+
+    .modal__success {
+        margin: 22px 0 65px;
+    }
+
+    .modal__success-descr {
+        margin: 10px 0 30px;
+    }
 }

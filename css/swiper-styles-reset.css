@@ -54,7 +54,6 @@
     text-align: initial!important;
     transition: initial!important;
     top:initial!important;
-    display:flex!important;
     align-items:center!important;
     justify-content: center!important;
     width: 82px!important;
@@ -86,4 +85,12 @@
     border-radius: 50%!important;
     background: #FFFFFF!important;
     opacity: 1!important;
+}
+
+.swiper-number-pagination {
+    color: #1C5A96!important;
+    position: initial!important;
+    transform: none!important;
+    height:initial!important;
+    width:initial!important;
 }

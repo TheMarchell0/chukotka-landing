@@ -11,3 +11,9 @@
     margin: 0 auto;
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    .documents {
+        margin-bottom: 30px;
+    }
+}

@@ -30,7 +30,6 @@
 
 .team__slider-item img {
     border-radius: 20px;
-    max-width: 310px;
     width: 100%;
 }
 
@@ -58,4 +57,30 @@
 .team__slider-contacts-title {
     font-weight: 500;
     margin-bottom: 5px;
+}
+
+@media (max-width: 1326px) {
+    .team__slider-item {
+        flex: initial;
+    }
+}
+
+@media (max-width: 1024px) {
+    .team {
+        margin-bottom: 30px;
+    }
+
+    .team__title {
+        margin-bottom: 41px;
+    }
+}
+
+@media (max-width: 767px) {
+    .team__title {
+        margin-bottom: 19px;
+    }
+
+    .team__slider-arrows {
+        display: none!important;
+    }
 }

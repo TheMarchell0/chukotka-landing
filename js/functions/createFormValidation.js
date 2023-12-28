@@ -41,8 +41,7 @@ function createFormValidation() {
                 const field = input.querySelector('.modal__form-input');
                 formData[field.name] = field.value;
             });
-            console.log( JSON.stringify(formData))
-            fetch('https://script.google.com/macros/s/AKfycbyP3j0yEFa-2mbZldMoHUESNuibNzTHaQBmlp-1BCD7GdxhNwWCDHo7v7LF85grISPTkw/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbzADXiwVoq-8PSqWSpJ1MBWXAQnwoLrmYupPaq8q7AmCbcXCfzKwYXMCl1XLKisWUoFCA/exec', {
                 method: 'POST',
                 body: new URLSearchParams(formData).toString(),
                 headers: {

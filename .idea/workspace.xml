@@ -2,8 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a26893ff-0757-47c0-957c-7221d5bd31b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/js/functions/createAnchorsFunctional.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/functions/createMobileMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/activities.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/activities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/contact-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/contact-us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/documents.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/documents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/institutions.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/institutions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/news.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/resources.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/resources.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/team.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/swiper-styles-reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/swiper-styles-reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/resources-gosuslugi-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/resources-gosuslugi-bg@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/resources-gosuslugi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/documents.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/documents.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/functions/createFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createFormValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/functions/createSliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createSliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703616648467</updated>
       <workItem from="1703616649802" duration="10730000" />
-      <workItem from="1703748449821" duration="7295000" />
+      <workItem from="1703748449821" duration="36011000" />
     </task>
     <servers />
   </component>

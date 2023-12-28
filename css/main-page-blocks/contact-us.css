@@ -27,6 +27,12 @@
 only screen and (min-resolution: 192dpi) {
     .contact-us__content {
         background: url('../../images/contact-us-bg@2x.png') no-repeat center;
-        background-size: 100%;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-us__content {
+        padding: 123px 50px;
     }
 }
