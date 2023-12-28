@@ -118,11 +118,13 @@
         margin: 7px 0 11px;
     }
 
-    .contacts-text:not(:last-child) {
-        margin-bottom: 4px;
-    }
-
     .institutions {
         margin-bottom: 31px;
+    }
+}
+
+@media (max-width: 350px) {
+    .institutions__blocks-item {
+        flex: 0 0 290px;
     }
 }

@@ -15,26 +15,27 @@
 <header class="header">
     <div class="header__container container">
         <div class="header__top">
-            <a href="/">
-                <picture>
-                    <source
-                            srcset="images/head-logo.png 1x, ../images/head-logo@2x.png 2x"
-                    />
-                    <img
-                            src="images/head-logo.png"
-                            alt="Логотип в шапке"
-                            width="212"
-                            class="header__top-logo"
-                    />
-                </picture>
-            </a>
+            <picture>
+                <source
+                        srcset="images/head-logo.png 1x, ../images/head-logo@2x.png 2x"
+                />
+                <img
+                        src="images/head-logo.png"
+                        alt="Логотип в шапке"
+                        width="212"
+                        class="header__top-logo"
+                />
+            </picture>
             <div class="header__top-contacts">
                 <a class="header__tel" href="tel:+78003000000">8-800-300-00-00</a>
                 <button class="header__button button js-modal-trigger" data-open-modal="form">Задать вопрос</button>
+                <div class="header__mobile-menu-button-wrapper js-trigger-mobile-menu">
+                    <div class="header__mobile-menu-button"></div>
+                </div>
             </div>
         </div>
         <nav class="header__nav">
-            <ul class="header__nav-list">
+            <ul class="header__nav-list js-mobile-menu">
                 <li class="header__nav-list-item"><a href="https://invest-chukotka.ru" target="_blank">Инвестпортал</a>
                 </li>
                 <li class="header__nav-list-item"><a href="/#activities">Деятельность</a></li>
@@ -58,7 +59,7 @@
                 <li class="documents-head__content-item documents-search-block">
                     <p class="documents-head__content-search-text">Поиск по названию</p>
                     <div class="documents-head__content-search-wrapper">
-                        <input class="document-head__content-input js-search-input" type="text" placeholder="Название выбранного документа">
+                        <input class="document-head__content-input js-search-input" type="text" maxlength="30" placeholder="Название выбранного документа">
                     </div>
                 </li>
             </ul>

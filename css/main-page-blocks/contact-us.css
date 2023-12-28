@@ -36,3 +36,22 @@ only screen and (min-resolution: 192dpi) {
         padding: 123px 50px;
     }
 }
+
+@media (max-width: 767px) {
+    .contact-us__content {
+        min-height: 228px;
+    }
+
+    .contact-us__title {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .contact-us__content {
+        padding: 65px 23px;
+    }
+
+    .contact-us__descr {
+        margin: 11px 0 10px;
+    }
+}

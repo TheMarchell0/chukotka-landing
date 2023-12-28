@@ -21,6 +21,8 @@
 
 .documents-head__content-search-wrapper {
     position: relative;
+    background: #FFFFFF;
+    border-radius: 10px;
 }
 
 .documents-head__content-search-wrapper::after {
@@ -36,9 +38,7 @@
 }
 
 .document-head__content-input {
-    border-radius: 10px;
-    background: #FFFFFF;
-    width: 100%;
+    width: 90%;
     padding: 12px 20px 11px;
 }
 
@@ -88,4 +88,37 @@
     font-weight: 500;
     line-height: 1;
     margin-bottom: 17px;
+}
+
+@media (max-width: 767px) {
+    .documents-head {
+        margin: 27px 0 22px;
+    }
+
+    .documents-head__content {
+        flex-direction: column;
+    }
+
+    .documents-search-block {
+        flex: auto;
+        margin-top: 3px;
+    }
+}
+
+@media (max-width: 350px) {
+    .document-head__content-input::placeholder {
+        font-size: 12px;
+    }
+
+    .document-head__content-input::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+
+    .document-head__content-input::-moz-placeholder {
+        font-size: 12px;
+    }
+
+    .document-head__content-input:-ms-input-placeholder {
+        font-size: 12px;
+    }
 }

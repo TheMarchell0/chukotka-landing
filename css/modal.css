@@ -35,9 +35,10 @@
 
 .news-global-slider .modal__content {
     padding: 63px 37px 0px 50px;
-    max-height: 830px;
+    max-height: 90vh;
     background-color: #FFFFFF;
     overflow: auto;
+    border-radius: 30px;
     border-bottom: 53px solid #FFFFFF;
 }
 
@@ -339,8 +340,11 @@ textarea.modal__form-input {
     .modal__wrapper,
     .news-global-slider {
         max-width: 94%;
-        margin-top: 40px;
         border-radius: 20px;
+    }
+
+    .news-global-slider .modal__content {
+        padding: 30px 37px 0px 50px;
     }
 
     .form-modal .modal__title,
@@ -375,6 +379,7 @@ textarea.modal__form-input {
 
     .modal__news-topic {
         flex-direction: column;
+        margin: 0 auto 24px;
     }
 
     .modal__news-topic-content {
@@ -400,6 +405,10 @@ textarea.modal__form-input {
         width: auto;
     }
 
+    .modal__form-inputs {
+        align-items: flex-start;
+    }
+
     .form-modal .modal__title, .modal__form-footer {
         margin: 0;
     }
@@ -422,6 +431,7 @@ textarea.modal__form-input {
 
     .modal__form-input {
         padding: 13px 16px 13px;
+        font-size: 14px;
     }
 
     .modal__form-item:last-child {
@@ -473,5 +483,66 @@ textarea.modal__form-input {
 
     .modal__success-descr {
         margin: 10px 0 30px;
+    }
+
+    .modal__news-head {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 19px;
+    }
+
+    .news-global-slider .modal__content {
+        padding: 48px 18px 0;
+        border-bottom: 21px solid #FFFFFF;
+    }
+
+    .modal__news-head-switches {
+        margin-top: 20px;
+    }
+
+    .modal__news-topic-content,
+    .modal__news-main-text {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .modal__news-topic-content-head {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .modal__news-main-text {
+        font-size: 14px;
+    }
+
+    .modal__news-main-text:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    .modal__news-topic {
+        margin: 0 auto 17px;
+    }
+}
+
+@media (max-width: 350px) {
+    .modal__form-input::placeholder {
+        font-size: 12px;
+    }
+
+    .modal__form-input::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+
+    .modal__form-input::-moz-placeholder {
+        font-size: 12px;
+    }
+
+    .modal__form-input:-ms-input-placeholder {
+        font-size: 12px;
+    }
+
+    .modal__form-input {
+        font-size: 12px;
     }
 }

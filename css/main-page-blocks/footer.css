@@ -89,3 +89,35 @@
         margin-bottom: 10px;
     }
 }
+
+@media (max-width: 767px) {
+    .footer {
+        margin-top: 40px;
+        padding: 30px 19px 29px;
+    }
+
+    .footer__content {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .footer__column-title {
+        font-size: 20px;
+    }
+
+    .footer__column-text {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .footer__column-text a {
+        font-size: 16px;
+        line-height: 1.1;
+        margin-bottom: 1px;
+    }
+
+    .footer__column-text span {
+        font-size: 12px;
+        line-height: 1.1;
+    }
+}

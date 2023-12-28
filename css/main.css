@@ -232,11 +232,13 @@ a:not(.button):hover {
     content: '';
     display: block;
     position: absolute;
-    top: 28px;
+    top: 50%;
     left: 30px;
     width: 36px;
     height: 36px;
     background: url('/images/doc-icon.svg') no-repeat center;
+    background-size: cover;
+    transform: translateY(-50%);
 }
 
 .docs-list__title {
@@ -301,6 +303,17 @@ a:not(.button):hover {
         max-width: 104px;
     }
 
+    .button.resources-banner__button {
+        max-width: 220px;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 12px 15px;
+    }
+
+    .button.documents__button {
+        max-width: 140px;
+    }
+
     .title {
         font-size: 24px;
         line-height: 1.1;
@@ -308,5 +321,31 @@ a:not(.button):hover {
 
     .contacts-text:not(:last-child) {
         margin-bottom: 10px;
+    }
+
+    .docs-list__title {
+        font-size: 14px;
+        -webkit-line-clamp: 3;
+    }
+
+    .docs-list__item {
+        padding: 18px 30px 14px 62px;
+    }
+
+    .docs-list__item::after {
+        width: 24px;
+        height: 24px;
+        left: 18px;
+    }
+
+    .news-global-modal .slider-arrows_big {
+        top: 35%;
+        width: 342px;
+    }
+}
+
+@media (max-width: 370px) {
+    .news-global-modal .slider-arrows_big {
+        width: 300px;
     }
 }

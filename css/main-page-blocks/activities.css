@@ -160,3 +160,10 @@
         max-height: initial;
     }
 }
+
+@media (max-width: 350px) {
+    .activities__slider-item img {
+        width: 310px;
+        height: auto;
+    }
+}

@@ -106,7 +106,7 @@
     .resources__banner {
         margin-bottom: 20px;
         flex: auto;
-        min-height: 260px;
+        min-height: 310px;
     }
 
     .resources__links {
@@ -119,5 +119,46 @@
 
     .resources__links-item {
         max-width: initial;
+    }
+}
+
+@media (max-width: 767px) {
+    .resources__banner {
+        padding: 21px;
+    }
+
+    .resources__banner-text-title {
+        font-size: 18px;
+    }
+
+    .resources__banner-text-descr {
+        font-size: 12px;
+        max-width: 127px;
+        width: 100%;
+    }
+
+    .resources__links-item {
+        padding: 15px 19px 14px;
+    }
+
+    .resources__links-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .resources__links-item:hover {
+        transform: none;
+    }
+
+    .resources__links-item::after {
+        right: 15px;
+    }
+
+    .resources__links-title {
+        font-size: 14px;
+        max-width: 144px;
+        -webkit-line-clamp: 2;
+    }
+
+    .resources {
+        margin-bottom: 30px;
     }
 }

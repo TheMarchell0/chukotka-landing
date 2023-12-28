@@ -77,3 +77,9 @@
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 767px) {
+    .news__list {
+        margin-top: 20px;
+    }
+}
