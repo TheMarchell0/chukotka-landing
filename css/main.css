@@ -147,7 +147,7 @@ a:not(.button):hover {
     font-weight: 500;
     line-height: 1.1;
     background-color: #1C5A96;
-    padding: 13px 15px;
+    padding: 13px 10px;
     transition: 0.2s linear;
 }
 
@@ -296,7 +296,7 @@ a:not(.button):hover {
         max-width: 130px;
         font-size: 14px;
         font-weight: 400;
-        padding: 8px 15px;
+        padding: 8px 10px;
     }
 
     .button.modal__form-button {
