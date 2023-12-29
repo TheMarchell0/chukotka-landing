@@ -124,7 +124,7 @@ a:not(.button):hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 135px;
+    width: 130px;
     height: 5px;
     border-radius: 5px;
     background-color: #062D5E;
@@ -293,7 +293,7 @@ a:not(.button):hover {
 
 @media (max-width: 767px) {
     .button {
-        max-width: 130px;
+        max-width: 135px;
         font-size: 14px;
         font-weight: 400;
         padding: 8px 15px;
