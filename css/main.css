@@ -293,7 +293,7 @@ a:not(.button):hover {
 
 @media (max-width: 767px) {
     .button {
-        max-width: 135px;
+        max-width: 130px;
         font-size: 14px;
         font-weight: 400;
         padding: 8px 15px;

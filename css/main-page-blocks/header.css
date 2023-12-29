@@ -183,7 +183,7 @@
     }
 
     .header__top-contacts {
-        flex: 0 1 160px;
+        flex: auto;
     }
 
     .header__button {
