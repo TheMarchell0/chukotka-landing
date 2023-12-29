@@ -8,6 +8,10 @@
     padding: 27px 19px 12px;
 }
 
+.header__top.open {
+    border-radius: 20px 20px 0px 0px;
+}
+
 .header__top-logo {
     max-width: 212px;
     width: 100%;
@@ -43,7 +47,6 @@
     width: 100%;
     margin: 0 auto;
     justify-content: space-between;
-    background-color: #FFFFFF;
 }
 
 .header__nav-list-item {
@@ -147,10 +150,11 @@
         right: -150%;
         top: 0;
         z-index: 100;
-        background: #FFFFFF;
+        background-color: #FFFFFF;
         transition: right 0.3s ease-out;
         padding: 30px 0;
         margin-top: -1px;
+        border-radius: 0px 0px 20px 20px;
     }
 
     .header__nav-list.open {
