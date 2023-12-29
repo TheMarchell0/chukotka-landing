@@ -25,8 +25,14 @@ body {
     position: relative;
     overflow-x: hidden;
     -webkit-overflow-scrolling: auto;
-    touch-action: none;
-    -ms-touch-action: none;
+}
+
+header,
+section,
+footer,
+.modal {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: auto;
 }
 
 /**
