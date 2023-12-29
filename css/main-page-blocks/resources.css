@@ -49,8 +49,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 1.1;
-    max-width: 460px;
-    width: 100%;
+    width: 91%;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -154,7 +153,7 @@
 
     .resources__links-title {
         font-size: 14px;
-        max-width: 144px;
+        width: 80%;
         -webkit-line-clamp: 2;
     }
 
