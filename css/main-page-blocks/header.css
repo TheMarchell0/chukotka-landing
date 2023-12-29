@@ -1,3 +1,6 @@
+header {
+    width: 100vw;
+}
 .header__top {
     border-radius: 20px;
     background-color: #FFFFFF;
