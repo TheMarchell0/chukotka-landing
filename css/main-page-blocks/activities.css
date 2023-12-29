@@ -4,7 +4,6 @@
 
 .activities__container {
     overflow: visible;
-    -webkit-overflow-scrolling: auto;
 }
 
 .activities__title {
@@ -110,6 +109,10 @@
 @media (max-width: 1326px) {
     .activities__slider-item {
         flex: initial;
+    }
+
+    .activities__container {
+        overflow-x: hidden;
     }
 }
 
