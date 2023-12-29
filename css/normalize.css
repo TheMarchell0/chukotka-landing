@@ -27,6 +27,14 @@ body {
     -webkit-overflow-scrolling: auto;
 }
 
+header,
+section,
+footer,
+.modal {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: auto;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
