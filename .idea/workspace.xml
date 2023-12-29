@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a26893ff-0757-47c0-957c-7221d5bd31b2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/css/documents-page-blocks/documents.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/documents-page-blocks/documents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/institutions.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/institutions.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

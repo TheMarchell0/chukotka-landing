@@ -9,6 +9,7 @@
     max-width: 1260px;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
+    overflow-y: hidden;
 }
 
 .institutions__blocks::-webkit-scrollbar {

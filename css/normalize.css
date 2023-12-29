@@ -24,7 +24,7 @@ body {
     margin: 0;
     position: relative;
     overflow-x: hidden;
-    -webkit-overflow-scrolling: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /**
