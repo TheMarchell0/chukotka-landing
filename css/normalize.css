@@ -31,7 +31,6 @@ header,
 section,
 footer,
 .modal {
-    overflow-x: hidden;
     -webkit-overflow-scrolling: auto;
 }
 
