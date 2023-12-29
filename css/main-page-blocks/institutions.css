@@ -1,15 +1,11 @@
-.institutions {
-    margin-bottom: 40px;
-}
-
 .institutions__blocks {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px auto 0;
+    margin: 0 auto;
+    padding: 50px 0 40px;
     max-width: 1260px;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
-    overflow-y: hidden;
 }
 
 .institutions__blocks::-webkit-scrollbar {
@@ -77,6 +73,7 @@
     .institutions__blocks {
         flex-wrap: nowrap;
         overflow-x: auto;
+        overflow-y: hidden;
     }
 
     .institutions__blocks-item:not(:nth-last-child(-n+2)) {
@@ -94,7 +91,7 @@
 
 @media (max-width: 1024px) {
     .institutions__blocks {
-        margin: 20px auto 0;
+       padding: 20px 0 40px;
     }
 }
 
@@ -117,10 +114,6 @@
 
     .institutions__blocks-text-descr {
         margin: 7px 0 11px;
-    }
-
-    .institutions {
-        margin-bottom: 31px;
     }
 }
 
