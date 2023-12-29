@@ -111,6 +111,16 @@
         flex: initial;
     }
 
+    .activities__slider-item:hover {
+        transform: none!important;
+        border: 2px solid transparent;
+        box-shadow: none;
+    }
+
+    .activities__slider-item:hover::before {
+        display: none;
+    }
+
     .activities__container {
         overflow-x: hidden;
     }
@@ -137,12 +147,6 @@
 
     .activities__slider-item {
         padding: 18px 15px 0px 19px;
-    }
-
-    .activities__slider-item:hover {
-        transform: none!important;
-        border: 2px solid transparent;
-        box-shadow: none;
     }
 
     .swiper-slide-active.activities__slider-item {

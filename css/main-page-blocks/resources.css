@@ -96,6 +96,14 @@
     }
 }
 
+@media (max-width: 1326px) {
+    .resources__links-item:hover {
+        transform: none;
+        background-color: #FFFFFF;
+        box-shadow: none;
+    }
+}
+
 @media (max-width: 1024px) {
     .resources__content {
         flex-direction: column-reverse;

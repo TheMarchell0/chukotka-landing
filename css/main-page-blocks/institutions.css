@@ -76,6 +76,11 @@
         overflow-y: hidden;
     }
 
+    .institutions__blocks-item:hover {
+        box-shadow: none;
+        transform: none;
+    }
+
     .institutions__blocks-item:not(:nth-last-child(-n+2)) {
         margin-bottom: 0px;
     }
@@ -91,7 +96,7 @@
 
 @media (max-width: 1024px) {
     .institutions__blocks {
-       padding: 20px 0 40px;
+       padding: 20px 0 31px;
     }
 }
 
