@@ -4,6 +4,7 @@
 
 .activities__container {
     overflow: visible;
+    -webkit-overflow-scrolling: auto;
 }
 
 .activities__title {
