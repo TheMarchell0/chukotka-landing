@@ -21,7 +21,15 @@
 .header__top-contacts {
     display: flex;
     align-items: center;
-    flex: 0 1 445px;
+    flex: 0 1 515px;
+}
+
+.header__tg-link {
+    margin: 0 30px;
+}
+
+.header__tg-link_mobile {
+    display: none;
 }
 
 .header__tel {
@@ -29,10 +37,6 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.1
-}
-
-.header__button {
-    margin-left: 30px;
 }
 
 .header__nav {
@@ -177,11 +181,21 @@
     .header__tel {
         display: none;
     }
-}
 
-@media (max-width: 767px) {
     .header__top {
         padding: 25px 7px 12px
+    }
+
+    .header__tg-link_desktop {
+        display: none;
+    }
+
+    .header__tg-link_mobile {
+        display: block;
+    }
+
+    .header__tg-link {
+        margin: 0;
     }
 
     .header__top-logo {

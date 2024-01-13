@@ -41,13 +41,13 @@ function createFormValidation() {
                 const field = input.querySelector('.modal__form-input');
                 formData[field.name] = field.value;
             });
-            fetch('https://script.google.com/macros/s/AKfycbzADXiwVoq-8PSqWSpJ1MBWXAQnwoLrmYupPaq8q7AmCbcXCfzKwYXMCl1XLKisWUoFCA/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbykqtDnBa_bsSSSa9n4HP9b5ByCYVRamAivPD0UWuWYASGMsU_8Ze51HI7S0_fBgJ8K/exec', {
                 method: 'POST',
                 body: new URLSearchParams(formData).toString(),
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
-                mode: 'cors' // Установите режим CORS
+                mode: 'cors'
             })
                 .then(response => response.text())
                 .then(result => {

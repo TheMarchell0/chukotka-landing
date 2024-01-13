@@ -289,6 +289,10 @@ a:not(.button):hover {
         transform: translateX(-50%);
         width: 412px;
     }
+
+    .button.header__button {
+        max-width: 170px;
+    }
 }
 
 @media (max-width: 767px) {

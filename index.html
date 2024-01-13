@@ -30,6 +30,13 @@
             </picture>
             <div class="header__top-contacts">
                 <a class="header__tel" href="tel:+78003000000">8-800-300-00-00</a>
+                <a class="header__tg-link header__tg-link_desktop" href="https://t.me/depeconom_chukotka" target="_blank">
+                    <img
+                            src="images/tg-icon.svg"
+                            alt="Логотип телеграм-канала"
+                            width="40"
+                    />
+                </a>
                 <button class="header__button button js-modal-trigger" data-open-modal="form">Задать вопрос</button>
                 <div class="header__mobile-menu-button-wrapper js-trigger-mobile-menu">
                     <div class="header__mobile-menu-button"></div>
@@ -43,9 +50,17 @@
                 <li class="header__nav-list-item"><a href="#activities">Деятельность</a></li>
                 <li class="header__nav-list-item"><a href="#team">Команда</a></li>
                 <li class="header__nav-list-item"><a href="#resources">Полезные ресурсы</a></li>
-                <li class="header__nav-list-item"><a href="#documents">Документы</a></li>
+                <!--<li class="header__nav-list-item"><a href="#documents">Документы</a></li>-->
                 <li class="header__nav-list-item"><a href="#news">Новости</a></li>
                 <li class="header__nav-list-item"><a href="#contact-us">Контакты</a></li>
+                <li class="header__nav-list-item"><a class="header__tg-link header__tg-link_mobile"
+                                                     href="https://t.me/depeconom_chukotka" target="_blank">
+                    <img
+                            src="images/tg-icon.svg"
+                            alt="Логотип телеграм-канала"
+                            width="40"
+                    />
+                </a></li>
             </ul>
         </nav>
     </div>
@@ -56,7 +71,8 @@
             <div class="hero__content">
                 <h1 class="hero__title">Департамент экономики и&nbsp;инвестиций Чукотского АО</h1>
                 <div class="hero__content-text">
-                    <p class="hero__content-text-title">Запускаем инвестиционные проекты, развиваем социально-экономическое состояние Чукотки, улучшаем бизнес климат</p>
+                    <p class="hero__content-text-title">Запускаем инвестиционные проекты, развиваем
+                        социально-экономическое состояние Чукотки, улучшаем бизнес климат</p>
                 </div>
             </div>
         </div>
@@ -261,6 +277,28 @@
                         <div class="team__slider-item swiper-slide">
                             <picture>
                                 <source
+                                        srcset="images/team-slider-img-4.png 1x, ../images/team-slider-img-4@2x.png 2x"
+                                />
+                                <img
+                                        src="images/team-slider-img-4.png"
+                                        alt="Картинка в слайдере №3"
+                                />
+                            </picture>
+                            <div class="team__slider-content">
+                                <p class="team__slider-name">Кочитова Елена Геннадьевна</p>
+                                <p class="team__slider-position">Заместитель начальника Департамента – руководитель
+                                    управления поддержки предпринимательских проектов</p>
+                                <p class="team__slider-contacts-title">Контакты</p>
+                                <a href="tel:+79999999999"
+                                   class="contacts-text contacts-text_phone">+7
+                                    (999) 999 99 99</a>
+                                <a href="mailto:namename@gmail.com"
+                                   class="contacts-text contacts-text_mail">namename@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="team__slider-item swiper-slide">
+                            <picture>
+                                <source
                                         srcset="images/team-slider-img-1.png 1x, ../images/team-slider-img-1@2x.png 2x"
                                 />
                                 <img
@@ -269,9 +307,9 @@
                                 />
                             </picture>
                             <div class="team__slider-content">
-                                <p class="team__slider-name">Фоминых Вероника Игоревна</p>
-                                <p class="team__slider-position">Заместитель начальника Департамента, руководитель
-                                    управления экономического анализа</p>
+                                <p class="team__slider-name">Наранов Санджи Алексеевич</p>
+                                <p class="team__slider-position">Заместитель руководителя Регионального проектного
+                                    офиса</p>
                                 <p class="team__slider-contacts-title">Контакты</p>
                                 <a href="tel:+79999999999"
                                    class="contacts-text contacts-text_phone">+7
@@ -291,7 +329,7 @@
     </section>
     <section class="institutions" id="institutions">
         <div class="institutions__container container">
-            <h2 class="institutions__title title">Учреждения</h2>
+            <h2 class="institutions__title title">Организации</h2>
             <ul class="institutions__blocks">
                 <li class="institutions__blocks-item">
                     <picture>
@@ -390,7 +428,8 @@
                         <p class="resources__links-title">МСП.РФ</p>
                     </div>
                     <div class="resources__links-item">
-                        <a class="absolute-link" href="https://xn&#45;&#45;80aapampemcchfmo7a3c9ehj.xn&#45;&#45;p1ai/" target="_blank"></a>
+                        <a class="absolute-link" href="https://xn&#45;&#45;80aapampemcchfmo7a3c9ehj.xn&#45;&#45;p1ai/"
+                           target="_blank"></a>
                         <p class="resources__links-title">Национальные проекты РФ</p>
                     </div>
                     <div class="resources__links-item">
@@ -413,7 +452,7 @@
             </ul>
         </div>
     </section>
-    <section class="documents" id="documents">
+    <!--<section class="documents" id="documents">
         <div class="documents__container container">
             <h2 class="documents__title title">Документы</h2>
             <ul class="documents__content docs-list">
@@ -456,33 +495,41 @@
             </ul>
             <a href="/documents.html" target="_blank" class="documents__button button ">Посмотреть все</a>
         </div>
-    </section>
+    </section>-->
     <section class="news" id="news">
         <div class="news__container container">
             <h2 class="news__title title">Новости</h2>
             <ul class="news__list">
                 <li class="news__list-item js-modal-trigger js-news-open" data-open-modal="news-slider">
-                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit111</p>
-                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur</p>
+                    <p class="news__list-title">Губернатор Чукотки рассказал об итогах совещания с Президентом
+                        России</p>
+                    <p class="news__list-descr">Губернатор Чукотского автономного округа подвёл итоги совещания с
+                        Президентом России Владимиром Путиным в Анадыре. Глава региона рассказал о том, что на встрече с
+                        Главой государства обсуждались вопросы, которые касаются как отдельных населённых пунктов, так и
+                        всего округа.</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
                 <li class="news__list-item js-modal-trigger js-news-open" data-open-modal="news-slider">
-                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit222</p>
-                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur</p>
+                    <p class="news__list-title">Стартовал приём заявок на форум «Сильные идеи для нового времени»</p>
+                    <p class="news__list-descr">Агентство стратегических инициатив по продвижению новых проектов (АСИ) и
+                        Фонд Росконгресс объявили о старте приёма заявок на форум «Сильные идеи для нового времени».</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
                 <li class="news__list-item js-modal-trigger js-news-open" data-open-modal="news-slider">
-                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit333</p>
-                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur</p>
+                    <p class="news__list-title">Чукотка и «Национальный центр государственно-частного партнерства»
+                        подписали соглашение о сотрудничестве</p>
+                    <p class="news__list-descr">7 декабря 2023 года в Москве состоялась церемония подписания соглашения
+                        о сотрудничестве между Правительством Чукотского автономного округа и Автономной некоммерческой
+                        организацией «Национальный Центр развития государственно-частного партнерства».</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
                 <li class="news__list-item js-modal-trigger js-news-open" data-open-modal="news-slider">
-                    <p class="news__list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit444</p>
-                    <p class="news__list-descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur</p>
+                    <p class="news__list-title">Правительство утвердило долгосрочные планы комплексного
+                        социально-экономического развития 16 дальневосточных городов до 2030 года</p>
+                    <p class="news__list-descr">Мастер-планы регионов Дальнего востока предусматривают: обновление
+                        жилищного фонда,
+                        строительство социальных объектов, благоустройство территорий, модернизацию транспортной и
+                        коммунальной инфраструктуры, развитие курортных зон.</p>
                     <p class="news__list-link">Подробнее</p>
                 </li>
             </ul>
@@ -506,10 +553,7 @@
         <div class="footer__content">
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">Адрес</div>
-                <address class="footer__column-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum
-                    dolore eu fugiat nulla pariatur.
-                </address>
+                <address class="footer__column-text">г. Анадырь, ул. Отке 2</address>
             </div>
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">Телефон</div>
@@ -525,18 +569,22 @@
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">Электронная почта</div>
                 <p class="footer__column-text">
-                    <a href="mailto:namename@mail.ru">namename@mail.ru</a>
-                    <span>Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore</span></p>
+                    <a href="mailto:namename@mail.ru">info@invest.chukotka-gov.ru</a>
+                    <span></span></p>
                 <p class="footer__column-text">
-                    <a href="mailto:namename@mail.ru">namename@mail.ru</a>
-                    <span>Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore</span></p>
+                    <a href="mailto:namename@mail.ru">press@invest.chukotka-gov.ru</a>
+                    <span></span></p>
             </div>
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">График работы</div>
-                <p class="footer__column-text">ПН-ПТ 10:00-20:00</p>
-                <p class="footer__column-text">СБ-ВС 12:00-17:00</p>
+                <p class="footer__column-text">9:00-18:00 ПН-ПТ</p>
+                <a class="footer__tg-link" href="https://t.me/depeconom_chukotka" target="_blank">
+                    <img
+                            src="images/tg-icon.svg"
+                            alt="Логотип телеграм-канала"
+                            width="40"
+                    />
+                </a>
             </div>
         </div>
     </div>
@@ -545,7 +593,7 @@
     <div class="modal__wrapper">
         <div class="modal__content">
             <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
-            <p class="modal__title title">Электронная приёмная</p>
+            <p class="modal__title">Электронная приёмная</p>
             <p class="modal__descr">Заполните форму обратной связи, оставьте ваш запрос</p>
             <form class="modal__form">
                 <div class="modal__form-inputs">
@@ -566,7 +614,7 @@
                         <label class="modal__form-label" for="form-descr">Ваш вопрос, причина обращения * </label>
                         <textarea class="modal__form-input" id="form-descr" type="text"
                                   name="description"
-                                  placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/></textarea>
+                                  placeholder="Здравствуйте! Хочу обратиться по вопросу..."/></textarea>
                     </div>
                 </div>
                 <p class="modal__form-remark">* - Поля обязательные для заполнения</p>
@@ -591,7 +639,7 @@
             <div class="swiper-slide modal__content">
                 <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
                 <div class="modal__news-head">
-                    <p class="modal__title title">Новость 1</p>
+                    <p class="modal__title">Губернатор Чукотки рассказал об итогах совещания с Президентом России</p>
                     <div class="modal__news-head-switches">
                         <p class="modal__news-head-switches-text">Следующая новость</p>
                         <div class="modal__news-head-arrows slider-arrows slider-arrows_small">
@@ -606,39 +654,17 @@
                             <div class="modal__news-topic-slider-item swiper-slide">
                                 <picture>
                                     <source
-                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                            srcset="images/news-slider-img-1.png 1x, ../images/news-slider-img-1@2x.png 2x"
                                     />
                                     <img
-                                            src="images/slider-img-1.png"
+                                            src="images/news-slider-img-1.png"
                                             alt="Картинка слайдера №1"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="modal__news-topic-slider-item swiper-slide">
-                                <picture>
-                                    <source
-                                            srcset="images/resouces-banner-bg.png 1x, ../images/resouces-banner-bg@2x.png 2x"
-                                    />
-                                    <img
-                                            src="images/resouces-banner-bg.png"
-                                            alt="Картинка слайдера №2"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="modal__news-topic-slider-item swiper-slide">
-                                <picture>
-                                    <source
-                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
-                                    />
-                                    <img
-                                            src="images/slider-img-1.png"
-                                            alt="Картинка слайдера №3"
                                     />
                                 </picture>
                             </div>
                         </div>
                         <div id="modal__news-pagination-1" class="modal__news-pagination swiper-pagination"></div>
-                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
+                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big visually-hidden">
                             <div id="modal__news-slider-prev-arrow-1"
                                  class="modal__news-slider-prev-arrow swiper-button-prev"></div>
                             <div id="modal__news-slider-next-arrow-1"
@@ -646,63 +672,60 @@
                         </div>
                     </div>
                     <div class="modal__news-topic-content">
-                        <p class="modal__news-topic-content-head">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit,
-                            sed do eiusmod tempor incididunt ut labore.</p>
-                        <p class="modal__news-topic-content-text modal__news-main-text">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                            eu
-                            fugiat nulla pariatur.</p>
-                        <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-                            dolor
-                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum
-                            dolore eu fugiat nulla pariatur.</p>
+                        <p class="modal__news-topic-content-head">Губернатор Чукотского автономного округа подвёл итоги
+                            совещания с Президентом России Владимиром Путиным в Анадыре. Глава региона рассказал о том,
+                            что на встрече с Главой государства обсуждались вопросы, которые касаются как отдельных
+                            населённых пунктов, так и всего округа.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">«Такого федерального внимания
+                            наш округ не получал никогда. Сейчас нам необходимо оперативно отработать в Москве, чтобы
+                            добиться решений в министерствах в кратчайшие сроки», – сказал Владислав Кузнецов.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Глава региона сообщил, что будет
+                            проработан один из самых проблемных вопросов, который касается внутренних авиаперевозок.</p>
                     </div>
                 </div>
                 <div class="modal__news-main">
-                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                        cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit anim id est laborum.</p>
-                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                        cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit anim id est laborum.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">«Делаем сетку таких перелетов
+                        удобнее: чтобы из каждого населенного пункта, охваченного маршрутной сетью, можно было минимум
+                        один раз в неделю гарантированно добраться до Билибино, Певека, Эгвекинота, Провидения и др., а
+                        оттуда – гарантированно один раз в неделю вылететь в Анадырь. Рассчитываем и на поддержку
+                        федерального бюджета – в этом случае деньги регионального бюджета высвободятся и пойдут на
+                        социальную инфраструктуру: будем строить больше школ, детсадов, повышать соцпособия», –
+                        рассказал Губернатор.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Что касается медицинского
+                        обслуживания, то планируется увеличить количество специалистов для оказания
+                        высококвалифицированной медпомощи, а медицинские медучреждения в Певеке и Провидения
+                        модернизировать. Ещё один фактор для улучшения жизни людей – рост добычи полезных ископаемых в
+                        округе.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">«Мы один из важных регионов страны
+                        по разведанным запасам. Это должно приносить пользу жителям округа. При этом разведано у нас
+                        только 32% территории. Попросил федерального финансирования на дополнительную геологоразведку.
+                        Что она нам даст? Новые разведанные запасы – увеличение добычи – новые налоги в бюджет. То есть
+                        новые и расширенные социальные программы для поддержки жителей нашего округа», – сообщил
+                        Владислав Кузнецов.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Регион получит поддержку и в решении
+                        проблемы переправы через Анадырский лиман. Ранее было принято решение о выделении средств на
+                        покупку 5 аэролодок. Кроме того, Владимир Путин дал указание профильному министерству отработать
+                        и другие варианты организации переправы лиман.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Среди обсуждаемых мер поддержки
+                        многодетных семей – отменена налога на жилье, выплата 1 млн на погашение ипотеки, а также
+                        создание механизма программы льготного кредитования на покупку автомобиля. Также поднимался
+                        вопрос продления субсидированных тарифов на электроэнергию для предпринимателей Чукотки.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">По распоряжению Президента
+                        подготовлены предложения в программу по поддержке национальных языков и культуры. Также в округе
+                        с 1 февраля будут увеличены зарплаты для оленеводов на 50% и для морзверобоев – на 20%.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Что касается сферы образования, то в
+                        рамках программы «Земский учитель» регион рассчитывает привлечь ещё больше квалифицированных
+                        преподавателей.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">«Далеко не все темы мы можем решить
+                        сразу, но мы будем их решать. Поэтому мне важна обратная связь – ваши вопросы и предложения.
+                        Чукотка должна использовать поддержку на федеральном уровне для того, чтобы обеспечить
+                        качественное улучшение жизни», – подчеркнул Губернатор.</p>
                 </div>
             </div>
             <div class="swiper-slide modal__content">
                 <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
                 <div class="modal__news-head">
-                    <p class="modal__title title">Новость 2</p>
+                    <p class="modal__title">Стартовал приём заявок на форум «Сильные идеи для нового времени»</p>
                     <div class="modal__news-head-switches">
                         <p class="modal__news-head-switches-text">Следующая новость</p>
                         <div class="modal__news-head-arrows slider-arrows slider-arrows_small">
@@ -717,39 +740,17 @@
                             <div class="modal__news-topic-slider-item swiper-slide">
                                 <picture>
                                     <source
-                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                            srcset="images/news-slider-img-4.png 1x, ../images/news-slider-img-4@2x.png 2x"
                                     />
                                     <img
-                                            src="images/slider-img-1.png"
+                                            src="images/news-slider-img-2.png"
                                             alt="Картинка слайдера №1"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="modal__news-topic-slider-item swiper-slide">
-                                <picture>
-                                    <source
-                                            srcset="images/resouces-banner-bg.png 1x, ../images/resouces-banner-bg@2x.png 2x"
-                                    />
-                                    <img
-                                            src="images/resouces-banner-bg.png"
-                                            alt="Картинка слайдера №2"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="modal__news-topic-slider-item swiper-slide">
-                                <picture>
-                                    <source
-                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
-                                    />
-                                    <img
-                                            src="images/slider-img-1.png"
-                                            alt="Картинка слайдера №3"
                                     />
                                 </picture>
                             </div>
                         </div>
                         <div id="modal__news-pagination-2" class="modal__news-pagination swiper-pagination"></div>
-                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
+                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big visually-hidden">
                             <div id="modal__news-slider-prev-arrow-2"
                                  class="modal__news-slider-prev-arrow swiper-button-prev"></div>
                             <div id="modal__news-slider-next-arrow-2"
@@ -757,63 +758,35 @@
                         </div>
                     </div>
                     <div class="modal__news-topic-content">
-                        <p class="modal__news-topic-content-head">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit,
-                            sed do eiusmod tempor incididunt ut labore.</p>
-                        <p class="modal__news-topic-content-text modal__news-main-text">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                            eu
-                            fugiat nulla pariatur.</p>
-                        <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-                            dolor
-                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum
-                            dolore eu fugiat nulla pariatur.</p>
+                        <p class="modal__news-topic-content-head">Стартовал приём заявок на форум «Сильные идеи для
+                            нового времени» Агентство стратегических инициатив по продвижению новых проектов (АСИ) и
+                            Фонд Росконгресс объявили о старте приёма заявок на форум «Сильные идеи для нового
+                            времени».</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Цель форума – найти и поддержать
+                            перспективные проекты и предложения, которые будут способствовать развитию страны,
+                            укреплению суверенитета и достижению стратегических целей развития России..</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Подать заявку может любой житель
+                            России до 31 января 2024 года. Для этого необходимо зарегистрироваться на платформе форума и
+                            выбрать нужную номинацию на сайте идея.росконгресс.рф.</p>
                     </div>
                 </div>
                 <div class="modal__news-main">
-                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                        cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit anim id est laborum.</p>
-                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                        cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit anim id est laborum.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Инициативы принимаются по семи
+                        тематическим блокам (номинациям): «Качество жизни населения», «Развитие экономики и
+                        предпринимательства», «Пространство для жизни», «Эффективный труд и образование»,
+                        «Технологическое развитие», «Экономика данных и цифровые решения» и «Эффективное
+                        государство».</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Эксперты выберут из них топ-1000 и
+                        топ-100 инициатив, лучшие из которых в марте будут представлены руководству страны. Порядка
+                        тысячи лучших проектов, выдвинутых на платформе, ежегодно получают поддержку от АСИ,
+                        администраций регионов, бизнеса и партнёров форума.</p>
                 </div>
             </div>
             <div class="swiper-slide modal__content">
                 <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
                 <div class="modal__news-head">
-                    <p class="modal__title title">Новость 3</p>
+                    <p class="modal__title">Чукотка и «Национальный центр государственно-частного партнерства» подписали
+                        соглашение о сотрудничестве</p>
                     <div class="modal__news-head-switches">
                         <p class="modal__news-head-switches-text">Следующая новость</p>
                         <div class="modal__news-head-arrows slider-arrows slider-arrows_small">
@@ -823,108 +796,43 @@
                     </div>
                 </div>
                 <div class="modal__news-topic">
-                    <div id="js-news__slider-3" class="modal__news-topic-slider news__slider">
-                        <div class="modal__news-topic-slider-wrapper swiper-wrapper">
-                            <div class="modal__news-topic-slider-item swiper-slide">
-                                <picture>
-                                    <source
-                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
-                                    />
-                                    <img
-                                            src="images/slider-img-1.png"
-                                            alt="Картинка слайдера №1"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="modal__news-topic-slider-item swiper-slide">
-                                <picture>
-                                    <source
-                                            srcset="images/resouces-banner-bg.png 1x, ../images/resouces-banner-bg@2x.png 2x"
-                                    />
-                                    <img
-                                            src="images/resouces-banner-bg.png"
-                                            alt="Картинка слайдера №2"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="modal__news-topic-slider-item swiper-slide">
-                                <picture>
-                                    <source
-                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
-                                    />
-                                    <img
-                                            src="images/slider-img-1.png"
-                                            alt="Картинка слайдера №3"
-                                    />
-                                </picture>
-                            </div>
-                        </div>
-                        <div id="modal__news-pagination-3" class="modal__news-pagination swiper-pagination"></div>
-                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
-                            <div id="modal__news-slider-prev-arrow-3"
-                                 class="modal__news-slider-prev-arrow swiper-button-prev"></div>
-                            <div id="modal__news-slider-next-arrow-3"
-                                 class="modal__news-slider-next-arrow swiper-button-next"></div>
-                        </div>
-                    </div>
                     <div class="modal__news-topic-content">
-                        <p class="modal__news-topic-content-head">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit,
-                            sed do eiusmod tempor incididunt ut labore.</p>
-                        <p class="modal__news-topic-content-text modal__news-main-text">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                            eu
-                            fugiat nulla pariatur.</p>
-                        <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-                            dolor
-                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum
-                            dolore eu fugiat nulla pariatur.</p>
+                        <p class="modal__news-topic-content-head">7 декабря 2023 года в Москве состоялась церемония
+                            подписания соглашения о сотрудничестве между Правительством Чукотского автономного округа и
+                            Автономной некоммерческой организацией «Национальный Центр развития государственно-частного
+                            партнерства». Подписи под документом поставили временно исполняющий обязанности заместителя
+                            Губернатора – Председателя Правительства округа Антон Яремчук и Старший управляющий директор
+                            Национального центра ГЧП Максим Ткаченко.</p>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Миссия центра - содействие
+                            привлечению инвестиций в развитие общественной инфраструктуры для повышения качества жизни
+                            людей.</p>
                     </div>
                 </div>
                 <div class="modal__news-main">
-                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                        cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit anim id est laborum.</p>
-                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                        cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit anim id est laborum.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Соглашение направлено на внедрение в
+                        регионе новых инструментов проектного управления и принципов клиентоориентированности при
+                        подготовке и реализации инвестиционных проектов ГЧП на территории Чукотки. В рамках достигнутых
+                        договоренностей Национальный центр ГЧП предоставит свою «базу знаний», окажет методическую и
+                        информационную поддержку по упаковке проектов ГЧП, в том числе концессионных соглашений.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Кроме того, планируется совместная
+                        работа по отбору пилотных перспективных проектов, в отношении которых будут апробированы новые
+                        инструменты проектного управления. Также в планах повышение квалификации специалистов, основными
+                        задачами которых является содействие в формировании благоприятного инвестиционного климата в
+                        регионе, сопровождение инвестиционных проектов в формате государственно-частного
+                        партнерства.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Основная задача проектов ГЧП – быть
+                        полезными населению регионов. Реализация новых подходов к проектному управлению позволит
+                        увеличить количество запускаемых инвестиционных проектов, направленных на создание объектов
+                        социальной инфраструктуры и сократить сроки на их подготовку и запуск, а также позволит повысить
+                        позиции Чукотского автономного округа в Национальном рейтинге состояния инвестиционного
+                        климата.</p>
                 </div>
             </div>
             <div class="swiper-slide modal__content">
                 <img class="modal__close js-close-modal" src="/images/close-icon.svg" alt="Закрыть">
                 <div class="modal__news-head">
-                    <p class="modal__title title">Новость 4</p>
+                    <p class="modal__title">Правительство утвердило долгосрочные планы комплексного
+                        социально-экономического развития 16 дальневосточных городов до 2030 года</p>
                     <div class="modal__news-head-switches">
                         <p class="modal__news-head-switches-text">Следующая новость</p>
                         <div class="modal__news-head-arrows slider-arrows slider-arrows_small">
@@ -939,39 +847,17 @@
                             <div class="modal__news-topic-slider-item swiper-slide">
                                 <picture>
                                     <source
-                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
+                                            srcset="images/news-slider-img-2.png 1x, ../images/news-slider-img-2@2x.png 2x"
                                     />
                                     <img
-                                            src="images/slider-img-1.png"
+                                            src="images/news-slider-img-2png"
                                             alt="Картинка слайдера №1"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="modal__news-topic-slider-item swiper-slide">
-                                <picture>
-                                    <source
-                                            srcset="images/resouces-banner-bg.png 1x, ../images/resouces-banner-bg@2x.png 2x"
-                                    />
-                                    <img
-                                            src="images/resouces-banner-bg.png"
-                                            alt="Картинка слайдера №2"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="modal__news-topic-slider-item swiper-slide">
-                                <picture>
-                                    <source
-                                            srcset="images/slider-img-1.png 1x, ../images/slider-img-1@2x.png 2x"
-                                    />
-                                    <img
-                                            src="images/slider-img-1.png"
-                                            alt="Картинка слайдера №3"
                                     />
                                 </picture>
                             </div>
                         </div>
                         <div id="modal__news-pagination-4" class="modal__news-pagination swiper-pagination"></div>
-                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big">
+                        <div class="modal__news-slider-arrows slider-arrows slider-arrows_big visually-hidden">
                             <div id="modal__news-slider-prev-arrow-4"
                                  class="modal__news-slider-prev-arrow swiper-button-prev"></div>
                             <div id="modal__news-slider-next-arrow-4"
@@ -979,57 +865,41 @@
                         </div>
                     </div>
                     <div class="modal__news-topic-content">
-                        <p class="modal__news-topic-content-head">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit,
-                            sed do eiusmod tempor incididunt ut labore.</p>
-                        <p class="modal__news-topic-content-text modal__news-main-text">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                            eu
-                            fugiat nulla pariatur.</p>
-                        <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-                            dolor
-                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum
-                            dolore eu fugiat nulla pariatur.</p>
+                        <p class="modal__news-topic-content-head">Мастер-планы регионов Дальнего востока
+                            предусматривают:</p>
+                        <ul class="modal__news-list">
+                            <li>обновление жилищного фонда,</li>
+                            <li>строительство социальных объектов,</li>
+                            <li>благоустройство территорий,</li>
+                            <li>модернизацию транспортной и коммунальной инфраструктуры,</li>
+                            <li>развитие курортных зон.</li>
+                        </ul>
+                        <p class="modal__news-topic-content-text modal__news-main-text">Комплексные планы подготовлены
+                            для Анадыря, Арсеньева, Биробиджана, Благовещенска, Белогорска, Большого Камня,
+                            Владивостока, Комсомольска-на-Амуре, Краснокаменска, Нерюнгри, Находки, Магадана,
+                            Уссурийска, Свободного, Хабаровска и Якутска.</p>
                     </div>
                 </div>
                 <div class="modal__news-main">
-                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                        cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit anim id est laborum.</p>
-                    <p class="modal__news-topic-content-text modal__news-main-text">Excepteur sint occaecat
-                        cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit anim id est laborum.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Благодаря мастер-планам:</p>
+                    <ul class="modal__news-list">
+                        <li>В Магадане в 2024 году будет завершено строительство областного родильного дома на 80 коек с
+                            женской консультацией и дневным стационаром на 10 мест.
+                        </li>
+                        <li>Во Владивостоке, на острове Русский, в 2025–2026 годах планируется строительство академии
+                            тенниса. В Якутске на 2025–2029 годы запланировано возведение Всемирного центра мамонта.
+                        </li>
+                        <li>В плане развития Благовещенска на 2025 год предусмотрено завершение работ по строительству
+                            трансграничной канатно-подвесной дороги через Амур.
+                        </li>
+                    </ul>
+                    <p class="modal__news-topic-content-text modal__news-main-text">В общей сложности комплексные планы
+                        развития включают 743 различных мероприятия.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Общий объем финансирования – 3,5
+                        трлн рублей. Из них 1,2 трлн рублей составят средства федерального бюджета, 400 млрд рублей –
+                        средства бюджетов регионов, 1,9 трлн рублей – внебюджетные источники.</p>
+                    <p class="modal__news-topic-content-text modal__news-main-text">Решение принято по поручению
+                        Президента. Всего мастер-планы разработаны для 25 дальневосточных городов.</p>
                 </div>
             </div>
         </div>

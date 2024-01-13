@@ -87,6 +87,7 @@
     }
 }
 
+/*
 @media (max-width: 380px) {
     .hero__content {
         background: url('../../images/hero-bg-mobile.png') no-repeat center;
@@ -100,4 +101,4 @@
         background: url('../../images/hero-bg-mobile@2x.png') no-repeat center;
         background-size: cover;
     }
-}
+}*/
