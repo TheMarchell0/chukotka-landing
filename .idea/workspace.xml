@@ -2,7 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb9f6e5e-93e3-47fc-8d0d-31426343bc8b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/documents.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-3@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-3@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-4@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-4@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-5@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-6@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-6@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/activities-slider-img-7@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/activities-slider-img-7@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/contact-us-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/contact-us-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/contact-us-bg@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/contact-us-bg@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/head-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/head-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/head-logo@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/head-logo@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hero-bg-mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hero-bg-mobile@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hero-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/hero-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hero-bg@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/hero-bg@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/institutions-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/institutions-img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/institutions-img-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/institutions-img-1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/institutions-img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/institutions-img-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/institutions-img-2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/institutions-img-2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/institutions-img-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/institutions-img-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/institutions-img-3@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/institutions-img-3@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/institutions-img-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/institutions-img-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/institutions-img-4@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/institutions-img-4@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/news-slider-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/news-slider-img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/news-slider-img-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/news-slider-img-1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/news-slider-img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/news-slider-img-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/news-slider-img-2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/news-slider-img-2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/news-slider-img-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/news-slider-img-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/news-slider-img-4@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/news-slider-img-4@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/resouces-banner-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/resouces-banner-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/resouces-banner-bg@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/resouces-banner-bg@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/slider-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/slider-img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/slider-img-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/slider-img-1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/team-slider-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/team-slider-img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/team-slider-img-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/team-slider-img-1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/team-slider-img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/team-slider-img-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/team-slider-img-2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/team-slider-img-2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/team-slider-img-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/team-slider-img-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/team-slider-img-4@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/team-slider-img-4@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
