@@ -3,11 +3,17 @@
 }
 
 .documents-head__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .documents-search-block {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 400px;
     flex: 0 1 400px;
 }
 
@@ -32,6 +38,8 @@
     position: absolute;
     right: 16px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     background: url('/images/search-icon.svg') no-repeat center;
     width: 21px;
@@ -49,6 +57,34 @@
     font-weight: 600;
     margin: 60px 0;
     font-size: 40px;
+}
+
+.document-head__content-input::-webkit-input-placeholder {
+    color: #323232;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.document-head__content-input::-moz-placeholder {
+    color: #323232;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.document-head__content-input:-ms-input-placeholder {
+    color: #323232;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.document-head__content-input::-ms-input-placeholder {
+    color: #323232;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
 }
 
 .document-head__content-input::placeholder {
@@ -97,10 +133,15 @@
     }
 
     .documents-head__content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .documents-search-block {
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
         flex: auto;
         margin-top: 3px;
     }
@@ -111,6 +152,18 @@
 }
 
 @media (max-width: 350px) {
+    .document-head__content-input::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+    .document-head__content-input::-moz-placeholder {
+        font-size: 12px;
+    }
+    .document-head__content-input:-ms-input-placeholder {
+        font-size: 12px;
+    }
+    .document-head__content-input::-ms-input-placeholder {
+        font-size: 12px;
+    }
     .document-head__content-input::placeholder {
         font-size: 12px;
     }

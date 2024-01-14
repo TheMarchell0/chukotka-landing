@@ -5,12 +5,19 @@
     visibility: hidden;
     top: 0;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
     height: 100%;
     background: rgba(50, 50, 50, 0.20);
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }
 
@@ -56,6 +63,8 @@
     top: 30px;
     right: 30px;
     cursor: pointer;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
     z-index: 10;
 }
@@ -72,8 +81,14 @@
 }
 
 .modal__form-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: 260px;
     max-width: 900px;
@@ -106,6 +121,8 @@
     font-weight: 400;
     line-height: 1.1;
     opacity: 0;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 
@@ -133,8 +150,38 @@
 
 textarea.modal__form-input {
     resize: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     height: 220px;
+}
+
+.modal__form-input::-webkit-input-placeholder {
+    color: #C2C2C2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.modal__form-input::-moz-placeholder {
+    color: #C2C2C2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.modal__form-input:-ms-input-placeholder {
+    color: #C2C2C2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.modal__form-input::-ms-input-placeholder {
+    color: #C2C2C2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
 }
 
 .modal__form-input::placeholder {
@@ -174,7 +221,11 @@ textarea.modal__form-input {
 }
 
 .modal__form-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -188,10 +239,12 @@ textarea.modal__form-input {
 }
 
 .modal-anim-open {
+    -webkit-animation: openModalAnim 0.3s ease forwards;
     animation: openModalAnim 0.3s ease forwards;
 }
 
 .modal-anim-close {
+    -webkit-animation: closeModalAnim 0.3s ease forwards;
     animation: closeModalAnim 0.3s ease forwards;
 }
 
@@ -200,17 +253,27 @@ textarea.modal__form-input {
 }
 
 .modal__news-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .modal__news-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
 .modal__news-topic {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 963px;
     width: 100%;
@@ -228,6 +291,7 @@ textarea.modal__form-input {
 .modal__news-topic-slider-item picture,
 .modal__news-topic-slider img {
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 20px;
     height: 100%;
@@ -241,7 +305,11 @@ textarea.modal__form-input {
 }
 
 .modal__news-head-switches {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -275,6 +343,8 @@ textarea.modal__form-input {
 }
 
 .modal__news-topic-slider + .modal__news-topic-content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 466px;
     flex: 0 1 466px;
 }
 
@@ -290,8 +360,15 @@ textarea.modal__form-input {
 }
 
 .modal__success {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 50px 0 65px;
 }
@@ -315,12 +392,30 @@ textarea.modal__form-input {
     width: 100%;
 }
 
+@-webkit-keyframes openModalAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes openModalAnim {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes closeModalAnim {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
@@ -369,7 +464,12 @@ textarea.modal__form-input {
     }
 
     .modal__news-head {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
         margin-bottom: 19px;
     }
@@ -392,25 +492,36 @@ textarea.modal__form-input {
     .form-modal .modal__title,
     .modal__form-footer {
         margin: 0 auto;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 
     .modal__descr {
         margin: 20px auto;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 
     .modal__form-inputs {
         height: auto;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
     .modal__form-remark {
         margin: 0 auto 20px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 
     .modal__form-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -420,11 +531,16 @@ textarea.modal__form-input {
     }
 
     .modal__news-topic {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         margin: 0 auto 24px;
     }
 
     .modal__news-topic-slider + .modal__news-topic-content{
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
         flex: auto;
         margin-top: 30px;
     }
@@ -444,6 +560,8 @@ textarea.modal__form-input {
     }
 
     .modal__form-inputs {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -477,6 +595,22 @@ textarea.modal__form-input {
         margin-bottom: 0px;
     }
 
+    .modal__form-input::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+
+    .modal__form-input::-moz-placeholder {
+        font-size: 14px;
+    }
+
+    .modal__form-input:-ms-input-placeholder {
+        font-size: 14px;
+    }
+
+    .modal__form-input::-ms-input-placeholder {
+        font-size: 14px;
+    }
+
     .modal__form-input::placeholder {
         font-size: 14px;
     }
@@ -498,6 +632,8 @@ textarea.modal__form-input {
     }
 
     .modal__form-footer {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -535,7 +671,8 @@ textarea.modal__form-input {
         line-height: 1;
     }
 
-    .modal__news-main-text {
+    .modal__news-main-text,
+    .modal__news-list li {
         font-size: 14px;
     }
 
@@ -549,6 +686,18 @@ textarea.modal__form-input {
 }
 
 @media (max-width: 350px) {
+    .modal__form-input::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+    .modal__form-input::-moz-placeholder {
+        font-size: 12px;
+    }
+    .modal__form-input:-ms-input-placeholder {
+        font-size: 12px;
+    }
+    .modal__form-input::-ms-input-placeholder {
+        font-size: 12px;
+    }
     .modal__form-input::placeholder {
         font-size: 12px;
     }

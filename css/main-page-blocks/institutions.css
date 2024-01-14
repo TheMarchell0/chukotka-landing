@@ -1,5 +1,8 @@
 .institutions__blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 50px 0 40px;
@@ -23,12 +26,21 @@
 
 .institutions__blocks-item {
     border-radius: 30px;
+    background: -o-linear-gradient(163deg, #E8E9F7 1.86%, rgba(232, 233, 247, 0.45) 100.34%);
     background: linear-gradient(287deg, #E8E9F7 1.86%, rgba(232, 233, 247, 0.45) 100.34%);
     color: #323232;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 600px;
     flex: 0 0 600px;
     padding: 24px 39px 20px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
     cursor: pointer;
 }
@@ -43,7 +55,10 @@
 }
 
 .institutions__blocks-item:hover {
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
     transform: scale(1.04);
+    -webkit-box-shadow: 0px 10px 30px 0px #E0E0E0;
     box-shadow: 0px 10px 30px 0px #E0E0E0;
 }
 
@@ -52,6 +67,8 @@
 }
 
 .institutions__blocks-text {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 280px;
     flex: 0 1 280px;
     margin: 6px 0 0 40px;
 }
@@ -71,13 +88,17 @@
 
 @media (max-width: 1326px) {
     .institutions__blocks {
+        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
         overflow-x: auto;
         overflow-y: hidden;
     }
 
     .institutions__blocks-item:hover {
+        -webkit-box-shadow: none;
         box-shadow: none;
+        -webkit-transform: none;
+        -ms-transform: none;
         transform: none;
     }
 
@@ -96,14 +117,21 @@
 
 @media (max-width: 1024px) {
     .institutions__blocks {
-       padding: 20px 0 31px;
+        padding: 20px 0 31px;
     }
 }
 
 @media (max-width: 767px) {
     .institutions__blocks-item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 320px;
         flex: 0 0 320px;
         padding: 36px 18px 20px 24px;
     }
@@ -113,6 +141,8 @@
     }
 
     .institutions__blocks-text {
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
         flex: auto;
         margin: 16px 0 0 0;
     }
@@ -124,6 +154,8 @@
 
 @media (max-width: 350px) {
     .institutions__blocks-item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 290px;
         flex: 0 0 290px;
     }
 }

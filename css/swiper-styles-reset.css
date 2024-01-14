@@ -10,6 +10,8 @@
     height: 31px !important;
     margin: 0 !important;
     background: url('../images/slider-arrow.svg') no-repeat center;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
     border-radius: 50%;
     background-color: #1C5A96;
@@ -38,6 +40,8 @@
 }
 
 .swiper-button-next {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -52,14 +56,22 @@
 
 .swiper-pagination {
     text-align: initial!important;
+    -webkit-transition: initial!important;
+    -o-transition: initial!important;
     transition: initial!important;
     top:initial!important;
+    -webkit-box-align:center!important;
+    -ms-flex-align:center!important;
     align-items:center!important;
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
     justify-content: center!important;
     width: 82px!important;
     height: 10px!important;
     bottom: 23px!important;
     left: 50%!important;
+    -webkit-transform:translateX(-50%)!important;
+    -ms-transform:translateX(-50%)!important;
     transform:translateX(-50%)!important;
 }
 
@@ -90,6 +102,8 @@
 .swiper-number-pagination {
     color: #1C5A96!important;
     position: initial!important;
+    -webkit-transform: none!important;
+    -ms-transform: none!important;
     transform: none!important;
     height:initial!important;
     width:initial!important;

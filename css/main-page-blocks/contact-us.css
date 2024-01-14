@@ -24,6 +24,7 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (min-resolution: 192dpi) {
     .contact-us__content {
         background: url('../../images/contact-us-bg@2x.png') no-repeat center;
