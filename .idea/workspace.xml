@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb9f6e5e-93e3-47fc-8d0d-31426343bc8b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/documents-page-blocks/documents.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/documents-page-blocks/documents.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/activities.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/activities.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/contact-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/contact-us.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/institutions.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/institutions.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/news.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/resources.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/resources.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-page-blocks/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-page-blocks/team.css" afterDir="false" />
-    </list>
+    <list default="true" id="bb9f6e5e-93e3-47fc-8d0d-31426343bc8b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
