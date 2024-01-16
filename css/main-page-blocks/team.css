@@ -8,12 +8,12 @@
 
 
 .team__slider-wrapper {
-    max-width: 1110px;
+    max-width: 1150px;
     margin: 0 auto;
     position: relative;
 }
 .team__slider {
-    max-width: 1080px;
+    max-width: 1120px;
 }
 
 .team__slider-arrows {
@@ -51,7 +51,6 @@
     font-size: 14px;
     font-weight: 300;
     margin: 8px 0 7px;
-    min-height: 61px;
 }
 
 .team__slider-contacts-title {

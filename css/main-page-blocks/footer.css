@@ -6,11 +6,33 @@
     padding: 30px 0 41px;
 }
 
+.footer__contact-us {
+    color: #FFFFFF;
+    border-radius: 25px;
+    background: url('../../images/contact-us-bg.png') no-repeat center;
+    padding: 130px 114px;
+    min-height: 450px;
+    margin-bottom: 31px;
+}
+
+.footer__contact-us-title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.footer__contact-us-descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 21px 0 19px;
+}
+
 .footer__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 72px;
+    margin-top: 31px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -20,25 +42,25 @@
 
 .footer__column {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 260px;
-    flex: 0 1 260px;
+    -ms-flex: 0 1 306px;
+    flex: 0 1 306px;
 }
 
 .footer__column:not(:last-child) {
-    margin-right: 68px;
+    margin-right: 25px;
 }
 
 .footer__column-title {
     font-size: 24px;
     font-weight: 500;
     line-height: 1.1;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .footer__column-text {
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.1;
 }
 
@@ -53,7 +75,6 @@
 .footer__column-text a {
     display: block;
     color: inherit;
-    font-size: 18px;
     font-weight: 500;
     margin-bottom: 3px;
 }
@@ -105,6 +126,10 @@
     .footer__column-text:not(:last-child) {
         margin-bottom: 10px;
     }
+
+    .footer__contact-us {
+        padding: 123px 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -136,5 +161,28 @@
     .footer__column-text span {
         font-size: 12px;
         line-height: 1.1;
+    }
+
+    .footer__contact-us {
+        min-height: 228px;
+        padding: 65px 23px;
+    }
+
+    .footer__contact-us-title {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .footer__contact-us-descr {
+        margin: 11px 0 10px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-resolution: 192dpi) {
+    .footer__contact-us {
+        background: url('../../images/contact-us-bg@2x.png') no-repeat center;
+        background-size: cover;
     }
 }

@@ -46,13 +46,13 @@ function createSliders() {
                 slidesPerView: 1.1,
                 spaceBetween: 15,
             },
-            500: {
+            600: {
                 slidesPerView: 2,
                 spaceBetween: 20
             },
-            900: {
+            1024: {
                 slidesPerView: 3,
-                spaceBetween: 75,
+                spaceBetween: 95,
             }
         }
     });

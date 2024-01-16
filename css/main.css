@@ -9,7 +9,6 @@
 @import "main-page-blocks/resources.css";
 @import "main-page-blocks/documents.css";
 @import "main-page-blocks/news.css";
-@import "main-page-blocks/contact-us.css";
 @import "main-page-blocks/footer.css";
 @import "documents-page-blocks/documents.css";
 @import "modal.css";
@@ -161,6 +160,11 @@ a:not(.button):hover {
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
+}
+
+.button a,
+.button a:visited{
+    color: #FFFFFF;
 }
 
 .button:hover {
@@ -343,7 +347,7 @@ a:not(.button):hover {
     }
 
     .button.resources-banner__button {
-        max-width: 220px;
+        max-width: 100%;
         font-size: 18px;
         font-weight: 500;
         padding: 12px 15px;

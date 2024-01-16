@@ -21,7 +21,7 @@
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
     cursor: pointer;
-    padding: 41px 21px 35px;
+    padding: 41px 21px 15px;
 }
 
 .news__list-item:hover {
