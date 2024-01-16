@@ -30,12 +30,19 @@
     background: #FFFFFF;
 }
 
+.team__slider-item picture {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
 .team__slider-item img {
     border-radius: 20px;
     width: 100%;
     height: 310px;
     -o-object-fit: cover;
     object-fit: cover;
+    max-width: 330px;
 }
 
 .team__slider-content {
