@@ -43,6 +43,7 @@
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
     cursor: pointer;
+    position: relative;
 }
 
 .institutions__blocks-item:not(:nth-last-child(-n+2)) {
