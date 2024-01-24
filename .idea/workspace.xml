@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="75f19cfb-7984-4bb7-87c0-0810f122ac72" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +26,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Work/base-emails",
+    "last_opened_file_path": "D:/Work/chukotka-landing",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -42,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705916275998</updated>
       <workItem from="1705916277373" duration="943000" />
+      <workItem from="1706098692106" duration="408000" />
     </task>
     <servers />
   </component>
