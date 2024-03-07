@@ -50,7 +50,7 @@ function createSliders() {
                 spaceBetween: 20
             },
             1024: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 95,
             }
         }
