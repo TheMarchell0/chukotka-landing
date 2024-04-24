@@ -363,6 +363,11 @@ textarea.modal__form-input {
     width: 100%;
 }
 
+.news-global-modal a {
+    text-decoration: underline;
+    color: #1C5A96;
+}
+
 .modal__success {
     display: -webkit-box;
     display: -ms-flexbox;
