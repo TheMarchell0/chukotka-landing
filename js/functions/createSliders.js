@@ -88,7 +88,9 @@ function createSliders() {
     });
 
     for (let i = 0; i < newsSliders.length; i++) {
-        const newsSliderItem = new Swiper(`#js-news__slider-${i+1}`, {
+        const sliderClass = `js-news__slider-${i+1}`;
+        newsSliders[i].classList.add(sliderClass)
+        const newsSliderItem = new Swiper(`.${sliderClass}`, {
             loop: true,
             disableOnInteraction: true,
             autoplay: {
@@ -99,12 +101,12 @@ function createSliders() {
                 crossFade: true,
             },
             pagination: {
-                el: ".modal__news-pagination",
+                el: `${sliderClass} .modal__news-pagination`,
                 clickable: true,
             },
             navigation: {
-                nextEl: `#modal__news-slider-next-arrow-${i+1}`,
-                prevEl: `#modal__news-slider-prev-arrow-${i+1}`,
+                nextEl: `${sliderClass} #modal__news-slider-next-arrow`,
+                prevEl: `${sliderClass} #modal__news-slider-prev-arrow`,
             },
         });
     }

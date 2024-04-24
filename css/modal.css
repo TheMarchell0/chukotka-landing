@@ -334,6 +334,10 @@ textarea.modal__form-input {
     line-height: 1.1;
 }
 
+.modal__news-main-text.underline {
+    text-decoration: underline;
+}
+
 .modal__news-list  li:not(:last-child) {
     margin-bottom: 10px;
 }
