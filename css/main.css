@@ -163,7 +163,7 @@ a:not(.button):hover {
 }
 
 .button a,
-.button a:visited{
+.button a:visited {
     color: #FFFFFF;
 }
 
@@ -284,6 +284,7 @@ a:not(.button):hover {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     white-space: normal;
+    min-height: 39px;
 }
 
 .docs-list__descr {
