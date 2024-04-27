@@ -358,6 +358,10 @@ textarea.modal__form-input {
     margin: 20px 0;
 }
 
+.modal__news-list.number {
+    list-style-type: auto;
+}
+
 .news-global-slider {
     max-width: 1080px;
     width: 100%;

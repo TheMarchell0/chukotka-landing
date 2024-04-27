@@ -81,6 +81,7 @@ function createSliders() {
         slidesPerView: 1,
         spaceBetween: '120%',
         centeredSlides: true,
+        allowTouchMove: false,
         navigation: {
             nextEl: ".modal__news-head-next-arrow",
             prevEl: ".modal__news-head-prev-arrow",
