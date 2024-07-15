@@ -338,6 +338,10 @@ textarea.modal__form-input {
     text-decoration: underline;
 }
 
+.modal__news-main-text.bold {
+    font-weight: 600;
+}
+
 .modal__news-list  li:not(:last-child) {
     margin-bottom: 10px;
 }
