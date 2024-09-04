@@ -72,7 +72,7 @@
     font-size: 18px;
 }
 
-.footer__column-text a {
+.footer__column-text a, .footer__column-text p {
     display: block;
     color: inherit;
     font-weight: 500;
@@ -119,7 +119,7 @@
         margin-bottom: 20px;
     }
 
-    .footer__column-text a {
+    .footer__column-text a, .footer__column-text p {
         margin-bottom: 7px;
     }
 
@@ -152,7 +152,7 @@
         font-weight: 400;
     }
 
-    .footer__column-text a {
+    .footer__column-text a, .footer__column-text p {
         font-size: 16px;
         line-height: 1.1;
         margin-bottom: 1px;
