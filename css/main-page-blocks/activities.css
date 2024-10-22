@@ -87,6 +87,7 @@
     width: 310px;
     -o-object-fit: cover;
     object-fit: cover;
+    max-height: 190px;
 }
 
 .activities__slider-title {
