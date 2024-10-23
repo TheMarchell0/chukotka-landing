@@ -12,6 +12,7 @@
     overflow-y: hidden;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
+    padding-bottom:69px;
 }
 
 .orv-scheme__list-item {
@@ -84,9 +85,6 @@
 
 @media (min-width: 1024px) {
     .orv-scheme__list-item:hover {
-        -webkit-transform: scale(1.01);
-        -ms-transform: scale(1.01);
-        transform: scale(1.01);
         border: 2px solid #FFFFFF;
         -webkit-box-shadow: 0px 10px 30px 0px #E0E0E0;
         box-shadow: 0px 10px 30px 0px #E0E0E0;
@@ -99,10 +97,11 @@
 
 @media (max-width: 1024px) {
     .orv-scheme {
-        margin: 60px 0 40px;
+        margin: 60px 0 0;
     }
 
     .orv-scheme__list {
         margin: 30px auto 0;
+        padding-bottom:40px;
     }
 }
