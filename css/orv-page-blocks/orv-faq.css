@@ -26,13 +26,13 @@
     width: 100%;
     position: relative;
     padding: 0 30px;
-    -webkit-transition: 0.2s linear;
-    -o-transition: 0.2s linear;
-    transition: 0.2s linear;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
 }
 
 .orv-faq__questions-item.active {
@@ -73,7 +73,6 @@
     height: 100%;
     opacity: 0;
     pointer-events: none;
-    transition: 0.1s linear;
     color: #404040;
     padding: 30px 29px;
 }
@@ -135,6 +134,10 @@
     background: url('../../images/orv-faq-answer-bg-3.png') no-repeat center;
 }
 
+.orv-faq__content.mobile {
+    display: none;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi) {
     .orv-faq__answers-item_1 {
         background: url('../../images/orv-faq-answer-bg-1@2x.png') no-repeat center;
@@ -149,5 +152,70 @@
     .orv-faq__answers-item_3 {
         background: url('../../images/orv-faq-answer-bg-3@2x.png') no-repeat center;
         background-size: cover;
+    }
+}
+
+@media (min-width: 1024px) {
+    .orv-faq__answers-item {
+        -webkit-transition: 0.1s linear;
+        -o-transition: 0.1s linear;
+        transition: 0.1s linear;
+    }
+}
+
+@media (max-width: 1024px) {
+    .orv-faq__content.desktop {
+        display: none;
+    }
+
+    .orv-faq__content.mobile {
+        display: block;
+    }
+
+    .orv-faq__questions {
+        flex: 0 1 100%;
+    }
+
+    .orv-faq__questions-item {
+        max-width: 100%;
+        flex-direction: column;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .orv-faq__questions-item.active {
+        transform: initial;
+    }
+    
+    .orv-faq__answers-item {
+        position: initial;
+        opacity: 1;
+        pointer-events: initial;
+        padding: 0;
+    }
+
+    .orv-faq__questions-item.active .orv-faq__answers-item {
+        padding: 30px 29px;
+    }
+
+    .orv-faq__questions-title {
+        min-height: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .orv-faq__questions-title {
+        padding-left: 10px;
+    }
+
+    .orv-faq__questions-item.active .orv-faq__answers-item {
+        padding: 30px 10px;
     }
 }

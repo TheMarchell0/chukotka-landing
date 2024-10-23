@@ -293,6 +293,19 @@ img {
     margin-top: 9px;
 }
 
+.accordion {
+    overflow: hidden;
+}
+
+.accordion-content {
+    max-height: 0;
+    transition: max-height 1s linear;
+}
+
+.accordion.active .accordion-content {
+    max-height: initial;
+}
+
 @media (max-width: 1326px) {
     .docs-list__item {
         -webkit-box-flex: 0;
