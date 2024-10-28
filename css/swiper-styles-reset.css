@@ -28,8 +28,8 @@
 }
 
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
+.swiper-button-prev:not(.swiper-button-disabled):hover,
+.swiper-button-next:not(.swiper-button-disabled):hover {
     background-color: #062D5E;
 }
 
