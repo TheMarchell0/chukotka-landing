@@ -2,27 +2,15 @@
     margin-bottom: 231px;
 }
 
-.orv-docs__list-wrapper {
-    position: relative;
-}
-
-.orv-docs__list-wrapper:not(:last-child)::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    width: 130px;
-    height: 5px;
-    border-radius: 5px;
-    background-color: #062D5E;
+.orv-docs__subtitle {
+    font-size: 30px;
 }
 
 .orv-docs__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 47px;
+    margin-bottom: 47px;
 }
 
 .orv-docs__footer {
@@ -108,5 +96,11 @@
 @media (max-width: 1024px) {
     .orv-docs {
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .orv-docs__subtitle {
+        font-size: 20px;
     }
 }
