@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const items = docsSlider.querySelectorAll('.orv-docs__list-item.swiper-slide').length;
 
 
-        if ((items > 4) || (innerWidth < 985)) {
+        if ((items > 4) || (innerWidth < 1320)) {
 
             if (!docsSlider.classList.contains('slider')) {
                 docsSlider.classList.add('slider');

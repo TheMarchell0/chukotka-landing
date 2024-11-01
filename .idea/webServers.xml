@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5ec52d35-d401-4234-8a18-3c8425c90623" name="nativity">
+        <fileTransfer accessType="SFTP" host="37.140.192.211" port="22" sshConfigId="3e38d8df-b500-455a-8acf-a1c102b73b72" sshConfig="u1893991@37.140.192.211:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
