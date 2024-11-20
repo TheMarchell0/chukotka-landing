@@ -102,8 +102,10 @@ function createFormValidation() {
         }
     });
 
-    checkboxBlock.addEventListener('click', () => {
-        validateCheckbox();
+    checkboxBlock.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('checkbox__link')) {
+            validateCheckbox();
+        }
     })
 
     inputs.forEach((input) => {
