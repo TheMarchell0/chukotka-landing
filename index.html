@@ -891,17 +891,26 @@
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">График работы</div>
                 <p class="footer__column-text">ПН-ПТ 9:00-18:00</p>
-                <a class="footer__tg-link" href="https://t.me/investchukotka" target="_blank" rel="nofollow">
-                    <img
-                            src="images/tg-icon-white.svg"
-                            alt="Логотип телеграм-канала"
-                            width="171"
-                    />
-                </a>
             </div>
+        </div>
+        <div class="footer__info">
+            <a class="footer__info-text" href="/docs/105-od.pdf" target="_blank" rel="nofollow">Политика конфендициальности и&nbsp;обработки персональных данных</a>
+            <a class="footer__tg-link" href="https://t.me/investchukotka" target="_blank" rel="nofollow">
+                <img
+                        src="images/tg-icon-white.svg"
+                        alt="Логотип телеграм-канала"
+                        width="171"
+                />
+            </a>
         </div>
     </div>
 </footer>
+
+<div class="cookie js-cookie hidden">
+    <p class="cookie__text">Продолжая пользоваться настоящим сайтом, вы выражаете <a href="/docs/104-od.pdf" target="_blank">согласие на&nbsp;обработку ваших персональных данных</a>. В&nbsp;случае несогласия с&nbsp;обработкой ваших персональных данных вы можете отключить сохранение cookies в&nbsp;настройках вашего браузера.</p>
+    <button class="cookie__button button js-accept-cookie">ОК</button>
+</div>
+
 <div class="modal form-modal js-modal" id="form">
     <div class="modal__wrapper">
         <div class="modal__content">
@@ -933,8 +942,10 @@
                 <p class="modal__form-remark">* - Поля обязательные для заполнения</p>
                 <div class="modal__form-footer">
                     <button type="submit" class="modal__form-button button js-submit-button">Отправить</button>
-                    <p class="modal__form-footer-text">Нажимая на кнопку «Отправить», вы даете согласие на обработку
-                        данных </p>
+                    <div class="modal__form-footer-checkbox checkbox-block js-checkbox-wrapper">
+                        <input class="visually-hidden checkbox js-checkbox" type="checkbox" id="form-checkbox">
+                        <label class="modal__form-footer-checkbox-text checkbox__text js-checkbox-label" for="form-checkbox">Принимаю условия <a href="/docs/105-od.pdf" target="_blank">политики конфиденциальности</a> и&nbsp;<a href="/docs/104-od.pdf" target="_blank">пользовательского соглашения</a></label>
+                    </div>
                 </div>
             </form>
         </div>

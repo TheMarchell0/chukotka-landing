@@ -235,13 +235,14 @@ textarea.modal__form-input {
     align-items: center;
 }
 
-.modal__form-footer-text {
+.modal__form-footer-checkbox-text {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.1;
-    max-width: 253px;
-    width: 100%;
-    margin-left: 20px;
+    line-height: 15.4px;
+}
+
+.modal__form-footer-checkbox-text a {
+    color: #0D72FF;
 }
 
 .modal-anim-open {
@@ -553,10 +554,6 @@ textarea.modal__form-input {
         flex-direction: column;
     }
 
-    .modal__form-footer-text {
-        margin-left: 0px;
-        margin-top: 20px;
-    }
 
     .modal__news-topic {
         -webkit-box-orient: vertical;
@@ -663,12 +660,6 @@ textarea.modal__form-input {
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start;
-    }
-
-    .modal__form-footer-text {
-        font-size: 12px;
-        max-width: 217px;
-        margin-top: 10px;
     }
 
     .modal__form-label::after {

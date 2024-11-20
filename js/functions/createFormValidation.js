@@ -4,10 +4,24 @@ export const successMessage = document.querySelector('.modal__success');
 function createFormValidation() {
     const submitButton = document.querySelector('.js-submit-button');
     const inputs = document.querySelectorAll('.modal__form-item');
+    const checkboxBlock = document.querySelector('.js-checkbox-wrapper')
 
     function validateEmail(email) {
         const emailRegex = /\S+@\S+\.\S+/;
         return emailRegex.test(email);
+    }
+
+    function validateCheckbox() {
+        const checkbox = checkboxBlock.querySelector('.js-checkbox');
+        const label = checkboxBlock.querySelector('.js-checkbox-label');
+
+        if (!checkbox.checked) {
+            checkboxBlock.classList.add('error');
+        } else {
+            if (checkboxBlock.classList.contains('error')) {
+                checkboxBlock.classList.remove('error');
+            }
+        }
     }
 
     function validateInput(input) {
@@ -31,7 +45,7 @@ function createFormValidation() {
 
     function checkAllFieldsValid() {
         var allValid = Array.from(inputs).every((input) => {
-            return !input.classList.contains('error') && !input.classList.contains('email-error');
+            return !input.classList.contains('error') && !input.classList.contains('email-error') && !checkboxBlock.classList.contains('error');
         });
 
         if (allValid) {
@@ -79,12 +93,18 @@ function createFormValidation() {
             validateInput(input);
         });
 
+        validateCheckbox();
+
         if (checkAllFieldsValid()) {
             successMessage.classList.remove('hidden');
             formContent.classList.add('hidden');
             clearFormFields();
         }
     });
+
+    checkboxBlock.addEventListener('click', () => {
+        validateCheckbox();
+    })
 
     inputs.forEach((input) => {
         const field = input.querySelector('.modal__form-input');

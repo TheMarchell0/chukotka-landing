@@ -1,18 +1,21 @@
-@import "fonts.css";
-@import "normalize.css";
-@import "swiper-styles-reset.css";
-@import "main-page-blocks/header.css";
-@import "main-page-blocks/hero.css";
-@import "main-page-blocks/activities.css";
-@import "main-page-blocks/team.css";
-@import "main-page-blocks/institutions.css";
-@import "main-page-blocks/resources.css";
-@import "main-page-blocks/documents.css";
-@import "main-page-blocks/news.css";
-@import "main-page-blocks/anticorruption.css";
-@import "main-page-blocks/footer.css";
-@import "documents-page-blocks/documents.css";
-@import "modal.css";
+@import "vendor/fonts.css";
+@import "vendor/normalize.css";
+@import "vendor/swiper-styles-reset.css";
+@import "components/header.css";
+@import "pages/main/hero.css";
+@import "pages/main/activities.css";
+@import "pages/main/team.css";
+@import "pages/main/institutions.css";
+@import "pages/main/resources.css";
+@import "pages/main/documents.css";
+@import "pages/main/news.css";
+@import "pages/main/anticorruption.css";
+@import "components/footer.css";
+@import "pages/documents/documents.css";
+@import "UI/button.css";
+@import "UI/modal.css";
+@import "UI/cookie.css";
+@import "UI/checkbox.css";
 
 * {
     font-family: "TT Firs Neue", "Arial", sans-serif;
@@ -150,39 +153,6 @@ img {
 
 .title_light::after {
     background-color: #C2C2C2;
-}
-
-.button {
-    border-radius: 10px;
-    max-width: 220px;
-    width: 100%;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.1;
-    background-color: #1C5A96;
-    padding: 13px 10px;
-    -webkit-transition: 0.2s linear;
-    -o-transition: 0.2s linear;
-    transition: 0.2s linear;
-}
-
-.button a,
-.button a:visited {
-    color: #FFFFFF;
-}
-
-.button:hover {
-    background-color: #062D5E;
-}
-
-.button_light {
-    color: #1C5A96;
-    background-color: #FFFFFF;
-}
-
-.button_light:hover {
-    color: #FFFFFF;
 }
 
 .contacts-text {

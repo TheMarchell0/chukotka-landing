@@ -4,6 +4,7 @@ import createAnchorsFunctional from "./functions/createAnchorsFunctional.js";
 import createMobileMenu from "./functions/createMobileMenu.js";
 import createTabsFunctional from "./functions/createTabsFunctional.js";
 import createAccordionFunctional from "./functions/createAccordionFunctional.js";
+import {createCookieFunctional} from "./functions/createCookieFunctional.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     const tabsBlocks = document.querySelectorAll('.js-tabs-block');
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     tabsBlocks.forEach(tabsBlock => createTabsFunctional(tabsBlock));
     accordionBlocks.forEach(accordionBlock => createAccordionFunctional(accordionBlock));
+    createCookieFunctional();
     createModalFunctional();
     createFormValidation();
     createAnchorsFunctional();

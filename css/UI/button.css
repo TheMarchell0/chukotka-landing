@@ -1,0 +1,32 @@
+.button {
+    border-radius: 10px;
+    max-width: 220px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+    background-color: #1C5A96;
+    padding: 13px 10px;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+.button a,
+.button a:visited {
+    color: #FFFFFF;
+}
+
+.button:hover {
+    background-color: #062D5E;
+}
+
+.button_light {
+    color: #1C5A96;
+    background-color: #FFFFFF;
+}
+
+.button_light:hover {
+    color: #FFFFFF;
+}

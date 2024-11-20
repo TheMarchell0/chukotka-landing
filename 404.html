@@ -18,8 +18,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dep.invest-chukotka.ru/404" />
     <link rel="canonical" href="https://dep.invest-chukotka.ru/404">
-    <link rel="icon" type="image/png" href="/images/favicon.ico">
-    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/404.css"/>
 </head>
 <body>
 <header class="header">
@@ -28,10 +29,10 @@
             <a href="/">
                 <picture>
                     <source
-                            srcset="/images/head-logo.png 1x, /images/head-logo@2x.png 2x"
+                            srcset="images/head-logo.png 1x, ../images/head-logo@2x.png 2x"
                     />
                     <img
-                            src="/images/head-logo.png"
+                            src="images/head-logo.png"
                             alt="Логотип в шапке"
                             width="212"
                             class="header__top-logo"
@@ -42,7 +43,7 @@
                 <a class="header__tel" href="tel:+74272269323" rel="nofollow">+7 (42722) 6-93-23</a>
                 <a class="header__tg-link header__tg-link_desktop" href="https://t.me/investchukotka" target="_blank" rel="nofollow">
                     <img
-                            src="/images/tg-icon.svg"
+                            src="images/tg-icon.svg"
                             alt="Логотип телеграм-канала"
                             width="40"
                     />
@@ -67,7 +68,7 @@
                 <li class="header__nav-list-item"><a class="header__tg-link header__tg-link_mobile"
                                                      href="https://t.me/investchukotka" target="_blank">
                     <img
-                            src="/images/tg-icon.svg"
+                            src="images/tg-icon.svg"
                             alt="Логотип телеграм-канала"
                             width="40"
                     />
@@ -77,11 +78,13 @@
     </div>
 </header>
 <main>
-    <div class="container">
-        <div style="display: flex;flex-direction: column;align-items: center">
-            <h1 style="margin-top:60px;text-align: center;">Страница не найдена</h1>
-            <a style="margin:40px 0 10px;max-width:fit-content" href="/" class="button">Перейти на главную страницу</a></div>
-    </div>
+    <section class="not-found">
+        <div class="container not-found__container">
+            <div class="not-found__content">
+                <h1 class="not-found__content-title">Страница не найдена</h1>
+                <a href="/" class="not-found__content-link button">Перейти на главную страницу</a></div>
+        </div>
+    </section>
 </main>
 <footer class="footer" id="contact-us">
     <div class="footer__container container">
@@ -102,32 +105,35 @@
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">Телефон</div>
                 <p class="footer__column-text">
-                    <a href="tel:+74272269323" rel="nofollow" itemprop="telephone">+7 (42722) 6-93-23</a>
-                    <span></span></p>
+                    <a href="tel:+74272269323" rel="nofollow">+7 (42722) 6-93-23</a>
+                    <span itemprop="telephone" style="display:none">+74272269323</span></p>
             </div>
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">Электронная почта</div>
-                <p class="footer__column-text">
-                    <a href="mailto:info@invest.chukotka-gov.ru" rel="nofollow" itemprop="email">info@invest.chukotka-gov.ru</a>
-                    <span></span></p>
-                <p class="footer__column-text">
-                    <a href="mailto:press@invest.chukotka-gov.ru" rel="nofollow" itemprop="email">press@invest.chukotka-gov.ru</a>
-                    <span></span></p>
+                <div class="footer__column-text">
+                    <p itemprop="email">info@invest.chukotka-gov.ru</p></div>
+                <div class="footer__column-text">
+                    <p itemprop="email">press@invest.chukotka-gov.ru</div></p>
             </div>
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">График работы</div>
                 <p class="footer__column-text">ПН-ПТ 9:00-18:00</p>
-                <a class="footer__tg-link" href="https://t.me/investchukotka" target="_blank" rel="nofollow">
-                    <img
-                            src="/images/tg-icon-white.svg"
-                            alt="Логотип телеграм-канала"
-                            width="171"
-                    />
-                </a>
             </div>
+        </div>
+        <div class="footer__info">
+            <a class="footer__info-text" href="/docs/105-od.pdf" target="_blank" rel="nofollow">Политика конфендициальности и&nbsp;обработки персональных данных</a>
+            <a class="footer__tg-link" href="https://t.me/investchukotka" target="_blank" rel="nofollow">
+                <img
+                        src="images/tg-icon-white.svg"
+                        alt="Логотип телеграм-канала"
+                        width="171"
+                />
+            </a>
         </div>
     </div>
 </footer>
+
+
 <div class="modal form-modal js-modal" id="form">
     <div class="modal__wrapper">
         <div class="modal__content">
@@ -172,7 +178,7 @@
         </div>
     </div>
 </div>
-<script type="module" src="/js/404.js"></script>
+<script type="module" src="js/404.js"></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

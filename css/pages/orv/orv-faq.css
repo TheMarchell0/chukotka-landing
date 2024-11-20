@@ -122,16 +122,16 @@
 }
 
 .orv-faq__answers-item_1 {
-    background: url('../../images/orv-faq-answer-bg-1.png') no-repeat center;
+    background: url('../../../images/orv-faq-answer-bg-1.png') no-repeat center;
     color: #062D5E;
 }
 
 .orv-faq__answers-item_2 {
-    background: url('../../images/orv-faq-answer-bg-2.png') no-repeat center;
+    background: url('../../../images/orv-faq-answer-bg-2.png') no-repeat center;
 }
 
 .orv-faq__answers-item_3 {
-    background: url('../../images/orv-faq-answer-bg-3.png') no-repeat center;
+    background: url('../../../images/orv-faq-answer-bg-3.png') no-repeat center;
 }
 
 .orv-faq__content.mobile {
@@ -140,17 +140,17 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi) {
     .orv-faq__answers-item_1 {
-        background: url('../../images/orv-faq-answer-bg-1@2x.png') no-repeat center;
+        background: url('../../../images/orv-faq-answer-bg-1@2x.png') no-repeat center;
         background-size: cover;
     }
 
     .orv-faq__answers-item_2 {
-        background: url('../../images/orv-faq-answer-bg-2@2x.png') no-repeat center;
+        background: url('../../../images/orv-faq-answer-bg-2@2x.png') no-repeat center;
         background-size: cover;
     }
 
     .orv-faq__answers-item_3 {
-        background: url('../../images/orv-faq-answer-bg-3@2x.png') no-repeat center;
+        background: url('../../../images/orv-faq-answer-bg-3@2x.png') no-repeat center;
         background-size: cover;
     }
 }

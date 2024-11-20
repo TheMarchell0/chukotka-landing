@@ -1,0 +1,63 @@
+.checkbox-block {
+    margin-left: 21px;
+    max-width: 380px;
+    width: 100%;
+}
+
+.checkbox__text {
+    position: relative;
+    padding-left: 24px;
+}
+
+.checkbox__text::before,
+.checkbox__text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+
+.checkbox__text::before {
+   width: 16px;
+    height: 16px;
+    border: 0.67px solid #5C5C5C;
+    border-radius: 2.67px;
+    top: 0;
+}
+
+.error .checkbox__text {
+    color: #F67878;
+}
+
+.error .checkbox__text::before {
+    border: 0.67px solid #F67878;
+}
+
+.checkbox__text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('/images/mark-icon.svg') no-repeat center;
+    width: 7.11px;
+    height: 4.89px;
+    opacity: 0;
+    top: 5px;
+    left: 5px;
+}
+
+.checkbox:checked + .checkbox__text::before  {
+    border: 0.67px solid #1C5A96;
+    background-color: #1C5A96;
+}
+
+.checkbox:checked + .checkbox__text::after {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .checkbox-block {
+        margin-left: initial;
+        margin-top: 21px;
+    }
+}

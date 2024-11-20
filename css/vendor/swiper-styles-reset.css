@@ -9,7 +9,7 @@
     width: 31px !important;
     height: 31px !important;
     margin: 0 !important;
-    background: url('../images/slider-arrow.svg') no-repeat center;
+    background: url('../../images/slider-arrow.svg') no-repeat center;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
@@ -19,7 +19,7 @@
 
 .modal__news-slider-arrows .swiper-button-prev,
 .modal__news-slider-arrows .swiper-button-next {
-    background: url('../images/news-slider-arrow.svg') no-repeat center;
+    background: url('../../images/news-slider-arrow.svg') no-repeat center;
 }
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {

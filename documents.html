@@ -22,6 +22,7 @@
     <link rel="canonical" href="https://dep.invest-chukotka.ru/documents">
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/documents.css"/>
 </head>
 <body style="height:100vh">
 <header class="header">
@@ -477,32 +478,40 @@
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">Телефон</div>
                 <p class="footer__column-text">
-                    <a href="tel:+74272269323" rel="nofollow" itemprop="telephone">+7 (42722) 6-93-23</a>
-                    <span></span></p>
+                    <a href="tel:+74272269323" rel="nofollow">+7 (42722) 6-93-23</a>
+                    <span itemprop="telephone" style="display:none">+74272269323</span></p>
             </div>
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">Электронная почта</div>
-                <p class="footer__column-text">
-                    <a href="mailto:info@invest.chukotka-gov.ru" rel="nofollow" itemprop="email">info@invest.chukotka-gov.ru</a>
-                    <span></span></p>
-                <p class="footer__column-text">
-                    <a href="mailto:press@invest.chukotka-gov.ru" rel="nofollow" itemprop="email">press@invest.chukotka-gov.ru</a>
-                    <span></span></p>
+                <div class="footer__column-text">
+                    <p itemprop="email">info@invest.chukotka-gov.ru</p></div>
+                <div class="footer__column-text">
+                    <p itemprop="email">press@invest.chukotka-gov.ru</div></p>
             </div>
             <div class="footer__content-column footer__column">
                 <div class="footer__column-title">График работы</div>
                 <p class="footer__column-text">ПН-ПТ 9:00-18:00</p>
-                <a class="footer__tg-link" href="https://t.me/investchukotka" target="_blank" rel="nofollow">
-                    <img
-                            src="images/tg-icon-white.svg"
-                            alt="Логотип телеграм-канала"
-                            width="171"
-                    />
-                </a>
             </div>
+        </div>
+        <div class="footer__info">
+            <a class="footer__info-text" href="/docs/105-od.pdf" target="_blank" rel="nofollow">Политика конфендициальности и&nbsp;обработки персональных данных</a>
+            <a class="footer__tg-link" href="https://t.me/investchukotka" target="_blank" rel="nofollow">
+                <img
+                        src="images/tg-icon-white.svg"
+                        alt="Логотип телеграм-канала"
+                        width="171"
+                />
+            </a>
         </div>
     </div>
 </footer>
+
+<div class="cookie js-cookie hidden">
+    <p class="cookie__text">Продолжая пользоваться настоящим сайтом, вы выражаете <a href="/docs/104-od.pdf" target="_blank">согласие на&nbsp;обработку ваших персональных данных</a>. В&nbsp;случае несогласия с&nbsp;обработкой ваших персональных данных вы можете отключить сохранение cookies в&nbsp;настройках вашего браузера.</p>
+    <button class="cookie__button button js-accept-cookie">ОК</button>
+</div>
+
+
 <div class="modal form-modal js-modal" id="form">
     <div class="modal__wrapper">
         <div class="modal__content">

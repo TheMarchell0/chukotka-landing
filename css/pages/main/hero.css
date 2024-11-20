@@ -4,7 +4,7 @@
 
 .hero__content {
     border-radius: 25px;
-    background: url('../../images/hero-bg.png') no-repeat center;
+    background: url('../../../images/hero-bg.png') no-repeat center;
     color: #FFFFFF;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -45,7 +45,7 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi) {
     .hero__content {
-        background: url('../../images/hero-bg@2x.png') no-repeat center;
+        background: url('../../../images/hero-bg@2x.png') no-repeat center;
         background-size: cover;
     }
 }
