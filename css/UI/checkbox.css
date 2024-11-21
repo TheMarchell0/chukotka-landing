@@ -61,3 +61,12 @@
         margin-top: 21px;
     }
 }
+
+/*Пример использования:
+<div class="checkbox-block js-checkbox-wrapper">
+    <input class="visually-hidden checkbox js-checkbox" type="checkbox" id="checkbox">
+    <label class="checkbox__text js-checkbox-label" for="form-checkbox">Принимаю условия
+    <a class="checkbox__link" href="/docs/name.pdf" target="_blank">политики конфиденциальности</a>
+    и&nbsp;<a class="checkbox__link"href="/docs/name.pdf" target="_blank">пользовательского соглашения</a>
+    </label>
+ </div>*/

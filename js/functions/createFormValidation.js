@@ -4,14 +4,14 @@ export const successMessage = document.querySelector('.modal__success');
 function createFormValidation() {
     const submitButton = document.querySelector('.js-submit-button');
     const inputs = document.querySelectorAll('.modal__form-item');
-    const checkboxBlock = document.querySelector('.js-checkbox-wrapper')
+    /*const checkboxBlock = document.querySelector('.js-checkbox-wrapper')*/
 
     function validateEmail(email) {
         const emailRegex = /\S+@\S+\.\S+/;
         return emailRegex.test(email);
     }
 
-    function validateCheckbox() {
+    /*function validateCheckbox() {
         const checkbox = checkboxBlock.querySelector('.js-checkbox');
         const label = checkboxBlock.querySelector('.js-checkbox-label');
 
@@ -22,7 +22,7 @@ function createFormValidation() {
                 checkboxBlock.classList.remove('error');
             }
         }
-    }
+    }*/
 
     function validateInput(input) {
         const isEmailField = input.classList.contains('js-email-input');
@@ -45,7 +45,7 @@ function createFormValidation() {
 
     function checkAllFieldsValid() {
         var allValid = Array.from(inputs).every((input) => {
-            return !input.classList.contains('error') && !input.classList.contains('email-error') && !checkboxBlock.classList.contains('error');
+            return !input.classList.contains('error') && !input.classList.contains('email-error');
         });
 
         if (allValid) {
@@ -93,7 +93,7 @@ function createFormValidation() {
             validateInput(input);
         });
 
-        validateCheckbox();
+        /*validateCheckbox();*/
 
         if (checkAllFieldsValid()) {
             successMessage.classList.remove('hidden');
@@ -102,11 +102,11 @@ function createFormValidation() {
         }
     });
 
-    checkboxBlock.addEventListener('click', (e) => {
+    /*checkboxBlock.addEventListener('click', (e) => {
         if (!e.target.classList.contains('checkbox__link')) {
             validateCheckbox();
         }
-    })
+    })*/
 
     inputs.forEach((input) => {
         const field = input.querySelector('.modal__form-input');
