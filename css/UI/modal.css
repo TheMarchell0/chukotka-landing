@@ -337,6 +337,11 @@ textarea.modal__form-input {
     text-decoration: underline;
 }
 
+.modal__news-main-text.date {
+    color: #7F7F7F;
+    font-size: 14px;
+}
+
 .modal__news-main-text.bold {
     font-weight: 600;
 }
