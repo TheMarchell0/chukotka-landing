@@ -1,0 +1,38 @@
+.hero {
+    margin: 75px 0 62px;
+    color: #323232;
+}
+
+.hero__content {
+    background-color: #EEEEEE;
+    border-radius: 30px;
+    min-height: 345px;
+    padding: 38px 32px 10px;
+}
+
+.hero__content-info {
+    max-width: 609px;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.hero__content-info-descr {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    margin: 50px 0 16px;
+    color: #404040;
+}
+
+.hero__content-info-postscript {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+}
+
+.hero__img {
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+}

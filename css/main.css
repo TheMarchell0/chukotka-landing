@@ -2,14 +2,6 @@
 @import "vendor/normalize.css";
 @import "vendor/swiper-styles-reset.css";
 @import "components/header.css";
-@import "pages/main/hero.css";
-@import "pages/main/activities.css";
-@import "pages/main/team.css";
-@import "pages/main/institutions.css";
-@import "pages/main/resources.css";
-@import "pages/main/documents.css";
-@import "pages/main/news.css";
-@import "pages/main/anticorruption.css";
 @import "components/footer.css";
 @import "pages/documents/documents.css";
 @import "UI/button.css";
@@ -115,6 +107,86 @@ img {
     transform: none;
 }
 
+.news-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.news-list__item {
+    border-radius: 20px;
+    border: 2px solid #E8E9F7;
+    color: #062D5E;
+    line-height: 1.1;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-list__item.swiper-slide {
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    display: flex;
+}
+
+.news-list-wrapper:not(.slider) .news-list__item {
+    flex: 0 1 310px;
+}
+
+.news-list-wrapper:not(.slider) .news-list__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.news-list__title {
+    font-size: 18px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.news-list__descr {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.news-list__link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+}
+
+.news-list__date {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7F7F7F;
+}
+
+.news-list__footer {
+    display: none;
+    justify-content: flex-end;
+}
+
+.slider .news-list__footer {
+    display: flex;
+}
+
+@media (min-width: 1024px) {
+    .news-list__item:hover {
+        color: #FFFFFF;
+        background-color: #1C5A96;
+        border: 2px solid #1C5A96;
+    }
+}
+
+
 .no-scroll {
     overflow: hidden;
 }
@@ -132,6 +204,7 @@ img {
     line-height: 1;
     position: relative;
     padding-bottom: 15px;
+    color: #323232;
 }
 
 .title::after {

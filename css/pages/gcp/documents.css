@@ -1,0 +1,12 @@
+.documents {
+    margin: 56px 0 55px;
+}
+
+.documents__content {
+    margin: 51px 0 33px;
+}
+
+.documents__button {
+    display: block;
+    text-align: center;
+}

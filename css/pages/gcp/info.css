@@ -1,0 +1,22 @@
+.info {
+    margin-bottom: 40px;
+}
+
+.info__title {
+    max-width: 642px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.info__list-item {
+    padding: 13px 25px 13px 22px;
+    min-height: 167px;
+}
+
+.info__list-title {
+    font-size: 16px;
+}
+
+.info__list-footer {
+    margin-top: 31px;
+}

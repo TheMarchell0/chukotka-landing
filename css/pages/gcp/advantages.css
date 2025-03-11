@@ -1,0 +1,105 @@
+.advantages {
+    color: #323232;
+}
+
+.advantages__content {
+    margin-top: 38px;
+    background-color: #EEEEEE;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0 32px;
+}
+
+.advantages__switches {
+    display: flex;
+    align-items: center;
+    max-width: 1002px;
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+.advantages__switches-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    background-color: #D9D9D9;
+    width: 50%;
+    padding: 19px 0 18px;
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+
+.advantages__switches-title:hover {
+    opacity: 0.6;
+}
+
+.advantages__switches-title:nth-child(odd) {
+    border-radius: 12px 0 0 12px;
+}
+
+.advantages__switches-title:nth-child(even) {
+    border-radius: 0 12px 12px 0;
+}
+
+.advantages__switches-title.active {
+    background-color: #FFFFFF;
+    pointer-events: none;
+}
+
+.advantages__grid {
+    display: none;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 300px 232px;
+    gap: 16px;
+    counter-reset: grid-count;
+    max-width: 1236px;
+    width: 100%;
+}
+
+.advantages__grid.active {
+    display: grid;
+}
+
+.advantages__grid-item {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 61px 20px;
+    counter-increment: grid-count;
+    position: relative;
+    grid-column: span 2;
+}
+
+.advantages__grid-item:nth-child(n+4) {
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages__grid-item::before {
+    content: counter(grid-count, decimal-leading-zero);
+    position: absolute;
+    display: block;
+    left: 20px;
+    top: 16px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 110%;
+}
+
+.advantages__grid-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    max-width: 285px;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.advantages__grid-img {
+    margin: 17px auto 0;
+    display: block;
+}
