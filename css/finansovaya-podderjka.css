@@ -3,3 +3,39 @@
 @import "pages/finansovaya-podderjka/counters.css";
 @import "pages/finansovaya-podderjka/info.css";
 @import "pages/finansovaya-podderjka/contacts.css";
+
+.accordion__list-item {
+    border-top: 2px solid #C2C2C2;
+    min-height: 100px;
+}
+
+.accordion__list-item:last-child {
+    border-bottom: 2px solid #C2C2C2;
+}
+
+.accordion__list-item.active:last-child {
+    border-bottom: initial;
+}
+
+.accordion__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion__list-item:not(.active) .accordion__title::after {
+    display: none;
+}
+
+.accordion__title {
+    max-width: 640px;
+    width: 100%;
+}
+
+.fp-dropdown-arrow {
+    transition: 0.3s linear;
+    margin-top: -15px;
+}
+
+.active .fp-dropdown-arrow {
+    transform: rotate(180deg);
+}
