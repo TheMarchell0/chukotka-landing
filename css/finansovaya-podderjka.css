@@ -6,13 +6,16 @@
 
 .accordion__list-item {
     border-top: 2px solid #C2C2C2;
-    padding-top: 41px;
     max-height: 124px;
 }
 
 .accordion__list-item:first-child {
+    max-height: 143px;
+}
+
+.accordion__list-item:first-child .accordion__head {
     padding-top: 30px;
-    max-height: 133px;
+    height: 141px;
 }
 
 .accordion__list-item:last-child {
@@ -28,12 +31,18 @@
 }
 
 .accordion__head {
+    padding-top: 41px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
+    height: 122px;
+}
+
+.accordion__title {
+    height: fit-content;
 }
 
 .accordion__title::after {
@@ -51,7 +60,7 @@
 
 .fp-dropdown-arrow {
     transition: 0.2s linear;
-    margin-top: -15px;
+    margin-top: -38px;
 }
 
 .active .fp-dropdown-arrow {
