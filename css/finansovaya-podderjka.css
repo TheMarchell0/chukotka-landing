@@ -6,7 +6,6 @@
 
 .accordion__list-item {
     border-top: 2px solid #C2C2C2;
-    min-height: 100px;
 }
 
 .accordion__list-item:last-child {
@@ -20,10 +19,18 @@
 .accordion__head {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+.accordion__title::after {
+    transition: 0.2s linear;
 }
 
 .accordion__list-item:not(.active) .accordion__title::after {
-    display: none;
+    width: 0;
 }
 
 .accordion__title {
@@ -32,10 +39,16 @@
 }
 
 .fp-dropdown-arrow {
-    transition: 0.3s linear;
+    transition: 0.2s linear;
     margin-top: -15px;
 }
 
 .active .fp-dropdown-arrow {
     transform: rotate(180deg);
+}
+
+@media (min-width: 1024px) {
+    .accordion__head:hover {
+        opacity: 0.6;
+    }
 }

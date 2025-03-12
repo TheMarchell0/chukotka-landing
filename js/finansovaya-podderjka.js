@@ -4,12 +4,16 @@ import createAnchorsFunctional from "./functions/createAnchorsFunctional.js";
 import createMobileMenu from "./functions/createMobileMenu.js";
 import createAccordionFunctional from "./functions/createAccordionFunctional.js";
 import {createCookieFunctional} from "./functions/createCookieFunctional.js";
+import createTimerFunctional from "./functions/createTimerFunctional.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     const accordionBlocks = document.querySelectorAll('.js-accordion');
-    const adsSliders = document.querySelectorAll('.js-orv-docs-slider');
+    const adsSliders = document.querySelectorAll('.js-ads-slider');
+    const countersSliders = document.querySelectorAll('.js-counters-slider');
+    const timers = document.querySelectorAll('.js-timer');
 
     accordionBlocks.forEach(accordionBlock => createAccordionFunctional(accordionBlock));
+    timers.forEach(timer => createTimerFunctional(timer));
     createCookieFunctional();
     createModalFunctional();
     createFormValidation();
@@ -17,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     createMobileMenu();
 
     for (let adsSlider of adsSliders) {
-        const items = adsSlider.querySelectorAll('.orv-docs__list-item.swiper-slide').length;
+        const items = adsSlider.querySelectorAll('.ads__list-item.swiper-slide').length;
 
 
         if ((items > 4) || (innerWidth < 1320)) {
@@ -49,6 +53,32 @@ document.addEventListener("DOMContentLoaded", function () {
                     1400: {
                         slidesPerView: 4,
                     }
+                }
+            });
+        }
+    }
+
+    for (let countersSlider of countersSliders) {
+        const items = countersSlider.querySelectorAll('.counters__list-item.swiper-slide').length;
+
+        if (items > 1) {
+
+            if (!countersSlider.classList.contains('slider')) {
+                countersSlider.classList.add('slider');
+            }
+
+            const countersSliderBlock = new Swiper(countersSlider, {
+                loop: false,
+                navigation: {
+                    nextEl: countersSlider.querySelector('.counters__next-arrow'),
+                    prevEl: countersSlider.querySelector('.counters__prev-arrow'),
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                breakpoints: {
+                    1024: {
+                        allowTouchMove: false,
+                    },
                 }
             });
         }

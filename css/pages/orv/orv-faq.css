@@ -29,10 +29,9 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    cursor: pointer;
-    -webkit-transition: 0.2s linear;
-    -o-transition: 0.2s linear;
-    transition: 0.2s linear;
+    -webkit-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    transition: 0.1s linear;
 }
 
 .orv-faq__questions-item.active {
@@ -181,20 +180,18 @@
         flex-direction: column;
         padding: 0;
         align-items: flex-start;
+        max-height: 100px;
     }
 
     .orv-faq__questions-item.active {
         transform: initial;
+        max-height: initial;
     }
     
     .orv-faq__answers-item {
         position: initial;
         opacity: 1;
         pointer-events: initial;
-        padding: 0;
-    }
-
-    .orv-faq__questions-item.active .orv-faq__answers-item {
         padding: 30px 29px;
     }
 

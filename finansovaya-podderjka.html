@@ -153,7 +153,7 @@
         <div class="accordion__container container">
             <ul class="accordion__list js-accordion js-multiple-accordion">
                 <li class="accordion__list-item ads js-accordion-item accordion">
-                    <div class="accordion__head">
+                    <div class="accordion__head accordion-head js-accordion-head">
                         <h2 class="accordion__title ads__title title">Объявления о&nbsp;проведении отборов получателей поддержки</h2>
                         <img
                                 src="images/fp-accordion-arrow.svg"
@@ -162,12 +162,61 @@
                                 class="ads__dropdown-arrow fp-dropdown-arrow"
                         />
                     </div>
-                    <div class="accordion-content">
-                        11231
+                    <div class="ads__content accordion-content js-accordion-content" style="max-height:0">
+                        <div class="ads__slider swiper js-ads-slider news-list-wrapper">
+                            <div class="ads__list swiper-wrapper news-list">
+                                <div class="ads__list-item swiper-slide news-list__item">
+                                    <p class="ads__list-title news-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="ads__list-descr news-list__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                                    <p class="news__list-date news-list__date">Размещено 30 января </p>
+                                    <p class="ads__list-link news-list__link">Условия участия</p>
+                                    <a class="absolute-link" target="_blank"
+                                       href="#"></a>
+                                </div>
+                                <div class="ads__list-item swiper-slide news-list__item">
+                                    <p class="ads__list-title news-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="ads__list-descr news-list__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                                    <p class="news__list-date news-list__date">Размещено 30 января </p>
+                                    <p class="ads__list-link news-list__link">Условия участия</p>
+                                    <a class="absolute-link" target="_blank"
+                                       href="#"></a>
+                                </div>
+                                <div class="ads__list-item swiper-slide news-list__item">
+                                    <p class="ads__list-title news-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="ads__list-descr news-list__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                                    <p class="news__list-date news-list__date">Размещено 30 января </p>
+                                    <p class="ads__list-link news-list__link">Условия участия</p>
+                                    <a class="absolute-link" target="_blank"
+                                       href="#"></a>
+                                </div>
+                                <div class="ads__list-item swiper-slide news-list__item">
+                                    <p class="ads__list-title news-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="ads__list-descr news-list__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                                    <p class="news__list-date news-list__date">Размещено 30 января </p>
+                                    <p class="ads__list-link news-list__link">Условия участия</p>
+                                    <a class="absolute-link" target="_blank"
+                                       href="#"></a>
+                                </div>
+                                <div class="ads__list-item swiper-slide news-list__item">
+                                    <p class="ads__list-title news-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="ads__list-descr news-list__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                                    <p class="news__list-date news-list__date">Размещено 30 января </p>
+                                    <p class="ads__list-link news-list__link">Условия участия</p>
+                                    <a class="absolute-link" target="_blank"
+                                       href="#"></a>
+                                </div>
+                            </div>
+                            <div class="ads__list-footer news-list__footer">
+                                <div class="ads__arrows slider-arrows slider-arrows_small">
+                                    <div class="ads__prev-arrow swiper-button-prev"></div>
+                                    <div class="ads__next-arrow swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class="accordion__list-item counters js-accordion-item accordion">
-                    <div class="accordion__head">
+                    <div class="accordion__head accordion-head js-accordion-head">
                         <h2 class="accordion__title counters__title title">Счетчик приема документов</h2>
                         <img
                                 src="images/fp-accordion-arrow.svg"
@@ -176,22 +225,134 @@
                                 class="counters__dropdown-arrow fp-dropdown-arrow"
                         />
                     </div>
-                    <div class="accordion-content">
-                        11231
+                    <div class="counters__content accordion-content js-accordion-content" style="max-height:0">
+                        <div class="counters__slider swiper js-counters-slider">
+                            <div class="counters__list swiper-wrapper">
+                                <div class="counters__list-item swiper-slide">
+                                    <div class="counters__list-item-wrapper">
+                                        <div class="counters__list-text">
+                                            <p class="counters__list-text-title">Ведется прием документов на&nbsp;грант на&nbsp;начало собственного дела</p>
+                                            <p class="counters__list-text-descr">До окончания приема осталось:</p>
+                                            <div class="counters__list-text-timer timer js-timer" data-target-date="2025-03-25T02:15:00">
+                                                <p class="counters__list-text-timer-item timer__item">
+                                                    <span class="counters__list-text-timer-number timer__number js-timer-number_day">0</span>
+                                                    <span class="counters__list-text-timer-unit timer__unit js-timer-unit_day">дней</span>
+                                                </p>
+                                                <p class="counters__list-text-timer-item timer__item">
+                                                    <span class="counters__list-text-timer-number timer__number js-timer-number_hours">0</span>
+                                                    <span class="counters__list-text-timer-unit timer__unit js-timer-unit_hours">часов</span>
+                                                </p>
+                                                <p class="counters__list-text-timer-item timer__item">
+                                                    <span class="counters__list-text-timer-number timer__number js-timer-number_minutes">0</span>
+                                                    <span class="counters__list-text-timer-unit timer__unit js-timer-unit_minutes">минут</span>
+                                                </p>
+                                            </div>
+                                            <a href="/docs/test.pdf" target="_blank" class="counters__list-text-button button">Смотреть объявление</a>
+                                        </div>
+                                        <picture>
+                                            <source
+                                                    srcset="images/fp-counters-img-1.png 1x, ../images/fp-counters-img-1@2x.png 2x"
+                                            />
+                                            <img
+                                                    src="images/fp-counters-img-1.png"
+                                                    alt="Декоративная картинка"
+                                                    width="456"
+                                                    class="counters__list-img"
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="counters__list-item swiper-slide">
+                                    <div class="counters__list-item-wrapper">
+                                        <div class="counters__list-text">
+                                            <p class="counters__list-text-title">Ведется прием документов на&nbsp;грант на&nbsp;начало собственного дела</p>
+                                            <p class="counters__list-text-descr">До окончания приема осталось:</p>
+                                            <div class="counters__list-text-timer timer js-timer" data-target-date="2025-03-15T02:05:00">
+                                                <p class="counters__list-text-timer-item timer__item">
+                                                    <span class="counters__list-text-timer-number timer__number js-timer-number_day">-</span>
+                                                    <span class="counters__list-text-timer-unit timer__unit js-timer-unit_day">дней</span>
+                                                </p>
+                                                <p class="counters__list-text-timer-item timer__item">
+                                                    <span class="counters__list-text-timer-number timer__number js-timer-number_hours">-</span>
+                                                    <span class="counters__list-text-timer-unit timer__unit js-timer-unit_hours">часов</span>
+                                                </p>
+                                                <p class="counters__list-text-timer-item timer__item">
+                                                    <span class="counters__list-text-timer-number timer__number js-timer-number_minutes">-</span>
+                                                    <span class="counters__list-text-timer-unit timer__unit js-timer-unit_minutes">минут</span>
+                                                </p>
+                                            </div>
+                                            <a href="/docs/test.pdf" target="_blank" class="counters__list-text-button button">Смотреть объявление</a>
+                                        </div>
+                                        <picture>
+                                            <source
+                                                    srcset="images/fp-counters-img-1.png 1x, ../images/fp-counters-img-1@2x.png 2x"
+                                            />
+                                            <img
+                                                    src="images/fp-counters-img-1.png"
+                                                    alt="Декоративная картинка"
+                                                    width="456"
+                                                    class="counters__list-img"
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="counters__list-footer">
+                                <div class="counters__arrows slider-arrows slider-arrows_small">
+                                    <div class="counters__prev-arrow swiper-button-prev"></div>
+                                    <div class="counters__next-arrow swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class="accordion__list-item info js-accordion-item accordion">
-                    <div class="accordion__head">
-                        <h2 class="accordion__title info__title title">Полезная информация</h2>
+                    <div class="accordion__head accordion-head js-accordion-head">
+                        <h2 class="accordion__title ads__title title">Полезная информация</h2>
                         <img
                                 src="images/fp-accordion-arrow.svg"
                                 alt="Стрелка"
                                 width="60"
-                                class="info__dropdown-arrow fp-dropdown-arrow"
+                                class="ads__dropdown-arrow fp-dropdown-arrow"
                         />
                     </div>
-                    <div class="accordion-content">
-                        11231
+                    <div class="info__content accordion-content js-accordion-content" style="max-height:0">
+                        <ul class="info__list">
+                            <li class="info__list-item">
+                                <div class="info__list-text">
+                                    <p class="info__list-text-title">Успешные кейсы предпринимателей</p>
+                                    <a href="#" target="_blank" class="info__list-text-button button">Узнать больше</a>
+                                </div>
+                                <picture>
+                                    <source
+                                            srcset="images/fp-info-img-1.png 1x, ../images/fp-info-img-1@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/fp-info-img-1.png"
+                                            alt="Декоративная картинка"
+                                            width="280"
+                                            class="info__list-img"
+                                    />
+                                </picture>
+                            </li>
+                            <li class="info__list-item">
+                                <div class="info__list-text">
+                                    <p class="info__list-text-title">Навигатор мер&nbsp;поддержки</p>
+                                    <a href="#" target="_blank" class="info__list-text-button button">Узнать больше</a>
+                                </div>
+                                <picture>
+                                    <source
+                                            srcset="images/fp-info-img-2.png 1x, ../images/fp-info-img-2@2x.png 2x"
+                                    />
+                                    <img
+                                            src="images/fp-info-img-2.png"
+                                            alt="Декоративная картинка"
+                                            width="280"
+                                            class="info__list-img"
+                                    />
+                                </picture>
+                            </li>
+                        </ul>
                     </div>
                 </li>
             </ul>
