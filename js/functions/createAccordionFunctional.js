@@ -2,6 +2,17 @@ function createAccordionFunctional(accordion) {
     const isMultiple = accordion.classList.contains('js-multiple-accordion');
     const accordionItems = accordion.querySelectorAll('.js-accordion-item');
 
+    const toggleAccordionItem = (accordionItem, isActive) => {
+        const accordionContent = accordionItem.querySelector('.js-accordion-content');
+        if (isActive) {
+            accordionItem.classList.remove('active');
+            accordionContent.style.maxHeight = '0';
+        } else {
+            accordionItem.classList.add('active');
+            accordionContent.style.maxHeight = accordionItem.scrollHeight + 'px';
+        }
+    };
+
     for (let accordionItem of accordionItems) {
         const accordionHead = accordionItem.querySelector('.js-accordion-head');
         const accordionContent = accordionItem.querySelector('.js-accordion-content');
@@ -13,21 +24,13 @@ function createAccordionFunctional(accordion) {
         accordionHead.addEventListener('click', () => {
             const isActive = accordionItem.classList.contains('active');
 
-            if (isActive) {
-                accordionItem.classList.remove('active');
-                accordionContent.style.maxHeight = '0';
-
-            } else {
-                accordionItem.classList.add('active');
-                accordionContent.style.maxHeight = accordionItem.scrollHeight + 'px';
-            }
-
             if (!isMultiple) {
-                for (let anotherItem of accordionItems) {
-                    anotherItem.classList.remove('active');
-                    accordionContent.style.maxHeight = '0';
-                }
+                accordionItems.forEach((anotherItem) => {
+                    toggleAccordionItem(anotherItem, true);
+                });
             }
+
+            toggleAccordionItem(accordionItem, isActive);
         });
     }
 }

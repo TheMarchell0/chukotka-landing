@@ -6,10 +6,21 @@
 
 .accordion__list-item {
     border-top: 2px solid #C2C2C2;
+    padding-top: 41px;
+    max-height: 124px;
+}
+
+.accordion__list-item:first-child {
+    padding-top: 30px;
+    max-height: 133px;
 }
 
 .accordion__list-item:last-child {
     border-bottom: 2px solid #C2C2C2;
+}
+
+.accordion__list-item.active {
+    max-height: initial;
 }
 
 .accordion__list-item.active:last-child {

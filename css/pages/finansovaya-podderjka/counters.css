@@ -2,6 +2,10 @@
     color: #323232
 }
 
+.counters__content {
+    margin-bottom: 31px;
+}
+
 .counters__slider {
     margin-top: 34px;
 }
