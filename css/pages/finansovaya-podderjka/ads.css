@@ -14,3 +14,9 @@
 .ads__list-footer {
     margin-top: 20px;
 }
+
+@media (max-width: 1024px) {
+    .ads__slider {
+        margin-top: 65px;
+    }
+}

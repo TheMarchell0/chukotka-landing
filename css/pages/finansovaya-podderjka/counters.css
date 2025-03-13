@@ -17,11 +17,16 @@
 }
 
 .counters__list-item-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 34px 32px 0;
     max-width: 1138px;
     width: 100%;
+    position: relative;
 }
 
 .counters__list-text {
@@ -71,5 +76,57 @@
     .counters__list-item {
         background: url('../../../images/fp-counters-bg@2x.png') no-repeat center;
         background-size: cover;
+    }
+}
+
+@media (max-width: 1326px) {
+    .counters__list-item-wrapper {
+        padding: 34px 32px;
+    }
+
+    .counters__list-item {
+        max-height: initial;
+    }
+
+    .counters__list-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .counters__list-item-wrapper {
+        padding: 34px 32px 300px;
+    }
+
+    .counters__slider {
+        margin-top: 65px;
+    }
+
+    .counters__list-item-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .counters__list-text-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .counters__list-item-wrapper {
+        padding: 20px 20px 200px;
+    }
+
+    .counters__list-text-button {
+        max-width: 170px;
+    }
+
+    .counters__list-img {
+        max-width: 320px;
     }
 }

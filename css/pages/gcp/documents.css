@@ -10,3 +10,15 @@
     display: block;
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    .documents__button {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .documents__button {
+        max-width: 171px;
+    }
+}

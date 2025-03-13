@@ -3,7 +3,6 @@
 @import "vendor/swiper-styles-reset.css";
 @import "components/header.css";
 @import "components/footer.css";
-@import "pages/documents/documents.css";
 @import "UI/button.css";
 @import "UI/modal.css";
 @import "UI/cookie.css";
@@ -375,21 +374,37 @@ img {
     min-height: 56px;
     border-radius: 11.84px;
     max-width: 240px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     color: #323232;
 }
 
 .timer.expired {
     pointer-events: none;
+    -webkit-filter: brightness(0.7) opacity(0.7);
     filter: brightness(0.7) opacity(0.7);
 }
 
 .timer__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 80px;
     flex: 0 1 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -475,10 +490,6 @@ img {
         font-size: 18px;
         font-weight: 500;
         padding: 12px 15px;
-    }
-
-    .button.documents__button {
-        max-width: 140px;
     }
 
     .title {

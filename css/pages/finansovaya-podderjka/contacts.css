@@ -21,11 +21,15 @@
 }
 
 .contacts__socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 11px 0 8px;
 }
 
 .contacts__socials-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-radius: 50%;
     width: 32px;
@@ -44,4 +48,15 @@
 
 .contacts__phones-item a {
     color: #323232;
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        margin: 50px 0 30px;
+    }
+
+    .contacts__content-title {
+        font-size: 18px;
+        line-height: 106%;
+    }
 }

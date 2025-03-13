@@ -149,6 +149,10 @@
     .documents-not-found {
         font-size: 26px;
     }
+
+    .button.documents__button {
+        max-width: 140px;
+    }
 }
 
 @media (max-width: 350px) {

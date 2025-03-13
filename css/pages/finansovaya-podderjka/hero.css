@@ -10,11 +10,34 @@
 }
 
 .hero__grid {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 16px 1fr;
     grid-template-rows: repeat(2, 1fr);
     gap: 16px 20px;
     margin-top: 40px;
+}
+
+.hero__grid > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.hero__grid > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.hero__grid > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.hero__grid > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
 }
 
 .hero__grid-item {
@@ -24,11 +47,16 @@
 }
 
 .hero__grid-item:first-child {
+    -ms-grid-row-span: 2;
     grid-row: span 2 / span 2;
 }
 
 .hero__grid-item:not(:first-child) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -62,4 +90,79 @@
 
 .hero__grid-img {
     display: block;
+}
+
+@media (max-width: 1024px) {
+
+    .hero__grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr; /* Один столбец */
+        -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    }
+
+    .hero__grid > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .hero__grid-item:first-child {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .hero__grid-item:first-child .hero__grid-img {
+        max-width: 187px;
+        margin: initial;
+    }
+
+    .hero__grid-text {
+        max-width: 70%;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .hero {
+        margin: 30px 0 50px;
+    }
+
+    .hero__title {
+        line-height: initial;
+    }
+
+    .hero__grid {
+        margin-top: 30px;
+    }
+
+    .hero__grid-text-title {
+        font-size: 22px;
+    }
+
+    .hero__grid-text-descr {
+        font-size: 16px;
+    }
+
+    .hero__grid-item {
+        padding: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .hero__grid-text {
+        max-width: 100%;
+        margin-right: initial;
+    }
+
+    .hero__grid-img,
+    .hero__grid-item:first-child .hero__grid-img {
+        margin-top: 30px;
+    }
 }
