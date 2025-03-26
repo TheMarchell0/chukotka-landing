@@ -11,6 +11,16 @@
     min-height: 202px;
 }
 
+.ads__list-descr {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
 .ads__list-footer {
     margin-top: 20px;
 }
