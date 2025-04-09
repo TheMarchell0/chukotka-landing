@@ -1,0 +1,48 @@
+.ui-icons-block {
+    background-color: #EEEEEE;
+    border-radius: 30px;
+    color: #323232;
+    line-height: 110%;
+    max-width: 640px;
+    width: 100%;
+    padding: 22px 16px 17px;
+}
+
+.ui-icons-block__title {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.ui-icons-block__list-item {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 12px 12px 10px;
+}
+
+.ui-icons-block__list-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.ui-icons-block__list-img {
+    margin-right: 17px;
+}
+
+.ui-icons-block__list-text {
+    max-width: 544px;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.ui-icons-block__list-text-title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+.ui-icons-block__list-text-descr {
+    font-weight: 400;
+    font-size: 16px;
+}

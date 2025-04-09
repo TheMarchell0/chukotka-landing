@@ -1,11 +1,3 @@
-.ads__content {
-    margin-bottom: 31px;
-}
-
-.ads__slider {
-    margin-top: 16px;
-}
-
 .ads__list-item {
     padding: 22px;
     min-height: 202px;
@@ -23,10 +15,4 @@
 
 .ads__list-footer {
     margin-top: 20px;
-}
-
-@media (max-width: 1024px) {
-    .ads__slider {
-        margin-top: 65px;
-    }
 }

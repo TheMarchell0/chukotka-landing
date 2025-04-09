@@ -1,0 +1,131 @@
+.accordion {
+    overflow: hidden;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+.classic .accordion {
+    border-top: 2px solid #C2C2C2;
+}
+
+.classic .accordion {
+    min-height: 124px;
+}
+
+.accordion.active {
+    min-height: initial;
+}
+
+.classic .accordion:last-child {
+    border-bottom: 2px solid #C2C2C2;
+}
+
+.classic .active:not(:only-child):last-child {
+    border-bottom: initial;
+}
+
+.accordion-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    width: 100%;
+    height: inherit;
+}
+.classic .accordion-head {
+    padding: 32px 0;
+}
+
+.accordion-title {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.classic .accordion-title {
+    padding-bottom: 0;
+}
+
+.classic .accordion-title::after {
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    bottom: -15px;
+}
+
+.classic .accordion:not(.active) .accordion-title::after {
+    width: 0;
+}
+
+.accordion-dropdown-arrow {
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+.active .accordion-dropdown-arrow {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    -webkit-transition: max-height 0.2s linear;
+    -o-transition: max-height 0.2s linear;
+    transition: max-height 0.2s linear;
+    opacity: 0;
+    margin: 0;
+}
+
+.active .accordion-content {
+    opacity: 1;
+}
+
+.classic .active .accordion-content {
+    margin: 11px 0 31px;
+}
+
+@media (min-width: 1024px) {
+    .accordion-head:hover {
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 1024px) {
+    .classic .accordion-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .classic .accordion:not(.active) {
+        min-height: 100px;
+    }
+
+    .classic .accordion-title {
+        font-size: 4vw;
+        max-width: 80%;
+    }
+
+    .accordion-dropdown-arrow {
+        margin-top: initial;
+        width: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .classic .accordion-title {
+        font-size: 5vw;
+    }
+}

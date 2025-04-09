@@ -7,9 +7,11 @@ function createAccordionFunctional(accordion) {
         if (isActive) {
             accordionItem.classList.remove('active');
             accordionContent.style.maxHeight = '0';
+            accordionContent.style.margin = '0';
         } else {
             accordionItem.classList.add('active');
             accordionContent.style.maxHeight = accordionItem.scrollHeight + 'px';
+            accordionContent.style.margin = '';
         }
     };
 

@@ -347,28 +347,6 @@ img {
     margin-top: 9px;
 }
 
-.accordion {
-    overflow: hidden;
-    -webkit-transition: 0.2s linear;
-    -o-transition: 0.2s linear;
-    transition: 0.2s linear;
-}
-
-.accordion-head {
-    width: 100%;
-}
-
-.accordion-content {
-    max-height: 0;
-    -webkit-transition: max-height 0.2s linear;
-    -o-transition: max-height 0.2s linear;
-    transition: max-height 0.2s linear;
-}
-
-.accordion.active .accordion-content {
-    max-height: initial;
-}
-
 .timer {
     background: #FFFFFF;
     min-height: 56px;
@@ -422,6 +400,26 @@ img {
     font-weight: 400;
     font-size: 12px;
     line-height: 110%
+}
+
+.mobile {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+@media (max-width: 1024px) {
+    .desktop {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+
+    .mobile {
+        visibility: initial;
+        opacity: initial;
+        height: initial;
+    }
 }
 
 @media (max-width: 1326px) {

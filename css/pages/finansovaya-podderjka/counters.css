@@ -2,14 +2,6 @@
     color: #323232
 }
 
-.counters__content {
-    margin-bottom: 31px;
-}
-
-.counters__slider {
-    margin-top: 10px;
-}
-
 .counters__list-item {
     border-radius: 30px;
     background: url('../../../images/fp-counters-bg.png') no-repeat center;
@@ -99,10 +91,6 @@
 @media (max-width: 1024px) {
     .counters__list-item-wrapper {
         padding: 34px 32px 300px;
-    }
-
-    .counters__slider {
-        margin-top: 65px;
     }
 
     .counters__list-item-wrapper {

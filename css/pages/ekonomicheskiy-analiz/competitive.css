@@ -1,0 +1,48 @@
+.competitive {
+    margin: 62px 0 10px;
+    color: #323232;
+}
+
+.competitive__subtitle {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 110%;
+}
+
+.competitive__head-title {
+    margin: 46px 0 12px;
+}
+
+.competitive__head-list {
+    display: flex;
+}
+
+.competitive__head-list-item {
+    flex:0 1 423px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    min-height: 250px;
+    padding: 16px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.competitive__head-list-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.competitive__head-list-item:not(:first-child) .competitive__head-list-title {
+    max-width: 310px;
+}
+
+.competitive__head-list-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+}
+
+.competitive__head-list-img {
+    display: block;
+    margin: 0 auto;
+}
