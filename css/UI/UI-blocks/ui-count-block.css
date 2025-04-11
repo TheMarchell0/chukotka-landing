@@ -49,7 +49,7 @@
 }
 
 
-.ui-count-block__list-title::before {
+.ui-count-block__list-title:not(.no-count)::before {
     content: counter(focus-count, decimal-leading-zero);
     color: #1C5A96;
     font-weight: 500;

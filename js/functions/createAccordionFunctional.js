@@ -10,7 +10,7 @@ function createAccordionFunctional(accordion) {
             accordionContent.style.margin = '0';
         } else {
             accordionItem.classList.add('active');
-            accordionContent.style.maxHeight = accordionItem.scrollHeight + 'px';
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
             accordionContent.style.margin = '';
         }
     };
@@ -20,7 +20,7 @@ function createAccordionFunctional(accordion) {
         const accordionContent = accordionItem.querySelector('.js-accordion-content');
 
         if (accordionItem.classList.contains('active')) {
-            accordionContent.style.maxHeight = accordionItem.scrollHeight + 'px';
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
         }
 
         accordionHead.addEventListener('click', () => {

@@ -1,5 +1,5 @@
 .competitive {
-    margin: 62px 0 10px;
+    margin: 62px 0 41px;
     color: #323232;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .competitive__head-list-item {
-    flex:0 1 423px;
+    flex: 0 1 423px;
     background-color: #FFFFFF;
     border-radius: 20px;
     min-height: 250px;
@@ -45,4 +45,70 @@
 .competitive__head-list-img {
     display: block;
     margin: 0 auto;
+}
+
+.competitive__content {
+    display: flex;
+    margin-top: 40px;
+}
+
+.competitive__content-item {
+    flex: 0 1 640px;
+}
+
+.competitive__content-item:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.competitive__content-title {
+    margin-bottom: 13px;
+}
+
+.competitive__content-numbers-item {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    min-height: 188px;
+    padding: 24px;
+}
+
+.competitive__content-numbers-item:nth-child(odd) {
+    background-color: #E8E9F7;
+}
+
+.competitive__content-numbers-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.competitive__content-numbers-text {
+    color: #323232;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+}
+
+.competitive__content-numbers-item:first-child .competitive__content-numbers-text {
+    max-width: 283px;
+    width: 100%;
+}
+
+.competitive__content-numbers-text span {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.competitive__content-count.ui-count-block {
+    padding: 16px 16px 17px;
+}
+
+.competitive__content-count .ui-count-block__list-item:last-child {
+    background: linear-gradient(90deg, #E8E9F7 56.6%, #005FA0 123.6%);
+    padding-left: 13px;
+}
+
+.competitive__content-count .ui-count-block__list-item:last-child .ui-count-block__list-title {
+    padding-left: 9px;
+    max-width: 500px;
 }
