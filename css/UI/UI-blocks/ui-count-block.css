@@ -33,6 +33,10 @@
     padding-left: 23px;
 }
 
+.small .ui-count-block__list-item {
+    min-height: 60px;
+}
+
 .ui-count-block__list-item:not(:last-child) {
     margin-bottom: 10px;
 }

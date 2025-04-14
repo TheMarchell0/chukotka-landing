@@ -1,3 +1,26 @@
 .hero {
-    margin: 62px 0 10px;
+    margin: 62px 0 59px;
+}
+
+.hero__title {
+    margin-bottom: 46px;
+}
+
+.hero__faq-content {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(85.95deg, #E8E9F7 22.3%, #005FA0 139.98%);
+}
+
+.hero__faq-content.faq__content {
+    padding: 30px 50px 30px 29px;
+}
+
+.hero__faq-content-title.faq__content-title {
+    max-width: initial;
+}
+
+.hero__faq-content-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
