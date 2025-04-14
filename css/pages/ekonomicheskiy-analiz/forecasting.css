@@ -3,12 +3,7 @@
     color: #323232;
 }
 
-.forecasting__content-head {
-    display: flex;
-}
-
 .forecasting__content-head-item {
-    flex: 0 1 640px;
     min-height: 270px;
     background: #E8E9F7;
     margin-bottom: 20px;
@@ -17,8 +12,11 @@
     padding: 25px 18px 10px 24px;
 }
 
+.forecasting__content-head-item.content__column {
+    flex-direction: row;
+}
+
 .forecasting__content-head-item:nth-child(odd) {
-    margin-right: 20px;
     background: #FFFFFF
 }
 
@@ -32,9 +30,6 @@
 }
 
 .forecasting__content-subtitle {
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 110%;
     margin: 12px 0 32px;
 }
 

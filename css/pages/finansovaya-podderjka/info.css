@@ -1,16 +1,4 @@
-.info__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
 .info__list-item {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 640px;
-    flex: 0 1 640px;
     border-radius: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -24,7 +12,6 @@
 
 .info__list-item:nth-child(odd) {
     background: #E8E9F7;
-    margin-right: 20px;
 }
 
 .info__list-item:nth-child(even) {

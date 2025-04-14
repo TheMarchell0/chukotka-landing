@@ -1,4 +1,6 @@
 .ui-count-block {
+    display: flex;
+    flex-direction: column;
     background-color: #EEEEEE;
     border-radius: 30px;
     color: #323232;
@@ -9,8 +11,6 @@
 }
 
 .ui-count-block__title {
-    font-weight: 500;
-    font-size: 26px;
     margin-bottom: 15px;
 }
 
@@ -22,6 +22,10 @@
 
 .ui-count-block__list {
     counter-reset: focus-count;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .ui-count-block__list-item {
@@ -30,7 +34,7 @@
     border-radius: 20px;
     background-color: #FFFFFF;
     min-height: 82px;
-    padding-left: 23px;
+    padding: 10px 23px;
 }
 
 .small .ui-count-block__list-item {
@@ -62,4 +66,10 @@
     top: 0;
     left: 0;
     position: absolute;
+}
+
+@media (max-width: 1024px) {
+    .ui-count-block {
+        max-width: initial;
+    }
 }

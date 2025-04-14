@@ -1,12 +1,7 @@
 .planning__content {
     margin-top: 46px;
-    display: flex;
 }
 
 .planning__content-item {
     margin-bottom: 20px;
-}
-
-.planning__content-item:nth-child(odd) {
-    margin-right: 20px;
 }

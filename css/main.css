@@ -239,6 +239,33 @@ img {
     background-color: #C2C2C2;
 }
 
+.subtitle {
+    font-family: TT Firs Neue;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 110%;
+    color: #323232;
+}
+
+.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.content__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 640px;
+    flex: 0 1 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content__column:nth-child(odd) {
+    margin-right: 20px;
+}
+
 .contacts-text {
     font-weight: 400;
     color: inherit;
@@ -468,6 +495,27 @@ img {
 
     .button.header__button {
         max-width: 170px;
+    }
+
+    .content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .content__column {
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
+        flex: auto;
+    }
+
+    .content__column:nth-child(odd) {
+        margin-right: initial;
+    }
+
+    .content__column:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
 
