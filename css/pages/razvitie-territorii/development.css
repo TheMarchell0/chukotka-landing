@@ -1,3 +1,78 @@
 .development {
-    margin: 61px 0 10px;
+    margin: 61px 0 55px;
+    color: #323232;
+}
+
+.development__title {
+    margin-bottom: 46px;
+}
+
+.development__content {
+    display: flex;
+}
+
+.development__content-item {
+    flex: 0 1 640px;
+}
+
+.development__content-item:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.development__content-info {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    min-height: 200px;
+    display: flex;
+    padding: 24px 24px 25px;
+    justify-content: space-between;
+}
+
+.development__content-info:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.development__content-info:nth-child(even) {
+    background-color: #E8E9F7;
+}
+
+.development__content-info:nth-child(even) .development__content-info-text-descr {
+    max-width: 409px;
+}
+
+.development__content-item.ui-count-block {
+    padding: 16px 16px 17px;
+}
+
+.development__content-item .ui-count-block__title {
+    max-width: 400px;
+    line-height: 112%;
+}
+
+.development__content-item .ui-count-block__list-title {
+    max-width: 486px;
+}
+
+.development__content-info-text-title {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 110%;
+    margin-bottom: 16px;
+}
+
+.development__content-info-text-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    max-width: 535px;
+}
+
+.development__content-info-text-descr:not(:last-child) {
+    margin-bottom: 19px;
+}
+
+.development__content-info-text-button {
+    max-width: 177px;
+    display: block;
+    text-align: center;
 }
