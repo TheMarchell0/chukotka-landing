@@ -22,8 +22,13 @@
 }
 
 .program__content-numbers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 12px;
 }
@@ -35,11 +40,15 @@
     font-size: 16px;
     line-height: 110%;
     min-height: 146px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 49%;
     flex: 0 1 49%;
     padding: 24px 24px 20px;
 }
 
 .program__content-numbers-list-text:first-child {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
     flex: 0 1 100%;
     background-color: #E8E9F7;
     font-weight: 500;
@@ -70,7 +79,10 @@
 }
 
 .program__content-control-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -78,10 +90,21 @@
     background-color: #FFFFFF;
     border-radius: 20px;
     min-height: 163px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 139px;
     flex: 0 1 139px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 8px 15px 21px;
     margin-bottom: 12px;
@@ -95,9 +118,14 @@
 }
 
 .program__content-info {
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), -o-linear-gradient(4.05deg, #E8E9F7 22.3%, #005FA0 139.98%);
     background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(85.95deg, #E8E9F7 22.3%, #005FA0 139.98%);
     border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     min-height: 175px;
     padding: 0 15px 6px 24px;
@@ -105,7 +133,12 @@
 
 .program__content-info-text {
     margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -134,10 +167,14 @@
 
 @media (max-width: 1330px) {
     .program__content-control-list{
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
     .program__content-control-list-item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 47%;
         flex: 0 1 47%;
     }
 
@@ -162,10 +199,77 @@
 
 @media (max-width: 1024px) {
     .program__content-control-list-item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 24%;
         flex: 0 1 24%;
     }
 
     .program__content-info-text {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    .program__title {
+        margin-bottom: 20px;
+    }
+
+    .program__content-notice {
+        padding: 15px;
+    }
+
+    .program__content-notice-text {
+        font-size: 14px;
+    }
+
+    .program__content-numbers-list-text:first-child,
+    .program__content-numbers-list-text {
+        font-size: 16px;
+        padding: 15px;
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
+        flex: auto;
+        min-height: 90px;
+    }
+
+    .program__content-numbers-list-text:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .program__content-numbers-list-text span {
+        font-size: 32px;
+    }
+
+    .program__content-control-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .program__content-control-list-item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .program__content-info {
+        padding: 15px 15px 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .program__content-info-text,
+    .program__content-info-img {
+        margin-top: initial;
     }
 }

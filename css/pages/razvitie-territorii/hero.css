@@ -7,11 +7,8 @@
 }
 
 .hero__faq-content {
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), -o-linear-gradient(4.05deg, #E8E9F7 22.3%, #005FA0 139.98%);
     background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(85.95deg, #E8E9F7 22.3%, #005FA0 139.98%);
-}
-
-.hero__faq-content.faq__content {
-    padding: 30px 50px 30px 29px;
 }
 
 .hero__faq-content-title.faq__content-title {
@@ -22,18 +19,28 @@
     position: absolute;
     bottom: 0;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
 @media (max-width: 1024px) {
-    .active .hero__faq-content.faq__content {
-        padding: 30px 50px 0 29px;
+    .faq__item.active .hero__faq-content.faq__content {
+        padding: 30px 20px 0 10px;
     }
 
     .hero__faq-content-img {
         position: initial;
         margin: 0 auto;
         display: block;
+        -webkit-transform: initial;
+        -ms-transform: initial;
         transform: initial;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        margin: 30px 0;
     }
 }

@@ -5,3 +5,9 @@
 .planning__content-item {
     margin-bottom: 20px;
 }
+
+@media (max-width: 767px) {
+    .planning__content {
+        margin-top: 20px;
+    }
+}

@@ -1,5 +1,10 @@
 .ui-count-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-color: #EEEEEE;
     border-radius: 30px;
@@ -23,13 +28,24 @@
 .ui-count-block__list {
     counter-reset: focus-count;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .ui-count-block__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-radius: 20px;
     background-color: #FFFFFF;
@@ -71,5 +87,25 @@
 @media (max-width: 1024px) {
     .ui-count-block {
         max-width: initial;
+    }
+}
+
+@media (max-width: 767px) {
+    .ui-count-block {
+        padding: 15px;
+    }
+
+    .ui-count-block__list-item {
+        padding: 10px 15px;
+        min-height: 50px;
+    }
+
+    .ui-count-block__list-title {
+        font-size: 14px;
+        padding-left: 35px;
+    }
+
+    .ui-count-block__list-title:not(.no-count)::before {
+        font-size: 18px;
     }
 }

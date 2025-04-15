@@ -8,17 +8,28 @@
 }
 
 .competitive__head-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .competitive__head-list-item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 423px;
     flex: 0 1 423px;
     background-color: #FFFFFF;
     border-radius: 20px;
     min-height: 250px;
     padding: 16px 20px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -89,6 +100,8 @@
 }
 
 .competitive__content-count .ui-count-block__list-item:last-child {
+    background: -webkit-gradient(linear, left top, right top, color-stop(56.6%, #E8E9F7), color-stop(123.6%, #005FA0));
+    background: -o-linear-gradient(left, #E8E9F7 56.6%, #005FA0 123.6%);
     background: linear-gradient(90deg, #E8E9F7 56.6%, #005FA0 123.6%);
     padding-left: 13px;
 }
@@ -100,10 +113,15 @@
 
 @media (max-width: 1024px) {
     .competitive__head-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .competitive__head-list-item {
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
         flex: auto;
         min-height: 213px;
     }
@@ -124,5 +142,37 @@
 
     .competitive__content-numbers-item {
         min-height: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .competitive {
+        margin: 30px 0;
+    }
+
+    .competitive__head-title {
+        margin: 20px 0;
+    }
+
+    .competitive__head-list-item {
+        min-height: 170px;
+        padding: 15px;
+    }
+
+    .competitive__head-list-title {
+        font-size: 14px;
+    }
+
+    .competitive__head-list-img {
+        max-width: 20vw;
+        width: 100%;
+    }
+
+    .competitive__content-numbers-text {
+        font-size: 14px;
+    }
+
+    .competitive__content-numbers-text span {
+        font-size: 32px;
     }
 }

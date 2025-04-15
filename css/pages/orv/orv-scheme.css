@@ -3,7 +3,11 @@
 }
 
 .orv-scheme__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     max-width: 1080px;
     width: 100%;

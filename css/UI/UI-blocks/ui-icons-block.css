@@ -13,7 +13,11 @@
 }
 
 .ui-icons-block__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     border-radius: 20px;
     background-color: #FFFFFF;
@@ -48,5 +52,19 @@
 @media (max-width: 1024px) {
     .ui-icons-block {
         max-width: initial;
+    }
+}
+
+@media (max-width: 767px) {
+    .ui-icons-block {
+        padding: 15px;
+    }
+
+    .ui-icons-block__list-text-title {
+        font-size: 16px;
+    }
+
+    .ui-icons-block__list-text-descr {
+        font-size: 14px;
     }
 }

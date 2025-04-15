@@ -7,21 +7,6 @@
     margin: 0 auto;
     padding: 50px 0 40px;
     max-width: 1260px;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-}
-
-.institutions__blocks::-webkit-scrollbar {
-    width: 0.5em;
-    height: 0.5em;
-}
-
-.institutions__blocks::-webkit-scrollbar-thumb {
-    background-color: transparent;
-}
-
-.institutions__blocks::-webkit-scrollbar-track {
-    background-color: transparent;
 }
 
 .institutions__blocks-item {
@@ -92,8 +77,6 @@
     .institutions__blocks {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        overflow-x: auto;
-        overflow-y: hidden;
     }
 
     .institutions__blocks-item:hover {
