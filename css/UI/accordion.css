@@ -29,9 +29,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -41,7 +38,28 @@
     transition: 0.2s linear;
     width: 100%;
     height: inherit;
+    position: relative;
 }
+
+.classic .accordion-head::after {
+    content: '';
+    display: block;
+    margin-left: auto;
+    width: 60px;
+    height: 60px;
+    background: url('../../images/accordion-dropdown-arrow.svg') no-repeat center;
+    background-size: cover;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+.classic .active .accordion-head::after {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 .classic .accordion-head {
     padding: 32px 0;
 }
@@ -50,6 +68,10 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+}
+
+.small.accordion-title {
+    font-size: 26px;
 }
 
 .classic .accordion-title {
@@ -65,18 +87,6 @@
 
 .classic .accordion:not(.active) .accordion-title::after {
     width: 0;
-}
-
-.accordion-dropdown-arrow {
-    -webkit-transition: 0.2s linear;
-    -o-transition: 0.2s linear;
-    transition: 0.2s linear;
-}
-
-.active .accordion-dropdown-arrow {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
 }
 
 .accordion-content {
@@ -118,9 +128,9 @@
         max-width: 80%;
     }
 
-    .accordion-dropdown-arrow {
-        margin-top: initial;
+    .classic .accordion-head::after {
         width: 40px;
+        height: 40px;
     }
 }
 

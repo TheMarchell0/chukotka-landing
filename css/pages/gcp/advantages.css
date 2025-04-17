@@ -62,125 +62,15 @@
     pointer-events: none;
 }
 
-.advantages__grid {
-    display: none;
-    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
-    grid-template-columns: repeat(6, 1fr);
-    -ms-grid-rows: 300px 16px 232px;
-    grid-template-rows: 300px 232px;
-    gap: 16px;
-    counter-reset: grid-count;
+.advantages__grid.grid {
     max-width: 1236px;
     width: 100%;
-}
-
-.advantages__grid > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-}
-
-.advantages__grid > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-}
-
-.advantages__grid > *:nth-child(3) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-}
-
-.advantages__grid > *:nth-child(4) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 7;
-}
-
-.advantages__grid > *:nth-child(5) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 9;
-}
-
-.advantages__grid > *:nth-child(6) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 11;
-}
-
-.advantages__grid > *:nth-child(7) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-}
-
-.advantages__grid > *:nth-child(8) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-}
-
-.advantages__grid > *:nth-child(9) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5;
-}
-
-.advantages__grid > *:nth-child(10) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 7;
-}
-
-.advantages__grid > *:nth-child(11) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 9;
-}
-
-.advantages__grid > *:nth-child(12) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 11;
+    display: none;
 }
 
 .advantages__grid.active {
     display: -ms-grid;
     display: grid;
-}
-
-.advantages__grid-item {
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    padding: 61px 20px;
-    counter-increment: grid-count;
-    position: relative;
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
-}
-
-.advantages__grid-item:nth-child(n+4) {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.advantages__grid-item::before {
-    content: counter(grid-count, decimal-leading-zero);
-    position: absolute;
-    display: block;
-    left: 20px;
-    top: 16px;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 110%;
-}
-
-.advantages__grid-title {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 110%;
-    max-width: 285px;
-    width: 100%;
-    margin-bottom: auto;
 }
 
 .advantages__grid-img {
@@ -189,7 +79,7 @@
 }
 
 @media (max-width: 1326px) {
-    .advantages__grid,
+    .advantages__grid.grid,
     .advantages__switches {
         max-width: 95%;
     }
@@ -215,18 +105,17 @@
     .advantages__switches-title:not(:last-child) {
         margin-bottom: 20px;
     }
+}
 
-    .advantages__grid-img {
-        width: 75%;
-    }
-
-    .advantages__grid-item:nth-child(n+4) .advantages__grid-img {
-        width: 100%;
+@media (min-width: 768px) {
+    .advantages__grid.grid {
+        -ms-grid-rows: 300px 16px 232px;
+        grid-template-rows: 300px 232px;
     }
 }
 
 @media (max-width: 767px) {
-    .advantages__grid,
+    .advantages__grid.grid,
     .advantages__switches {
         max-width: 85%;
     }
@@ -237,40 +126,8 @@
         padding: 15px 10px;
     }
 
-    .advantages__grid {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    }
-
-    .advantages__grid > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-    }
-
-    .advantages__grid-item {
-        -ms-grid-column-span: 3;
-        grid-column: span 3;
-    }
-
-    .advantages__grid-item:nth-child(n+4) {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: initial;
-        -ms-flex-align: initial;
-        align-items: initial;
-    }
-
     .advantages__grid-img {
         max-width: 150px;
         width: 100%;
-    }
-
-    .advantages__grid-item::before,
-    .advantages__grid-title {
-        font-size: 16px;
     }
 }

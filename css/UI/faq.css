@@ -85,6 +85,10 @@
         box-shadow: 0px 10px 30px 0px #E0E0E0;
     }
 
+    .big .faq__head {
+        min-height: 161px;
+    }
+
     .faq__content {
         -webkit-transition: 0.1s linear;
         -o-transition: 0.1s linear;

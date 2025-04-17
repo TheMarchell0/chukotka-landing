@@ -1,0 +1,96 @@
+.contacts {
+    color: #323232;
+    margin-bottom: 113px;
+}
+
+.contacts__title {
+    margin-bottom: 38px;
+}
+
+.contacts__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 640px;
+    width: 100%;
+    background-color: #EEEEEE;
+    border-radius: 30px;
+    padding: 24px 29px 24px 25px;
+}
+
+.contacts__content-text-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 110%;
+    margin-bottom: 16px;
+}
+
+.contacts__content-text-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    position: relative;
+    padding-left: 36px;
+    display: block;
+    color: #323232;
+}
+
+.contacts__content-text-info::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.contacts__content-text-info:not(:last-child) {
+    margin-bottom: 17px;
+}
+
+.contacts__content-text-info.tel::before {
+    background: url('../../../images/privlechenie-investiciy-contacts-phone-icon.svg') no-repeat center;
+    background-size: cover;
+}
+
+.contacts__content-text-info.mail::before {
+    background: url('../../../images/privlechenie-investiciy-contacts-mail-icon.svg') no-repeat center;
+    background-size: cover;
+}
+
+.contacts__content-text-info.location::before {
+    background: url('../../../images/privlechenie-investiciy-contacts-location-icon.svg') no-repeat center;
+    background-size: cover;
+}
+
+.contacts__content-qr-list {
+    display: flex;
+    margin-top: 7px;
+}
+
+.contacts__content-qr-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        margin-bottom: 30px;
+    }
+
+    .contacts__title {
+        margin-bottom: 20px;
+    }
+
+    .contacts__content {
+        flex-direction: column;
+    }
+
+    .contacts__content-text {
+        margin-bottom: 20px;
+    }
+
+    .contacts__content-qr-list-img {
+        max-width: 105px;
+        width: 100%;
+    }
+}
