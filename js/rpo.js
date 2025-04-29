@@ -19,5 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
             prevEl: ".projects__slider-prev-arrow",
         },
         spaceBetween: 20,
+        breakpoints: {
+            320: {
+                slidesPerView: 1.1,
+            },
+            767: {
+                slidesPerView: 1.3,
+            },
+            1025: {
+                slidesPerView: 1,
+                widthPercent: 100,
+            }
+        }
     });
 });
