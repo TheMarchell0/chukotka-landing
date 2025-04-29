@@ -5,4 +5,6 @@
 @import "pages/index/resources.css";
 @import "pages/index/documents.css";
 @import "pages/index/news.css";
+@import "pages/index/banner.css";
 @import "pages/index/anticorruption.css";
+@import "UI/gosuslugi-banner.css";
