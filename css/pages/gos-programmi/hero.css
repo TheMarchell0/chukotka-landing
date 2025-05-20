@@ -35,6 +35,8 @@
 .hero__content-img {
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: 0;
 }
@@ -61,6 +63,8 @@
     .hero__content-img {
         max-width: 200px;
         width: 100%;
+        -webkit-transform: initial;
+        -ms-transform: initial;
         transform: initial;
         position: initial;
         display: block;
