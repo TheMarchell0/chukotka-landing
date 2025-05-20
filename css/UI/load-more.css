@@ -1,0 +1,7 @@
+.load-more-list-item {
+    display: none;
+}
+
+.load-more-list-item.active {
+    display: block;
+}
