@@ -1,5 +1,5 @@
 .orv-docs {
-    margin-bottom: 231px;
+    margin-bottom: 50px;
 }
 
 .orv-docs__subtitle {
@@ -25,12 +25,6 @@
 
 .orv-docs__footer {
     margin-top: 21px;
-}
-
-@media (max-width: 1024px) {
-    .orv-docs {
-        margin-bottom: 50px;
-    }
 }
 
 @media (max-width: 767px) {
