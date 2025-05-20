@@ -1,0 +1,40 @@
+.hero {
+    margin: 62px 0;
+}
+
+.hero__title {
+    font-weight: 600;
+    margin-bottom: 46px;
+}
+
+.hero__content-item  {
+    background-color: #E8E9F7;
+    border-radius: 30px;
+    min-height: 320px;
+    position: relative;
+    padding: 25px;
+}
+
+.hero__content-item:nth-child(odd) {
+    background-color: #EEEEEE;
+}
+
+.hero__content-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    color: #062D5E;
+    max-width: 435px;
+    width: 100%;
+}
+
+.hero__content-item:nth-child(odd) .hero__content-title {
+    max-width: 480px;
+}
+
+.hero__content-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
