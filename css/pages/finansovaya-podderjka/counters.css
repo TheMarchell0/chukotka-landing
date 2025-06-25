@@ -5,7 +5,7 @@
 .counters__list-item {
     border-radius: 30px;
     background: url('../../../images/fp-counters-bg.png') no-repeat center;
-    max-height: 317px;
+    background-size: cover;
 }
 
 .counters__list-item-wrapper {
@@ -15,10 +15,11 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 34px 32px 0;
+    padding: 34px 32px 20px;
     max-width: 1138px;
     width: 100%;
     position: relative;
+    height: 100%;
 }
 
 .counters__list-text {
@@ -50,6 +51,12 @@
     text-align: center;
 }
 
+.counters__list-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .counters__list-footer {
     margin-top: 27px;
     display: none;
@@ -78,12 +85,6 @@
 
     .counters__list-item {
         max-height: initial;
-    }
-
-    .counters__list-img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
     }
 }
 
