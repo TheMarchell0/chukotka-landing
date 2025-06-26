@@ -1,3 +1,8 @@
+.info__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
 .info__list-item {
     border-radius: 30px;
     display: -webkit-box;
@@ -8,6 +13,7 @@
     justify-content: space-between;
     padding: 30px 30px 16px;
     min-height: 240px;
+    margin-bottom: 20px;
 }
 
 .info__list-item:nth-child(odd) {
