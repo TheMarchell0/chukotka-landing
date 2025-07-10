@@ -9,6 +9,7 @@ import createTimerFunctional from "./functions/createTimerFunctional.js";
 document.addEventListener("DOMContentLoaded", function () {
     const accordionBlocks = document.querySelectorAll('.js-accordion');
     const adsSliders = document.querySelectorAll('.js-ads-slider');
+    const supportSliders = document.querySelectorAll('.js-support-slider');
     const countersSliders = document.querySelectorAll('.js-counters-slider');
     const timers = document.querySelectorAll('.js-timer');
 
@@ -19,6 +20,44 @@ document.addEventListener("DOMContentLoaded", function () {
     createFormValidation();
     createAnchorsFunctional();
     createMobileMenu();
+
+    for (let supportSlider of supportSliders) {
+        const items = supportSlider.querySelectorAll('.support__list-item.swiper-slide').length;
+
+
+        if ((items > 4) || (innerWidth < 1320)) {
+
+            if (!supportSlider.classList.contains('slider')) {
+                supportSlider.classList.add('slider');
+            }
+
+            const slider = new Swiper(supportSlider, {
+                loop: false,
+                navigation: {
+                    nextEl: supportSlider.querySelector('.support__slider-next-arrow'),
+                    prevEl: supportSlider.querySelector('.support__slider-prev-arrow'),
+                },
+                spaceBetween: 20,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1.5,
+                    },
+                    600: {
+                        slidesPerView: 2,
+                    },
+                    985: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        width: 310,
+                    },
+                    1400: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
+        }
+    }
 
     for (let adsSlider of adsSliders) {
         const items = adsSlider.querySelectorAll('.ads__list-item.swiper-slide').length;
