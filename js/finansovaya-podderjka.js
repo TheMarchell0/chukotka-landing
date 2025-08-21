@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const adsSliders = document.querySelectorAll('.js-ads-slider');
     const supportSliders = document.querySelectorAll('.js-support-slider');
     const countersSliders = document.querySelectorAll('.js-counters-slider');
-    const timers = document.querySelectorAll('.js-timer');
+    const timerSystems = document.querySelectorAll('.js-timer-system');
 
     accordionBlocks.forEach(accordionBlock => createAccordionFunctional(accordionBlock));
-    timers.forEach(timer => createTimerFunctional(timer));
+    timerSystems.forEach(timerSystem => createTimerFunctional(timerSystem));
     createCookieFunctional();
     createModalFunctional();
     createFormValidation();

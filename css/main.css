@@ -401,6 +401,14 @@ img {
     margin-top: 9px;
 }
 
+.timer-wrapper {
+    display: none;
+}
+
+.timer-wrapper.active {
+    display: block;
+}
+
 .timer {
     background: #FFFFFF;
     min-height: 56px;
