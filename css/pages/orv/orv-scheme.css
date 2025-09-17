@@ -9,9 +9,9 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    max-width: 1080px;
+    max-width: 1390px;
     width: 100%;
-    margin: 44px auto 0;
+    margin: 40px auto 0;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: thin;
@@ -69,6 +69,7 @@
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+    width: 100%;
 }
 
 .orv-scheme__list-item img {
