@@ -48,7 +48,7 @@
     width: 60px;
     height: 60px;
     background: url('../../images/accordion-dropdown-arrow.svg') no-repeat center;
-    background-size: cover;
+    background-size: contain;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear;

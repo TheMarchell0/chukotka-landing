@@ -1,0 +1,11 @@
+.expertise__text-list {
+    max-width: 1131px;
+    width: 100%;
+}
+
+.expertise__text-list-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    color: #323232;
+}

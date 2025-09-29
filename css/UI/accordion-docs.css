@@ -1,0 +1,124 @@
+.accordion-docs__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 1110px;
+    width: 100%;
+}
+
+.accordion-docs__list-item {
+    border: 1px solid #E8E9F7;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    min-height: 56px;
+    padding: 0 24px;
+    position: relative;
+}
+
+.accordion-docs__list-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.accordion-docs__list-item:hover {
+    opacity: 0.6;
+}
+
+.accordion-docs__list-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    max-width: 312px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #062D5E;
+}
+
+.accordion-docs__list-date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #C2C2C2;
+}
+
+.accordion-docs__list-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #1C5A96;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.accordion-docs__list-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -39px;
+    width: 23px;
+    height: 28px;
+    background: url(/images/doc-icon.svg) no-repeat center;
+    background-size: cover;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordion-docs__list-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 1px;
+    width: 100%;
+    background-color: #1C5A96;
+}
+
+@media (max-width: 767px) {
+    .accordion-docs__list-item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: initial;
+        -ms-flex-align: initial;
+        align-items: initial;
+        padding: 20px;
+        min-height: 130px;
+    }
+
+    .accordion-docs__list-title {
+        max-width: initial;
+    }
+
+    .accordion-docs__list-title,
+    .accordion-docs__list-link
+    .accordion-docs__list-date {
+        font-size: 16px;
+    }
+
+    .accordion-docs__list-link {
+        margin-left: 39px;
+    }
+}

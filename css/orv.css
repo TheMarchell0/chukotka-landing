@@ -1,4 +1,57 @@
-@import "pages/orv/orv-faq.css";
-@import "pages/orv/orv-scheme.css";
-@import "pages/orv/orv-docs.css";
+@import "pages/orv/faq.css";
+@import "pages/orv/scheme.css";
+@import "pages/orv/provision.css";
+@import "pages/orv/procedure.css";
+@import "pages/orv/expertise.css";
 @import "UI/faq.css";
+@import "UI/accordion-docs.css";
+
+.orv-accordion {
+    margin: 40px 0 67px;
+}
+
+.orv-accordion-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    color: #323232;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.orv-accordion-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #062D5E;
+}
+
+.orv-accordion-descr {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 110%;
+    color: #323232;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 20px 0 0;
+}
+
+@media (max-width: 767px) {
+    .orv-accordion {
+        margin: 33px 0 40px;
+    }
+
+    .orv-accordion-title {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .orv-accordion-descr {
+        font-size: 20px;
+    }
+}

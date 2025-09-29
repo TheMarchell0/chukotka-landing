@@ -1,0 +1,10 @@
+.provision__accordion-content-list-item {
+    position: relative;
+}
+
+.provision__accordion-content-list-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 31px;
+}

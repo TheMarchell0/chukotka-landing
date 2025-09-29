@@ -1,0 +1,35 @@
+.procedure__title.orv-accordion-title {
+    padding-bottom: 0;
+}
+
+.procedure__title.orv-accordion-title::after {
+    display: none;
+}
+
+.procedure__subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    color: #323232;
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.procedure__subtitle::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #062D5E;
+}
+
+@media (max-width: 767px) {
+    .procedure__subtitle {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+}
