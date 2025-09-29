@@ -1,3 +1,7 @@
+.provision {
+    margin-bottom: 30px;
+}
+
 .provision__accordion-content-list-item {
     position: relative;
 }

@@ -6,8 +6,6 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-width: 1110px;
-    width: 100%;
 }
 
 .accordion-docs__list-item {
@@ -28,6 +26,8 @@
     min-height: 56px;
     padding: 0 24px;
     position: relative;
+    max-width: 1110px;
+    width: 100%;
 }
 
 .accordion-docs__list-item:not(:last-child) {

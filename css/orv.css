@@ -6,10 +6,6 @@
 @import "UI/faq.css";
 @import "UI/accordion-docs.css";
 
-.orv-accordion {
-    margin: 40px 0 67px;
-}
-
 .orv-accordion-title {
     font-weight: 500;
     font-size: 40px;
@@ -17,6 +13,9 @@
     color: #323232;
     position: relative;
     padding-bottom: 15px;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 20px 0 0;
 }
 
 .orv-accordion-title::after {
@@ -42,13 +41,10 @@
 }
 
 @media (max-width: 767px) {
-    .orv-accordion {
-        margin: 33px 0 40px;
-    }
-
     .orv-accordion-title {
         font-size: 24px;
         line-height: 1.1;
+        max-width: 82%;
     }
 
     .orv-accordion-descr {

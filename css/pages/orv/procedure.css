@@ -1,3 +1,7 @@
+.procedure {
+    margin-bottom: 30px;
+}
+
 .procedure__title.orv-accordion-title {
     padding-bottom: 0;
 }
