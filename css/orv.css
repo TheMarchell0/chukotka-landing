@@ -40,6 +40,16 @@
     margin: 0 20px 0 0;
 }
 
+.classic.provision__accordion .accordion {
+    border-top: initial;
+}
+
+.classic.provision__accordion .accordion:last-child,
+.classic.procedure__accordion .accordion:last-child,
+.classic.expertise__accordion .accordion:last-child {
+    border-bottom: initial;
+}
+
 @media (max-width: 767px) {
     .orv-accordion-title {
         font-size: 24px;
